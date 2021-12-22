@@ -3,16 +3,16 @@
 $theme_change = 0;
 
 //預設佈景種類 bootstrap4 , bootstrap3 , html , mix
-$theme_kind = 'bootstrap4';
+$theme_kind = 'bootstrap5';
 
 //可選用佈景種類 bootstrap4 , bootstrap3 , html , mix （$theme_change=1 時才有用）
-$theme_kind_arr = 'bootstrap4';
+$theme_kind_arr = 'bootstrap5';
 
 //引入哪些選單？ all(含 my_menu,admin,user),my_menu,admin,user
 $menu_var_kind = 'my_menu';
 
 //額外顏色設定 如： bootstrap3/themes/light/Cerulean
-$theme_color = 'bootstrap4';
+$theme_color = 'bootstrap5';
 
 //是否為可選用佈景
 $theme_set_allowed = 1;
@@ -175,13 +175,13 @@ $config_enable['block_style'] = ['enable' => '1', 'min' => '', 'max' => '', 'req
 border: none;
 border-radius: 6px;
 padding: 0px;
-margin:0px 0px 20px;'];
+margin:0px 0px 20px;', ];
 
 //區塊標題區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
 $config_enable['block_title_style'] = ['enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'padding:6px;
 text-align:center;
 font-family: 微軟正黑體;
-text-shadow: 0px 1px #0c4d5b, 1px 0px #0c4d5b, -1px 0px #0c4d5b, 0px -1px #0c4d5b, -1px -1px #0c4d5b, 1px 1px #0c4d5b, 1px -1px #0c4d5b, -1px 1px #0c4d5b;'];
+text-shadow: 0px 1px #0c4d5b, 1px 0px #0c4d5b, -1px 0px #0c4d5b, 0px -1px #0c4d5b, -1px -1px #0c4d5b, 1px 1px #0c4d5b, 1px -1px #0c4d5b, -1px 1px #0c4d5b;', ];
 
 //區塊內容區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
 $config_enable['block_content_style'] = ['enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'padding: 5px 0px 10px;'];
@@ -206,15 +206,15 @@ $config_enable['bt_bg_color']['rightBlock'] = ['enable'=>1, 'min' => '', 'max' =
 $config_enable['block_style']['footerCenterBlock'] = ['enable' => 1, 'min' => '', 'max' => '', 'require' => 0, 'default' => 'border: none;
 border-radius: 6px;
 padding: 0px;
-margin:0px 0px 20px;'];
+margin:0px 0px 20px;', ];
 $config_enable['block_style']['footerLeftBlock'] = ['enable' => 1, 'min' => '', 'max' => '', 'require' => 0, 'default' => 'border: none;
 border-radius: 6px;
 padding: 0px;
-margin:0px 0px 20px;'];
+margin:0px 0px 20px;', ];
 $config_enable['block_style']['footerRightBlock'] = ['enable' => 1, 'min' => '', 'max' => '', 'require' => 0, 'default' => 'border: none;
 border-radius: 6px;
 padding: 0px;
-margin:0px 0px 20px;'];
+margin:0px 0px 20px;', ];
 $config_enable['bt_bg_color']['leftBlock'] = ['enable' => 1, 'min' => '', 'max' => '', 'require' => 0, 'default' => '#ff7163'];
 $config_enable['bt_bg_color']['rightBlock'] = ['enable' => 1, 'min' => '', 'max' => '', 'require' => 0, 'default' => '#ff7163'];
 
@@ -249,10 +249,19 @@ $config_enable['navbar_color_hover'] = ['enable' => '1', 'min' => '', 'max' => '
 $config_enable['navbar_icon'] = ['enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'style='];
 
 //導覽工具列 導覽選項上下距離[theme_css_navbar.tpl]
-$config_enable['navbar_py'] = ['enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => ''];
+$config_enable['navbar_py'] = ['enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => '13'];
 
 //導覽工具列 導覽選項左右距離[theme_css_navbar.tpl]
-$config_enable['navbar_px'] = ['enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => '15'];
+$config_enable['navbar_px'] = ['enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => '20'];
+
+//導覽工具列 導覽選項文字大小[theme_css_navbar.tpl]
+$config_enable['navbar_font_size'] = ['enable' => '1', 'min' => '0.6', 'max' => '2', 'require' => '1', 'default' => '1'];
 
 // 上傳導覽列logo圖[navbar.tpl]，值：可指定置於「themes/佈景/images/navlogo/」下的某一檔案名稱
 $config_enable['navlogo_img'] = ['enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => ''];
+
+/*
+tabs-7 頁尾
+ */
+
+$config_tabs[7] = 1;

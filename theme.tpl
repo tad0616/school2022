@@ -24,14 +24,14 @@
         <!-- 網站的標題及標語 -->
         <title><{$xoops_sitename}><{if $xoops_pagetitle}> - <{$xoops_pagetitle}><{/if}></title>
 
-        <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/link_css.tpl"}>
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/link_css.tpl"}>
 
         <!-- 給模組套用的樣板標籤開始 -->
-<{$xoops_module_header}>
+        <{$xoops_module_header}>
         <!-- 給模組套用的樣板標籤結束 -->
 
         <!-- 局部套用的樣式，如果有載入完整樣式 theme_css.tpl 那就不需要這一部份 -->
-        <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/theme_css.tpl"}>
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/theme_css.tpl"}>
 
         <style type="text/css">
             #xoops_theme_left_zone{
@@ -46,12 +46,6 @@
             <{/if}>
             }
 
-            #xoops_theme_footer a,
-            #xoops_theme_footer a:hover,
-            #xoops_theme_footer a:active ,
-            #xoops_theme_footer a:visited {
-                color:<{$footer_color}>;
-            }
 
             <{if $bg_bg2 and $bg_bg3}>
                 body{
@@ -77,219 +71,99 @@
             <{/if}>
 
 
-            <{if $logo_bg}>
-                #logo-container{
-                    <{if $logo_display_type=='not_full'}>
-                        background-image: none;
-                    <{else}>
-                        background-image: url('<{$logo_bg}>') <{if $logo_bg2}>, url('<{$logo_bg2}>')<{/if}>;
-                        background-position: <{$logo_bg_position}><{if $logo_bg2_position}>, <{$logo_bg2_position}><{/if}>;
-                        background-repeat: <{$logo_bg_repeat}><{if $logo_bg2_repeat}>, <{$logo_bg2_repeat}><{/if}>;
-                        background-size: <{$logo_bg_size}><{if $logo_bg2_size}>, <{$logo_bg2_size}><{/if}>;
-                    <{/if}>
+            <{if $nav_display_type=='not_full'}>
+                #xoops_theme_nav {
+                    border-radius: <{$nav_border_radius}>;
                 }
-
-                #logo-container-display{
-                    <{if $logo_display_type=='not_full'}>
-                        background-image: url('<{$logo_bg}>') <{if $logo_bg2}>, url('<{$logo_bg2}>')<{/if}>;
-                        background-position: <{$logo_bg_position}><{if $logo_bg2_position}>, <{$logo_bg2_position}><{/if}>;
-                        background-repeat: <{$logo_bg_repeat}><{if $logo_bg2_repeat}>, <{$logo_bg2_repeat}><{/if}>;
-                        background-size: <{$logo_bg_size}><{if $logo_bg2_size}>, <{$logo_bg2_size}><{/if}>;
-                    <{else}>
-                        background-image: none;
-                    <{/if}>
-                }
-            <{/if}>
-
-            #nav-container-display{
-                background-color: transparent;
-            }
-            /* 不透明時 */
-            <{if $nav_bg_opacity=='' or $nav_bg_opacity==1}>
-                /* 沒有漸層 */
-                <{if $navbar_bg_top==$navbar_bg_bottom}>
-                    /* 非滿版狀態時 */
-                    <{if ($nav_display_type=='not_full' and $navbar_pos!='fixed-top' and $navbar_pos!='fixed-bottom') or ($navbar_pos=='fixed-top' or $navbar_pos=='fixed-bottom')}>
-                        #main-nav {
-                            background-color: <{$navbar_bg_top}>;
-                        }
-                        #nav-container{
-                            background-color: transparent;
-                        }
-                    <{else}>
-                        /* 滿版狀態時，顏色放在外框，內容底透明 */
-                        #main-nav {
-                            background-color: transparent;
-                        }
-                        #nav-container{
-                            background-color: <{$navbar_bg_top}>;
-                        }
-                    <{/if}>
-                <{else}>
-                    /* 有漸層 */
-                    /* 非滿版狀態時 */
-                    <{if ($nav_display_type=='not_full' and $navbar_pos!='fixed-top' and $navbar_pos!='fixed-bottom') or ($navbar_pos=='fixed-top' or $navbar_pos=='fixed-bottom')}>
-                        #main-nav {
-                            background: linear-gradient(<{$navbar_bg_top}>,<{$navbar_bg_bottom}>);
-                        }
-                        #nav-container{
-                            background-color: transparent;
-                        }
-                    <{else}>
-                        /* 滿版狀態時，顏色放在外框，內容底透明 */
-                        #main-nav {
-                            background-color: transparent;
-                        }
-                        #nav-container{
-                            background: linear-gradient(<{$navbar_bg_top}>,<{$navbar_bg_bottom}>);
-                        }
-
-                    <{/if}>
-                <{/if}>
             <{else}>
-            /* 有設透明時 */
-                /* 沒有漸層 */
-                <{if $navbar_bg_top==$navbar_bg_bottom}>
-                    /* 非滿版狀態時 */
-                    <{if ($nav_display_type=='not_full' and $navbar_pos!='fixed-top' and $navbar_pos!='fixed-bottom') or ($navbar_pos=='fixed-top' or $navbar_pos=='fixed-bottom')}>
-                        #main-nav {
-                            background-color: rgba(<{$navbar_bg_top_rgb.r}>,<{$navbar_bg_top_rgb.g}>,<{$navbar_bg_top_rgb.b}>, <{$nav_bg_opacity}>);
-                        }
-                        #nav-container{
-                            background-color: transparent;
-                        }
-                    <{else}>
-                        /* 滿版狀態時，顏色放在外框，內容底透明 */
-                        #main-nav {
-                            background-color: transparent;
-                        }
-                        #nav-container{
-                            background-color: rgba(<{$navbar_bg_top_rgb.r}>,<{$navbar_bg_top_rgb.g}>,<{$navbar_bg_top_rgb.b}>, <{$nav_bg_opacity}>);
-                        }
-                    <{/if}>
-                <{else}>
-                    /* 有漸層 */
-                    /* 非滿版狀態時 */
-                    <{if ($nav_display_type=='not_full' and $navbar_pos!='fixed-top' and $navbar_pos!='fixed-bottom') or ($navbar_pos=='fixed-top' or $navbar_pos=='fixed-bottom')}>
-                        #main-nav {
-                            background: linear-gradient(rgba(<{$navbar_bg_top_rgb.r}>,<{$navbar_bg_top_rgb.g}>,<{$navbar_bg_top_rgb.b}>, <{$nav_bg_opacity}>), rgb(<{$navbar_bg_bottom_rgb.r}>,<{$navbar_bg_bottom_rgb.g}>,<{$navbar_bg_bottom_rgb.b}>, <{$nav_bg_opacity}>));
-                        }
-                        #nav-container{
-                            background-color: transparent;
-                        }
-                    <{else}>
-                        /* 滿版狀態時，顏色放在外框，內容底透明 */
-                        #main-nav {
-                            background-color: transparent;
-                        }
-                        #nav-container{
-                            background: linear-gradient(rgba(<{$navbar_bg_top_rgb.r}>,<{$navbar_bg_top_rgb.g}>,<{$navbar_bg_top_rgb.b}>, <{$nav_bg_opacity}>), rgb(<{$navbar_bg_bottom_rgb.r}>,<{$navbar_bg_bottom_rgb.g}>,<{$navbar_bg_bottom_rgb.b}>, <{$nav_bg_opacity}>));
-                        }
-                    <{/if}>
-                <{/if}>
-            <{/if}>
-
-            /* nav_display_type=<{$nav_display_type}>, navbar_pos=<{$navbar_pos}> */
-            <{assign var=nav_margin_y value=$nav_margin|substr:0:1}>
-            <{if $nav_margin_y==0 or $nav_margin_y==''}>
-                <{assign var=nav_border_radius value=0}>
-            <{/if}>
-            <{if $nav_border_radius and $nav_display_type=='not_full' and $navbar_pos!='fixed-top' and $navbar_pos!='fixed-bottom'}>
-                #main-nav {
+                #nav-wapper {
                     border-radius: <{$nav_border_radius}>;
                 }
             <{/if}>
 
-            <{if $navbar_pos=='fixed-top'}>
-                #main-nav {
-                    min-height: 50px;
+            <{if $slide_display_type=='not_full'}>
+                #slide-display, #slide-display img{
+                    border-radius: <{$slide_border_radius}>;
+                }
+            <{elseif $slide_display_type=='all_full'}>
+                #slide-wrapper, #slide-wrapper img{
+                    border-radius: <{$slide_border_radius}>;
+                }
+            <{else}>
+                #slide-wrapper{
+                    border-radius: <{$slide_border_radius}>;
                 }
             <{/if}>
 
 
-            <{if $nav_shadow=='1'}>
-                <{if $nav_display_type=='not_full'}>
-                    #main-nav {
-                        <{if $nav_margin_y==0 or $nav_margin_y==''}>
-                            box-shadow: 2px 0px 2px 0px  rgb(51, 51, 51, 0.7),-2px 0px 2px 0px  rgb(51, 51, 51, 0.7) ;
-                        <{else}>
-                            box-shadow: 0px 0px 5px 1px rgb(51, 51, 51);
-                        <{/if}>
-                    }
-                <{else}>
-                    #nav-container {
-                        <{if $nav_margin_y==0 or $nav_margin_y==''}>
-                            box-shadow: 2px 0px 2px 0px  rgb(51, 51, 51, 0.7),-2px 0px 2px 0px  rgb(51, 51, 51, 0.7) ;
-                        <{else}>
-                            box-shadow: 0px 0px 5px 1px rgb(51, 51, 51);
-                        <{/if}>
-                    }
-                <{/if}>
-            <{/if}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/shadow_setup.tpl"}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_css.tpl"}>
 
-
-            #footer-container{
-                <{if $footer_display_type!='not_full'}>
-                    background-repeat: <{$footer_img_repeat}>;
-                    background-position: <{$footer_img_position}>;
-                    background-size: <{$footer_img_size}>;
-                <{/if}>
-            }
-
-            #footer-container-display{
-                <{if $footer_display_type=='not_full'}>
-                    background-repeat: <{$footer_img_repeat}>;
-                    background-position: <{$footer_img_position}>;
-                    background-size: <{$footer_img_size}>;
-                <{/if}>
-            }
-
-            #xoops_theme_slide{
-                <{if $slide_mt}>margin-top: <{$slide_mt}>px;<{/if}>
-                <{if $slide_mb}>margin-bottom: <{$slide_mb}>px;<{/if}>
-            }
         </style>
 
         <!-- 載入bootstrap -->
-        <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/bootstrap_js.tpl"}>
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/bootstrap_js.tpl"}>
     </head>
 
     <body>
-        <{if $margin_top}><div style="margin-top: <{$margin_top}>px;"></div><{/if}>
-        <!-- logo區域 -->
-        <{if $logo_img and $logo_position=="page"}>
-            <div id="logo-container">
-                <div class="container" style="max-width: <{if $logo_display_type=='all_full'}>100%<{else}><{$container_width}><{/if}>;">
-                    <{assign var=mylogofile value=$xoops_rootpath$logo_path`$smarty.get.$logo_var`.$logo_ext}>
-                    <div id="logo-container-display" class="row <{if $logo_align}>d-flex <{$logo_align}><{/if}> <{if $logo_shadow=='1' and $logo_display_type=='not_full'}>xoops_content_shadow<{/if}>">
-                        <{if $logo_auto==1 and $smarty.server.REQUEST_URI|strpos:$smarty.get.$logo_var!==false and $mylogofile|file_exists}>
-                            <a href="<{$xoops_url}>/index.php?<{$logo_var}>=<{$smarty.get.$logo_var}>"><img id="website_logo" src="<{$xoops_url}><{$logo_path}><{$smarty.get.$logo_var}>.<{$logo_ext}>" style="max-width: 100%;<{if $logo_position=="slide"}>position: absolute; z-index: 5; <{$logo_place}><{else}>position: relative; z-index:10;<{/if}>" alt="<{$xoops_sitename}>" title="<{$xoops_sitename}>" class="img-fluid"></a>
-                        <{else}>
-                            <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/logo.tpl"}>
-                        <{/if}>
-                    </div>
+        <{* 頂部內容區 *}>
+        <div id="topdiv-wrapper">
+            <div id="topdiv-display" class="row">
+                <div style="<{$topdiv_style}>">
+                    <{$topdiv_content}>
                 </div>
             </div>
-        <{/if}>
+        </div>
 
         <!-- 導覽列區域 -->
+        <{if $navbar_pos=='fixed-top'}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/nav-container.tpl"}>
+        <{/if}>
+        <{if $margin_top}><div style="margin-top: <{$margin_top}>;"></div><{/if}>
+
+        <!-- logo區域 -->
+        <div id="logo-wrapper">
+            <{assign var=mylogofile value=$xoops_rootpath$logo_path`$smarty.get.$logo_var`.$logo_ext}>
+            <div id="logo-display" class="row <{if $logo_align}>d-flex <{$logo_align}><{/if}>">
+                <div style="<{$logo_style}>">
+                    <{if $logo_text=='1'}>
+                        <h1 class="mt-4">
+                        <a href="<{$xoops_url}>/index.php?<{$logo_var}>=<{$smarty.get.$logo_var}>"><{$xoops_sitename}></a>
+                        </h1>
+                        <div class="mt-1 opacity-75"><{$xoops_slogan}></div>
+                    <{elseif $logo_img and $logo_position=="page"}>
+                        <{if $logo_auto==1 and $smarty.server.REQUEST_URI|strpos:$smarty.get.$logo_var!==false and $mylogofile|file_exists}>
+                            <a href="<{$xoops_url}>/index.php?<{$logo_var}>=<{$smarty.get.$logo_var}>">
+                                <img id="website_logo" src="<{$xoops_url}><{$logo_path}><{$smarty.get.$logo_var}>.<{$logo_ext}>" style="<{if $logo_full!='1'}>max-<{/if}>>width: 100%;<{if $logo_position=="slide"}>position: absolute; z-index: 5; <{$logo_place}><{else}>position: relative; z-index:10;<{/if}>" alt="<{$xoops_sitename}>" title="<{$xoops_sitename}>" class="img-fluid">
+                            </a>
+                        <{else}>
+                            <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/logo.tpl"}>
+                        <{/if}>
+                    <{/if}>
+                </div>
+            </div>
+        </div>
+
+
         <{if $navbar_pos=='sticky-top'}>
             <{includeq file="$xoops_rootpath/themes/school2022/tpl/nav-container.tpl"}>
         <{/if}>
 
         <!-- 滑動圖區域 -->
-        <{if $slide_width > 0 }>
-            <div id="slide-container">
-                <div class="container" style="max-width: <{if $slide_display_type=='all_full'}>100%<{else}><{$container_width}><{/if}>;">
-                    <div id="xoops_theme_slide" class="row  <{if $slide_shadow=='1' and $slide_display_type=='not_full'}>xoops_content_shadow<{/if}>">
-                        <div id="slide-container-display" style="width:100%; position:relative; z-index:1;">
+        <{if $use_slide }>
+            <div id="slide-wrapper">
+                <div id="slide-display" class="row">
+                    <div style="<{$slide_style}>">
+                        <{if $slide_kind=='CarouSlide'}>
+                            <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/slider/CarouSlide.tpl"}>
+                        <{else}>
                             <{includeq file="$xoops_rootpath/themes/school2022/tpl/slideshow_responsive.tpl"}>
                             <{if $slide_mask}>
                                 <img src="<{$slide_mask}>" alt="mask" class="img-fluid" style="width:100%; position:absolute; z-index:2; left:0px; top:0px;">
                             <{elseif $slide_def_mask}>
                                 <img src="<{$xoops_url}>/uploads/tad_themes/school2022/mask/<{$slide_def_mask}>.svg" alt="mask" class="img-fluid" style="width:100%; position:absolute; z-index:2; left:0px; top:0px;">
                             <{/if}>
-                        </div>
+                        <{/if}>
                     </div>
                 </div>
             </div>
@@ -300,41 +174,41 @@
             <{includeq file="$xoops_rootpath/themes/school2022/tpl/nav-container.tpl"}>
         <{/if}>
 
+
         <!-- 主內容區域 -->
-        <div class="container" id="content-container" style="max-width: <{if $content_display_type!='all_full'}><{$container_width}><{else}>100%<{/if}>;">
-            <div id="xoops_theme_content" class="row <{if $content_shadow=='1' and $content_display_type=='not_full'}>xoops_content_shadow<{/if}>">
-                <div id="content-container-display" style="<{$content_zone}>" class="col-sm-12">
+        <div id="base-wrapper">
+            <div id="base-display" class="container-fluid">
+
                     <!-- 載入布局 -->
-                    <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/$theme_type.tpl"}>
+                    <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/$theme_type.tpl"}>
 
                     <!-- 顯示參數，開發用，開發完可刪除 -->
-                    <{if $show_var=='1'}><{includeq file="$xoops_rootpath/modules/tadtools/themes_common/show_var.tpl"}><{/if}>
-                </div>
+                    <{if $show_var=='1'}>
+                        <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/show_var.tpl"}>
+                    <{/if}>
+
             </div>
         </div>
 
         <!-- 頁尾區域 -->
-        <div class="container" id="footer-container" style="max-width: <{if $footer_display_type!='all_full'}><{$container_width}><{else}>100%<{/if}>;">
-            <div id="xoops_theme_footer" class="row <{if $footer_shadow=='1' and $footer_display_type=='not_full'}>xoops_content_shadow<{/if}>">
-                <div id="footer-container-display" class="col-sm-12">
+        <div id="footer-wrapper">
+            <div id="footer-display" class="row">
+                <div style="<{$footer_style}>">
                     <{if $xoops_isadmin}><a href="<{$xoops_url}>/modules/system/admin.php?fct=preferences&op=show&confcat_id=3" class="block_config"></a><{/if}>
 
-                    <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/footerBlock.tpl"}>
+                    <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/footerBlock.tpl"}>
 
                     <{$xoops_footer}>
                 </div>
             </div>
         </div>
 
-        <{if $navbar_pos=='fixed-top' or $navbar_pos=='fixed-bottom'}>
-            <div id="nav-container-display" style="width:100%;">
-                <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/navbar.tpl"}>
-            </div>
+        <{if $navbar_pos=='fixed-bottom'}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/nav-container.tpl"}>
         <{/if}>
 
-
         <!-- 載入自訂js -->
-        <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/my_js.tpl"}>
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/my_js.tpl"}>
         <{$my_code}>
         <{if $margin_bottom}><div style="margin-bottom: <{$margin_bottom}>px;"></div><{/if}>
     </body>

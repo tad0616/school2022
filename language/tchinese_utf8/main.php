@@ -10,8 +10,6 @@ define('TF_FONT_FAMILY_DEFAULT', 'jf-openhuninn, Mamelon, mnyylti, HanWangWeBe, 
 define('TF_FONT_FAMILY_DESC', '輸入字型名稱，有空白的部份需要用""包起來。如：' . TF_FONT_FAMILY_DEFAULT);
 define('TF_USE_SHADOW_LOGO', '陰影是否包含logo');
 define('TF_USE_SHADOW_LOGO_DESC', '當logo在滑動圖文之上時，是否仍要加上陰影？');
-define('TF_FOOTER_BG_CSS', '頁尾底圖CSS設定');
-define('TF_FOOTER_BG_CSS_DESC', '可利用此處設定各種背景CSS設定，例如重複方式、位置...等');
 define('TF_LEFT_SPARATE', '左區域分隔線');
 define('TF_LEFT_SPARATE_DESC', '左區域和主內容間是否加上分隔線');
 define('TF_RIGHT_SPARATE', '右區域分隔線');
@@ -23,12 +21,8 @@ define('TF_MY_CODE_DESC', '可自行載入CSS或JS');
 define('TF_OG_FILE', '網站縮圖');
 define('TF_OG_FILE_DESC', '在fb或line分享網址時，會顯示的縮圖（寬高至少 200px）');
 
-define('TF_LOGO_DISPLAY_TYPE', 'logo區域顯示模式');
-define('TF_LOGO_DISPLAY_TYPE_DESC', '以何種方式來呈現logo區域');
 define('TF_LOGO_SHADOW', 'logo區域是否要套用陰影');
 define('TF_LOGO_SHADOW_DESC', '若「是」會在logo區域周圍加上陰影');
-define('TF_LOGO_BGCOLOR', 'logo顯示區域底色');
-define('TF_LOGO_BGCOLOR_DESC', 'logo顯示區域底色');
 
 define('TF_LOGO_BG1', 'logo區域的底圖1');
 define('TF_LOGO_BG1_DESC', '若「是」會在logo區域加上底圖1');
@@ -50,8 +44,6 @@ define('TF_LOGO_BG2_SIZE_DESC', 'logo底圖2縮放方式');
 
 define('TF_SLIDE_DISPLAY_TYPE', '滑動圖區域顯示模式');
 define('TF_SLIDE_DISPLAY_TYPE_DESC', '以何種方式來呈現滑動圖');
-define('TF_SLIDE_SHADOW', '滑動圖區域是否要套用陰影');
-define('TF_SLIDE_SHADOW_DESC', '若「是」會在滑動圖區域周圍加上陰影');
 define('TF_SLIDE_BGCOLOR', '滑動圖顯示區域底色');
 define('TF_SLIDE_BGCOLOR_DESC', '滑動圖顯示區域底色');
 define('TF_SLIDE_TIMEOUT', '滑動圖顯示時間');
@@ -65,29 +57,15 @@ define('TF_FOOTER_SHADOW', '頁尾區域是否要套用陰影');
 define('TF_FOOTER_SHADOW_DESC', '若「是」會在頁尾區域周圍加上陰影');
 define('TF_FOOTER_BGCOLOR', '頁尾顯示區域底色');
 define('TF_FOOTER_BGCOLOR_DESC', '頁尾顯示區域底色');
-define('TF_FOOTER_IMG', '頁尾底圖');
-define('TF_FOOTER_IMG_DESC', '可自行上傳想要的底圖');
-define('TF_FOOTER_IMG_REPEAT', '頁尾底圖重複方式');
-define('TF_FOOTER_IMG_REPEAT_DESC', '頁尾底圖重複方式');
-define('TF_FOOTER_IMG_SIZE', '頁尾底圖縮放方式');
-define('TF_FOOTER_IMG_SIZE_DESC', '頁尾底圖縮放方式');
-define('TF_FOOTER_IMG_POSITION', '頁尾底圖位置');
-define('TF_FOOTER_IMG_POSITION_DESC', '頁尾底圖位置');
 define('TF_FOOTER_COLOR', '頁尾文字顏色');
 define('TF_FOOTER_COLOR_DESC', '頁尾內容的文字顏色');
 define('TF_FOOTER_HEIGHT', '頁尾最低高度');
 define('TF_FOOTER_HEIGHT_DESC', '沒內容時可設定頁尾最低呈現高度');
-define('TF_FOOTER_PADDING', '頁尾文字內距');
-define('TF_FOOTER_PADDING_DESC', '分別為：上 右 下 左');
 
 define('TF_DISPLAY_TYPE_NOT_FULL', '內容底色皆置中');
 define('TF_DISPLAY_TYPE_BG_FULL', '內容置中，底色滿版');
 define('TF_DISPLAY_TYPE_ALL_FULL', '內容底色皆滿版');
 
-define('TF_CONTENT_DISPLAY_TYPE', '內容區域顯示模式');
-define('TF_CONTENT_DISPLAY_TYPE_DESC', '以何種方式來呈現內容區');
-define('TF_CONTENT_SHADOW', '內容區域是否要套用陰影');
-define('TF_CONTENT_SHADOW_DESC', '若「是」會在內容區域周圍加上陰影');
 define('TF_USE_CONTAINER_WIDTH', '整體頁面顯示寬度');
 define('TF_USE_CONTAINER_WIDTH_DESC', '如： 1430px 或 85%');
 
@@ -105,7 +83,6 @@ define('TF_LOGO_ALIGN_L', '靠左');
 define('TF_LOGO_ALIGN_C', '置中');
 define('TF_LOGO_ALIGN_R', '靠右');
 
-define('TF_BG_IMG', '背景圖');
 define('TF_BG_COLOR', '背景顏色');
 define('TF_BG_REPEAT', '背景重複');
 define('TF_BG_REPEAT_NORMAL', '一般重複');
@@ -151,12 +128,8 @@ define('TF_BG_SIZE_FULL', '滿版');
 
 define('TF_NAV_DISPLAY_TYPE', '導覽列顯示模式');
 define('TF_NAV_DISPLAY_TYPE_DESC', '以何種方式來呈現導覽列');
-define('TF_NAV_SHADOW', '導覽列是否套用陰影');
-define('TF_NAV_SHADOW_DESC', '若「是」會在導覽列區域周圍加上陰影');
 define('TF_NAV_BG_OPACITY', '導覽列透明度');
 define('TF_NAV_BG_OPACITY_DESC', '請設定 0（透明）~1（不透明）之間的小數值');
-define('TF_NAV_BORDER_RADIUS', '導覽列圓角設定');
-define('TF_NAV_BORDER_RADIUS_DESC', '可針對四個角設定圓角，如「8px 8px 0px 0px」，僅「' . TF_DISPLAY_TYPE_NOT_FULL . '」時有作用');
 define('TF_NAV_MARGIN', '導覽列上下間距設定');
 define('TF_NAV_MARGIN_DESC', '可針對上右下左設定間距，如「15px」，不需間距的話空白即可');
 
@@ -173,3 +146,63 @@ define('TF_SLIDE_DEF_MASK_DESC', '會自動根據底色來產生滑動圖外框�
 define('TF_SLIDE_DEF_MASK0', '無');
 define('TF_SLIDE_DEF_MASK1', '外框一');
 define('TF_SLIDE_DEF_MASK2', '外框二');
+
+define('TF_NAV_SUB_BG_COLOR', '導覽列子選單底色');
+define('TF_NAV_SUB_BG_COLOR_DESC', '導覽列子選單的背景色');
+
+define('TF_NAV_SUB_FONT_COLOR', '導覽列子選單文字顏色');
+define('TF_NAV_SUB_FONT_COLOR_DESC', '導覽列子選單的文字顏色');
+
+define('TF_SHADOW', '陰影方向');
+define('TF_SHADOW_DESC', '有勾選的方向才會出現陰影');
+define('TF_TOP', '上');
+define('TF_RIGHT', '右');
+define('TF_BOTTOM', '下');
+define('TF_LEFT', '左');
+
+define('TF_BORDER_RADIUS', '圓角設定');
+define('TF_BORDER_RADIUS_DESC', '可針對四個角設定圓角，如「8px 8px 0px 0px」，僅「' . TF_DISPLAY_TYPE_NOT_FULL . '」時有作用');
+
+define('TF_LOGO_FULL', 'logo 是否自動滿版');
+define('TF_LOGO_FULL_DESC', '會將 logo 寬度自動設為 100%');
+
+define('TF_TOPDIV_CONTENT', '頂部自訂內容');
+define('TF_TOPDIV_CONTENT_DESC', '可以在頂部加入任何內容（html）');
+define('TF_TOPDIV_STYLE', '頂部自訂內容樣式');
+define('TF_TOPDIV_STYLE_DESC', '頂部自訂內容CSS樣式設定');
+define('TF_TOPDIV_DISPLAY_TYPE', '頂部自訂內容顯示模式');
+define('TF_TOPDIV_DISPLAY_TYPE_DESC', '以何種方式來呈現頂部自訂內容');
+
+define('TF_NAV_LINE', '選項分格線');
+define('TF_NAV_LINE_DESC', '選項是否加上分格線');
+
+define('TF_SLIDE_KIND', '滑動圖套件');
+define('TF_SLIDE_KIND_DESC', '可選用不同滑動圖套件');
+define('TF_SLIDE_KIND1', '自適應滑動圖（不限數量、不限高度）');
+define('TF_SLIDE_KIND2', 'CarouSlide滑動圖（限五張圖，需有描述，高度 300）');
+
+define('TF_LOGO_TEXT', '是否使用文字取代 logo 圖片');
+define('TF_LOGO_TEXT_DESC', '是否使用網站名稱取代 logo 圖');
+
+define('TF_PADDING_MARGIN', '元件內外距設定');
+define('TF_PADDING_MARGIN_DESC', '上下是指離上下方元件距離（不含底色），內部則是內容離元件邊界的距離（含底色）');
+
+define('TF_DISPLAY_TYPE', '本區域顯示模式');
+define('TF_DISPLAY_TYPE_DESC', '以何種方式來呈現本區域');
+
+define('TF_BG_IMG', '背景圖');
+define('TF_BG_IMG_DESC', '背景圖相關設定項目');
+
+define('TF_COLOR', '文字顏色');
+define('TF_COLOR_DESC', '內容的文字顏色');
+define('TF_HEIGHT', '最低高度');
+define('TF_HEIGHT_DESC', '沒內容時可設定最低呈現高度');
+
+define('TF_ZINDEX', '上下層順序');
+define('TF_ZINDEX_DESC', '設定此區域的上下層排序');
+
+define('TF_CONTENT_BGCOLOR', '中間底色');
+define('TF_CONTENT_BGCOLOR_DESC', '中間有放內容的區域之底色');
+
+define('TF_SIDE_BGCOLOR', '兩側底色');
+define('TF_SIDE_BGCOLOR_DESC', '無內容（兩側）部份的底色');

@@ -24,14 +24,14 @@
         <!-- 網站的標題及標語 -->
         <title><{$xoops_sitename}><{if $xoops_pagetitle}> - <{$xoops_pagetitle}><{/if}></title>
 
-        <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/link_css.tpl"}>
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/link_css.tpl"}>
 
         <!-- 給模組套用的樣板標籤開始 -->
 <{$xoops_module_header}>
         <!-- 給模組套用的樣板標籤結束 -->
 
         <!-- 局部套用的樣式，如果有載入完整樣式 theme_css.tpl 那就不需要這一部份 -->
-        <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/theme_css.tpl"}>
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/theme_css.tpl"}>
 
         <style type="text/css">
             #xoops_theme_left_zone{
@@ -61,7 +61,7 @@
             <div id="logo-container">
                 <div class="container" id="logo-container" style="max-width: <{if $logo_display_type!='all_full'}><{$container_width}><{else}>100%<{/if}>;">
                     <div id="logo-container-display" class="row <{if $logo_shadow=='1' and $logo_display_type=='not_full'}>xoops_content_shadow<{/if}>">
-                        <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/logo.tpl"}>
+                        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/logo.tpl"}>
                     </div>
                 </div>
             </div>
@@ -73,11 +73,11 @@
         <{/if}>
 
         <!-- 滑動圖區域 -->
-        <{if $slide_width > 0 }>
-            <div class="container" id="slide-container" style="max-width: <{if $slide_display_type!='all_full'}><{$container_width}><{else}>100%<{/if}>;">
+        <{if $use_slide }>
+            <div class="container" id="slide-wrapper" style="max-width: <{if $slide_display_type!='all_full'}><{$container_width}><{else}>100%<{/if}>;">
                 <div id="xoops_theme_slide" class="row  <{if $slide_shadow=='1' and $slide_display_type=='not_full'}>xoops_content_shadow<{/if}>">
-                    <div id="slide-container-display" style="width:100%; position:relative; z-index:1;">
-                        <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/slideshow_responsive.tpl"}>
+                    <div id="slide-display" style="width:100%; position:relative; z-index:1; padding:0px;">
+                        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/slideshow_responsive.tpl"}>
                         <{if $slide_mask}>
                             <img src="<{$slide_mask}>" alt="mask" class="img-fluid" style="width:100%; position:absolute; z-index:2; left:0px; top:0px;">
                         <{/if}>
@@ -98,7 +98,7 @@
             <div id="xoops_theme_content" class="row <{if $content_shadow=='1' and $content_display_type=='not_full'}>xoops_content_shadow<{/if}>">
                 <div id="content-container-display" style="<{$content_zone}>" class="col-sm-12">
                     <!-- 載入布局 -->
-                    <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/siteclosed_login.tpl"}>
+                    <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/siteclosed_login.tpl"}>
 
                     <!-- 顯示參數，開發用，開發完可刪除 -->
                     <{if $show_var=='1'}><{includeq file="$xoops_rootpath/modules/tadtools/themes_common/show_var.tpl"}><{/if}>
@@ -114,7 +114,7 @@
                 <div id="footer-container-display" class="col-sm-12">
                     <{if $xoops_isadmin}><a href="<{$xoops_url}>/modules/system/admin.php?fct=preferences&op=show&confcat_id=3" class="block_config"></a><{/if}>
 
-                    <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/footerBlock.tpl"}>
+                    <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/footerBlock.tpl"}>
 
                     <{$xoops_footer}>
                 </div>
@@ -123,10 +123,10 @@
         <{/if}>
 
         <!-- 載入bootstrap -->
-        <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/bootstrap_js.tpl"}>
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/bootstrap_js.tpl"}>
 
         <!-- 載入自訂js -->
-        <{includeq file="$xoops_rootpath/modules/tadtools/themes4_tpl/my_js.tpl"}>
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/my_js.tpl"}>
         <{$my_code}>
     </body>
 </html>

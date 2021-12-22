@@ -1,7 +1,7 @@
 <?php
 $i = 0;
 
-//slide 區域顯示模式
+//區域顯示模式
 $i++;
 $theme_config[$i]['name'] = "slide_display_type";
 $theme_config[$i]['text'] = TF_SLIDE_DISPLAY_TYPE;
@@ -11,21 +11,56 @@ $theme_config[$i]['options'] = ['not_full' => TF_DISPLAY_TYPE_NOT_FULL, 'bg_full
 $theme_config[$i]['images'] = ['not_full' => XOOPS_URL . '/modules/tad_themes/images/dt_not_full.png', 'bg_full' => XOOPS_URL . '/modules/tad_themes/images/dt_bg_full.png', 'all_full' => XOOPS_URL . '/modules/tad_themes/images/dt_all_full.png'];
 $theme_config[$i]['default'] = "not_full";
 
-//slide 是否套用陰影
+//陰影方向
 $i++;
 $theme_config[$i]['name'] = "slide_shadow";
-$theme_config[$i]['text'] = TF_SLIDE_SHADOW;
-$theme_config[$i]['desc'] = TF_SLIDE_SHADOW_DESC;
-$theme_config[$i]['type'] = "yesno";
+$theme_config[$i]['text'] = TF_SHADOW;
+$theme_config[$i]['desc'] = TF_SHADOW_DESC;
+$theme_config[$i]['type'] = "checkbox";
+$theme_config[$i]['options'] = ['t' => TF_TOP, 'b' => TF_BOTTOM, 'l' => TF_LEFT, 'r' => TF_RIGHT];
+$theme_config[$i]['default'] = [];
+
+//內部距離設定
+$i++;
+$theme_config[$i]['name'] = "slide_padding";
+$theme_config[$i]['text'] = TF_PADDING_MARGIN;
+$theme_config[$i]['desc'] = TF_PADDING_MARGIN_DESC;
+$theme_config[$i]['type'] = "padding_margin";
+$theme_config[$i]['default'] = "0px";
+$theme_config[$i]['mt'] = "0px";
+$theme_config[$i]['mb'] = "0px";
+
+//z-index
+$i++;
+$theme_config[$i]['name'] = "slide_zindex";
+$theme_config[$i]['text'] = TF_ZINDEX;
+$theme_config[$i]['desc'] = TF_ZINDEX_DESC;
+$theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "0";
 
-//slide 顯示區域底色
+//中間底色
 $i++;
-$theme_config[$i]['name'] = "slide_bgcolor";
-$theme_config[$i]['text'] = TF_SLIDE_BGCOLOR;
-$theme_config[$i]['desc'] = TF_SLIDE_BGCOLOR_DESC;
+$theme_config[$i]['name'] = "slide_content_bgcolor";
+$theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
+$theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
+$theme_config[$i]['type'] = "color";
+$theme_config[$i]['default'] = "#ffffff";
+
+//兩側底色
+$i++;
+$theme_config[$i]['name'] = "slide_side_bgcolor";
+$theme_config[$i]['text'] = TF_SIDE_BGCOLOR;
+$theme_config[$i]['desc'] = TF_SIDE_BGCOLOR_DESC;
 $theme_config[$i]['type'] = "color";
 $theme_config[$i]['default'] = "transparent";
+
+//nav 圓角
+$i++;
+$theme_config[$i]['name'] = "slide_border_radius";
+$theme_config[$i]['text'] = TF_BORDER_RADIUS;
+$theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "8px 8px 0px 0px";
 
 //slide 速度調整
 $i++;
@@ -35,6 +70,15 @@ $theme_config[$i]['desc'] = TF_SLIDE_TIMEOUT_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "3000";
 
+//slide 種類
+$i++;
+$theme_config[$i]['name'] = "slide_kind";
+$theme_config[$i]['text'] = TF_SLIDE_KIND;
+$theme_config[$i]['desc'] = TF_SLIDE_KIND_DESC;
+$theme_config[$i]['type'] = "select";
+$theme_config[$i]['options'] = ['' => TF_SLIDE_KIND1, 'CarouSlide' => TF_SLIDE_KIND2];
+$theme_config[$i]['default'] = "";
+
 //slide 顯示左右箭頭
 $i++;
 $theme_config[$i]['name'] = "slide_nav";
@@ -42,45 +86,3 @@ $theme_config[$i]['text'] = TF_SLIDE_NAV;
 $theme_config[$i]['desc'] = TF_SLIDE_NAV_DESC;
 $theme_config[$i]['type'] = "yesno";
 $theme_config[$i]['default'] = "0";
-
-//slide 上方距離
-$i++;
-$theme_config[$i]['name'] = "slide_mt";
-$theme_config[$i]['text'] = TF_SLIDE_MT;
-$theme_config[$i]['desc'] = TF_SLIDE_MT_DESC;
-$theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "0";
-
-//slide 下方距離
-$i++;
-$theme_config[$i]['name'] = "slide_mb";
-$theme_config[$i]['text'] = TF_SLIDE_MB;
-$theme_config[$i]['desc'] = TF_SLIDE_MB_DESC;
-$theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "0";
-
-//slide 圖片外框
-$i++;
-$theme_config[$i]['name'] = "slide_mask";
-$theme_config[$i]['text'] = TF_SLIDE_MASK;
-$theme_config[$i]['desc'] = TF_SLIDE_MASK_DESC;
-$theme_config[$i]['type'] = "file";
-$theme_config[$i]['default'] = "";
-
-//slide 預設圖片外框
-$i++;
-$theme_config[$i]['name'] = "slide_def_mask";
-$theme_config[$i]['text'] = TF_SLIDE_DEF_MASK;
-$theme_config[$i]['desc'] = TF_SLIDE_DEF_MASK_DESC;
-$theme_config[$i]['type'] = "selectpicker";
-$theme_config[$i]['options'] = ['' => TF_SLIDE_DEF_MASK0, 'mask1' => TF_SLIDE_DEF_MASK1, 'mask2' => TF_SLIDE_DEF_MASK2];
-$theme_config[$i]['images'] = ['' => XOOPS_URL . '/themes/school2022/images/mask/mask0.png', 'mask1' => XOOPS_URL . '/themes/school2022/images/mask/mask1.png', 'mask2' => XOOPS_URL . '/themes/school2022/images/mask/mask2.png'];
-$theme_config[$i]['default'] = "";
-$theme_config[$i]['callback']['func_name'] = "change_svg_color";
-$theme_config[$i]['callback']['func_parm'][0]['type'] = "config2";
-$theme_config[$i]['callback']['func_parm'][0]['col'] = "slide_def_mask";
-$theme_config[$i]['callback']['func_parm'][1]['type'] = "config2";
-$theme_config[$i]['callback']['func_parm'][1]['col'] = "slide_bgcolor";
-$theme_config[$i]['callback']['func_parm'][2]['type'] = "config";
-$theme_config[$i]['callback']['func_parm'][2]['col'] = "bg_color";
-$theme_config[$i]['callback']['func_code'] = "function change_svg_color(\$parm=[]){\$svg = file_get_contents(\"" . XOOPS_ROOT_PATH . "/themes/school2022/images/mask/{\$parm['slide_def_mask']}.svg\");\$new_color = \$parm['slide_bgcolor']=='transparent'?\$parm['bg_color']:\$parm['slide_bgcolor'];\$svg = str_replace('#007fa0', \$new_color, \$svg);if(!is_dir('" . XOOPS_ROOT_PATH . "/uploads/tad_themes/school2022/mask')){mkdir('" . XOOPS_ROOT_PATH . "/uploads/tad_themes/school2022/mask');}file_put_contents(\"" . XOOPS_ROOT_PATH . "/uploads/tad_themes/school2022/mask/{\$parm['slide_def_mask']}.svg\", \$svg);}";
