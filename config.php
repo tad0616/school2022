@@ -57,10 +57,10 @@ $config_enable['clb_width'] = ['enable' => '1', 'min' => '', 'max' => '', 'requi
 $config_enable['crb_width'] = ['enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '50%'];
 
 //離上邊界距離[自]
-$config_enable['margin_top'] = ['enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '55px'];
+$config_enable['margin_top'] = ['enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '0px'];
 
 //文字大小[theme_css.tpl]
-$config_enable['font_size'] = ['enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '1em'];
+$config_enable['font_size'] = ['enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '1rem'];
 
 //離下邊界距離[自]
 $config_enable['margin_bottom'] = ['enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '0'];
@@ -249,7 +249,7 @@ $config_enable['navbar_color_hover'] = ['enable' => '1', 'min' => '', 'max' => '
 $config_enable['navbar_icon'] = ['enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'style='];
 
 //導覽工具列 導覽選項上下距離[theme_css_navbar.tpl]
-$config_enable['navbar_py'] = ['enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => '13'];
+$config_enable['navbar_py'] = ['enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => '15'];
 
 //導覽工具列 導覽選項左右距離[theme_css_navbar.tpl]
 $config_enable['navbar_px'] = ['enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => '20'];

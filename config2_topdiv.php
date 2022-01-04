@@ -6,8 +6,8 @@ $i = 0;
 //頂部自訂內容顯示模式
 $i++;
 $theme_config[$i]['name'] = "topdiv_display_type";
-$theme_config[$i]['text'] = TF_TOPDIV_DISPLAY_TYPE;
-$theme_config[$i]['desc'] = TF_TOPDIV_DISPLAY_TYPE_DESC;
+$theme_config[$i]['text'] = TF_DISPLAY_TYPE;
+$theme_config[$i]['desc'] = TF_DISPLAY_TYPE_DESC;
 $theme_config[$i]['type'] = "selectpicker";
 $theme_config[$i]['options'] = ['not_full' => TF_DISPLAY_TYPE_NOT_FULL, 'bg_full' => TF_DISPLAY_TYPE_BG_FULL, 'all_full' => TF_DISPLAY_TYPE_ALL_FULL];
 $theme_config[$i]['images'] = ['not_full' => XOOPS_URL . '/modules/tad_themes/images/dt_not_full.png', 'bg_full' => XOOPS_URL . '/modules/tad_themes/images/dt_bg_full.png', 'all_full' => XOOPS_URL . '/modules/tad_themes/images/dt_all_full.png'];
@@ -87,15 +87,66 @@ $theme_config[$i]['default'] = "#ffffff";
 //頂部自訂內容CSS樣式設定
 $i++;
 $theme_config[$i]['name'] = "topdiv_style";
-$theme_config[$i]['text'] = TF_TOPDIV_STYLE;
-$theme_config[$i]['desc'] = TF_TOPDIV_STYLE_DESC;
+$theme_config[$i]['text'] = TF_STYLE;
+$theme_config[$i]['desc'] = TF_STYLE_DESC;
 $theme_config[$i]['type'] = "textarea";
 $theme_config[$i]['default'] = "";
 
-//頂部自訂內容
+//左中右的寬度
 $i++;
-$theme_config[$i]['name'] = "topdiv_content";
-$theme_config[$i]['text'] = TF_TOPDIV_CONTENT;
-$theme_config[$i]['desc'] = TF_TOPDIV_CONTENT_DESC;
+$theme_config[$i]['name'] = "topdiv_cols";
+$theme_config[$i]['text'] = TF_TOPDIV_COLS;
+$theme_config[$i]['desc'] = TF_TOPDIV_COLS_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "4-4-4";
+
+// 左側內容
+$i++;
+$theme_config[$i]['name'] = "topdiv_left";
+$theme_config[$i]['text'] = TF_TOPDIV_LEFT;
+$theme_config[$i]['desc'] = TF_TOPDIV_LEFT . TF_TOPDIV_SELECT_CONTENT;
+$theme_config[$i]['type'] = "select";
+$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'google_translate' => TF_GOOGLE_TRANSLATE, 'html' => TF_HTML];
+$theme_config[$i]['default'] = "";
+
+//左側自訂內容
+$i++;
+$theme_config[$i]['name'] = "topdiv_left_content";
+$theme_config[$i]['text'] = TF_TOPDIV_LEFT . TF_TOPDIV_CONTENT;
+$theme_config[$i]['desc'] = TF_TOPDIV_LEFT . TF_TOPDIV_CONTENT_DESC;
+$theme_config[$i]['type'] = "textarea";
+$theme_config[$i]['default'] = "";
+
+// 中間內容
+$i++;
+$theme_config[$i]['name'] = "topdiv_center";
+$theme_config[$i]['text'] = TF_TOPDIV_CENTER;
+$theme_config[$i]['desc'] = TF_TOPDIV_CENTER . TF_TOPDIV_SELECT_CONTENT;
+$theme_config[$i]['type'] = "select";
+$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'google_translate' => TF_GOOGLE_TRANSLATE, 'html' => TF_HTML];
+$theme_config[$i]['default'] = "";
+
+//中間自訂內容
+$i++;
+$theme_config[$i]['name'] = "topdiv_center_content";
+$theme_config[$i]['text'] = TF_TOPDIV_CENTER . TF_TOPDIV_CONTENT;
+$theme_config[$i]['desc'] = TF_TOPDIV_CENTER . TF_TOPDIV_CONTENT_DESC;
+$theme_config[$i]['type'] = "textarea";
+$theme_config[$i]['default'] = "";
+
+// 右側內容
+$i++;
+$theme_config[$i]['name'] = "topdiv_right";
+$theme_config[$i]['text'] = TF_TOPDIV_RIGHT;
+$theme_config[$i]['desc'] = TF_TOPDIV_RIGHT . TF_TOPDIV_SELECT_CONTENT;
+$theme_config[$i]['type'] = "select";
+$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'google_translate' => TF_GOOGLE_TRANSLATE, 'html' => TF_HTML];
+$theme_config[$i]['default'] = "";
+
+//右側自訂內容
+$i++;
+$theme_config[$i]['name'] = "topdiv_right_content";
+$theme_config[$i]['text'] = TF_TOPDIV_RIGHT . TF_TOPDIV_CONTENT;
+$theme_config[$i]['desc'] = TF_TOPDIV_RIGHT . TF_TOPDIV_CONTENT_DESC;
 $theme_config[$i]['type'] = "textarea";
 $theme_config[$i]['default'] = "";

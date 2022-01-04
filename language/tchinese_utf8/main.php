@@ -3,13 +3,9 @@ include_once XOOPS_ROOT_PATH . '/modules/tadtools/language/' . $GLOBALS['xoopsCo
 /**自訂設定之語系**/
 define('TF_SHOW_VAR', '顯示佈景變數資訊');
 define('TF_SHOW_VAR_DESC', '佈景開發時，會顯示所有 tad_themes 提供的控制變數及設定值');
-define('TF_FOOTER_STYLE', '頁尾內容樣式設定');
-define('TF_FOOTER_STYLE_DESC', '可使用CSS語法控制頁尾內容的外觀');
 define('TF_FONT_FAMILY', '主要字型設定');
 define('TF_FONT_FAMILY_DEFAULT', 'jf-openhuninn, Mamelon, mnyylti, HanWangWeBe, HanWangMingBlack, JasonHandwriting1-Regular, JasonHandwriting2-Regular, JasonHandwriting3-Regular');
 define('TF_FONT_FAMILY_DESC', '輸入字型名稱，有空白的部份需要用""包起來。如：' . TF_FONT_FAMILY_DEFAULT);
-define('TF_USE_SHADOW_LOGO', '陰影是否包含logo');
-define('TF_USE_SHADOW_LOGO_DESC', '當logo在滑動圖文之上時，是否仍要加上陰影？');
 define('TF_LEFT_SPARATE', '左區域分隔線');
 define('TF_LEFT_SPARATE_DESC', '左區域和主內容間是否加上分隔線');
 define('TF_RIGHT_SPARATE', '右區域分隔線');
@@ -20,9 +16,6 @@ define('TF_MY_CODE', '欲加入頁尾的CSS或JS語法');
 define('TF_MY_CODE_DESC', '可自行載入CSS或JS');
 define('TF_OG_FILE', '網站縮圖');
 define('TF_OG_FILE_DESC', '在fb或line分享網址時，會顯示的縮圖（寬高至少 200px）');
-
-define('TF_LOGO_SHADOW', 'logo區域是否要套用陰影');
-define('TF_LOGO_SHADOW_DESC', '若「是」會在logo區域周圍加上陰影');
 
 define('TF_LOGO_BG1', 'logo區域的底圖1');
 define('TF_LOGO_BG1_DESC', '若「是」會在logo區域加上底圖1');
@@ -42,25 +35,10 @@ define('TF_LOGO_BG2_POSITION_DESC', 'logo底圖2起始的位置');
 define('TF_LOGO_BG2_SIZE', 'logo底圖2縮放');
 define('TF_LOGO_BG2_SIZE_DESC', 'logo底圖2縮放方式');
 
-define('TF_SLIDE_DISPLAY_TYPE', '滑動圖區域顯示模式');
-define('TF_SLIDE_DISPLAY_TYPE_DESC', '以何種方式來呈現滑動圖');
-define('TF_SLIDE_BGCOLOR', '滑動圖顯示區域底色');
-define('TF_SLIDE_BGCOLOR_DESC', '滑動圖顯示區域底色');
 define('TF_SLIDE_TIMEOUT', '滑動圖顯示時間');
 define('TF_SLIDE_TIMEOUT_DESC', '單位為毫秒');
 define('TF_SLIDE_NAV', '是否顯示左右箭頭');
 define('TF_SLIDE_NAV_DESC', '若「否」左右滑動的圖示會消失');
-
-define('TF_FOOTER_DISPLAY_TYPE', '頁尾區域顯示模式');
-define('TF_FOOTER_DISPLAY_TYPE_DESC', '以何種方式來呈現頁尾');
-define('TF_FOOTER_SHADOW', '頁尾區域是否要套用陰影');
-define('TF_FOOTER_SHADOW_DESC', '若「是」會在頁尾區域周圍加上陰影');
-define('TF_FOOTER_BGCOLOR', '頁尾顯示區域底色');
-define('TF_FOOTER_BGCOLOR_DESC', '頁尾顯示區域底色');
-define('TF_FOOTER_COLOR', '頁尾文字顏色');
-define('TF_FOOTER_COLOR_DESC', '頁尾內容的文字顏色');
-define('TF_FOOTER_HEIGHT', '頁尾最低高度');
-define('TF_FOOTER_HEIGHT_DESC', '沒內容時可設定頁尾最低呈現高度');
 
 define('TF_DISPLAY_TYPE_NOT_FULL', '內容底色皆置中');
 define('TF_DISPLAY_TYPE_BG_FULL', '內容置中，底色滿版');
@@ -126,8 +104,6 @@ define('TF_BG_SIZE_COVER', '放大圖片填滿畫面');
 define('TF_BG_SIZE_CONTAIN', '縮放以呈現完整圖片');
 define('TF_BG_SIZE_FULL', '滿版');
 
-define('TF_NAV_DISPLAY_TYPE', '導覽列顯示模式');
-define('TF_NAV_DISPLAY_TYPE_DESC', '以何種方式來呈現導覽列');
 define('TF_NAV_BG_OPACITY', '導覽列透明度');
 define('TF_NAV_BG_OPACITY_DESC', '請設定 0（透明）~1（不透明）之間的小數值');
 define('TF_NAV_MARGIN', '導覽列上下間距設定');
@@ -166,13 +142,6 @@ define('TF_BORDER_RADIUS_DESC', '可針對四個角設定圓角，如「8px 8px 
 define('TF_LOGO_FULL', 'logo 是否自動滿版');
 define('TF_LOGO_FULL_DESC', '會將 logo 寬度自動設為 100%');
 
-define('TF_TOPDIV_CONTENT', '頂部自訂內容');
-define('TF_TOPDIV_CONTENT_DESC', '可以在頂部加入任何內容（html）');
-define('TF_TOPDIV_STYLE', '頂部自訂內容樣式');
-define('TF_TOPDIV_STYLE_DESC', '頂部自訂內容CSS樣式設定');
-define('TF_TOPDIV_DISPLAY_TYPE', '頂部自訂內容顯示模式');
-define('TF_TOPDIV_DISPLAY_TYPE_DESC', '以何種方式來呈現頂部自訂內容');
-
 define('TF_NAV_LINE', '選項分格線');
 define('TF_NAV_LINE_DESC', '選項是否加上分格線');
 
@@ -185,7 +154,9 @@ define('TF_LOGO_TEXT', '是否使用文字取代 logo 圖片');
 define('TF_LOGO_TEXT_DESC', '是否使用網站名稱取代 logo 圖');
 
 define('TF_PADDING_MARGIN', '元件內外距設定');
-define('TF_PADDING_MARGIN_DESC', '上下是指離上下方元件距離（不含底色），內部則是內容離元件邊界的距離（含底色）');
+define('TF_PADDING_MARGIN_DESC', '上下是指離上下方元件距離（不含底色），內距則是內容離元件邊界的距離（含底色）');
+define('TF_PADDING', '元件內距設定');
+define('TF_PADDING_DESC', '內距則是內容離元件邊界的距離（含底色）');
 
 define('TF_DISPLAY_TYPE', '本區域顯示模式');
 define('TF_DISPLAY_TYPE_DESC', '以何種方式來呈現本區域');
@@ -206,3 +177,19 @@ define('TF_CONTENT_BGCOLOR_DESC', '中間有放內容的區域之底色');
 
 define('TF_SIDE_BGCOLOR', '兩側底色');
 define('TF_SIDE_BGCOLOR_DESC', '無內容（兩側）部份的底色');
+define('TF_STYLE', '自訂樣式設定');
+define('TF_STYLE_DESC', '可使用CSS語法自行定義本區域外觀');
+
+define('TF_TOPDIV_LEFT', '頂部左側');
+define('TF_TOPDIV_CENTER', '頂部中間');
+define('TF_TOPDIV_RIGHT', '頂部右側');
+define('TF_TOPDIV_SELECT_CONTENT', '選擇欲出現的內容');
+define('TF_TOPDIV_CONTENT', '自訂內容');
+define('TF_TOPDIV_CONTENT_DESC', '可以加入任何內容（html）');
+define('TF_NONE', '無');
+define('TF_SEARCH', '搜尋框');
+define('TF_LOGIN', '登入框');
+define('TF_HTML', '自訂內容（請於下方自行填入）');
+define('TF_GOOGLE_TRANSLATE', 'Google 翻譯');
+define('TF_TOPDIV_COLS', '設定左中右的呈現欄寬');
+define('TF_TOPDIV_COLS_DESC', '填入三個數字，以-隔開，勿有空白，總和需為 12，如：4-4-4 或 3-6-3');

@@ -125,3 +125,25 @@ blockquote > p > cite {
     letter-spacing: 0;
     font-style:italic;
 }
+
+ul.social_logos {
+    overflow: hidden;
+    list-style: none outside none;
+    padding: 0px;
+    margin: 0px;
+}
+.social_logos li {
+    margin: 0px 8px 0px 0px;
+    display: inline-block;
+}
+.social_logos li a i {
+    display: block;
+    position: relative;
+    padding: 5px 8px;
+    z-index: 10;
+    color: #FFF;
+    transition: transform 0.6s ease-out 0s;
+    border-radius: 30px;
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.4);
+    text-align: center;
+}

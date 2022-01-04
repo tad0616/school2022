@@ -4,13 +4,9 @@ include_once XOOPS_ROOT_PATH . '/modules/tadtools/language/' . $GLOBALS['xoopsCo
 /**Custom settings of Languages **/
 define('TF_SHOW_VAR', 'Show set variable information');
 define('TF_SHOW_VAR_DESC', 'When the scene is developed, all the control variables and settings provided by tad_themes will be displayed');
-define('TF_FOOTER_STYLE', 'End of page content style setting');
-define('TF_FOOTER_STYLE_DESC', 'Use CSS syntax to control the appearance of the content at the end of the page');
 define('TF_FONT_FAMILY', 'Main font settings');
 define('TF_FONT_FAMILY_DEFAULT', 'jf-openhuninn, Mamelon, mnyylti, HanWangWeBe, HanWangMingBlack, JasonHandwriting1-Regular, JasonHandwriting2-Regular, JasonHandwriting3-Regular');
 define('TF_FONT_FAMILY_DESC', 'Enter the font name, the blank part needs to be wrapped with "". For example: ' . TF_FONT_FAMILY_DEFAULT);
-define('TF_USE_SHADOW_LOGO', 'Does the shadow contain logo');
-define('TF_USE_SHADOW_LOGO_DESC', 'When the logo is over the sliding image, do you still want to add a shadow?');
 define('TF_LEFT_SPARATE', 'Left area divider');
 define('TF_LEFT_SPARATE_DESC', 'Do you want to add a separator between the left area and the main content');
 define('TF_RIGHT_SPARATE', 'Right area divider');
@@ -21,9 +17,6 @@ define('TF_MY_CODE', 'CSS or JS syntax to add to the end of the page');
 define('TF_MY_CODE_DESC', 'Can load CSS or JS by yourself');
 define('TF_OG_FILE', 'Site Thumbnails');
 define('TF_OG_FILE_DESC', 'Thumbnails displayed when sharing URLs on fb or line(width at least 200px)');
-
-define('TF_LOGO_SHADOW', 'Do you want to apply a shadow to the logo area');
-define('TF_LOGO_SHADOW_DESC', 'If "Yes" will add a shadow around the logo area');
 
 define('TF_LOGO_BG1', 'Background 1 of the logo area');
 define('TF_LOGO_BG1_DESC', 'If "Yes" will add a background 1 to the logo area');
@@ -43,25 +36,10 @@ define('TF_LOGO_BG2_POSITION_DESC', 'Logo background 2 image location');
 define('TF_LOGO_BG2_SIZE', 'logo background 2 image size');
 define('TF_LOGO_BG2_SIZE_DESC', 'logo background 2 image size');
 
-define('TF_SLIDE_DISPLAY_TYPE', 'Sliding area display mode');
-define('TF_SLIDE_DISPLAY_TYPE_DESC', 'How to render the sliding view');
-define('TF_SLIDE_BGCOLOR', 'Sliding map display area background color');
-define('TF_SLIDE_BGCOLOR_DESC', 'Sliding map display area background color');
 define('TF_SLIDE_TIMEOUT', 'Slide graph display time');
 define('TF_SLIDE_TIMEOUT_DESC', 'Unit is millisecond');
 define('TF_SLIDE_NAV', 'Show left and right arrows');
 define('TF_SLIDE_NAV_DESC', 'If it is "No", the icon that slides left and right will disappear');
-
-define('TF_FOOTER_DISPLAY_TYPE', 'End of page display mode');
-define('TF_FOOTER_DISPLAY_TYPE_DESC', 'How to render the footer');
-define('TF_FOOTER_SHADOW', 'Do you want to apply a shadow at the end of the page');
-define('TF_FOOTER_SHADOW_DESC', 'If "Yes" will add a shadow around the end of the page');
-define('TF_FOOTER_BGCOLOR', 'The bottom of the page shows the background color');
-define('TF_FOOTER_BGCOLOR_DESC', 'The bottom of the page shows the background color');
-define('TF_FOOTER_COLOR', 'End of page text color');
-define('TF_FOOTER_COLOR_DESC', 'Text color of the content at the end of the page');
-define('TF_FOOTER_HEIGHT', 'The minimum height at the end of the page');
-define('TF_FOOTER_HEIGHT_DESC', 'Set the minimum presentation height at the end of the page when there is no content');
 
 define('TF_DISPLAY_TYPE_NOT_FULL', 'The content is in the middle');
 define('TF_DISPLAY_TYPE_BG_FULL', 'Content is centered, background full version');
@@ -125,8 +103,6 @@ define('TF_BG_SIZE_COVER', 'cover');
 define('TF_BG_SIZE_CONTAIN', 'contain');
 define('TF_BG_SIZE_FULL', '100%');
 
-define('TF_NAV_DISPLAY_TYPE', 'Navigation column area display mode');
-define('TF_NAV_DISPLAY_TYPE_DESC', 'How to render the navigation column');
 define('TF_NAV_BG_OPACITY', 'Navigation bar area background color transparency');
 define('TF_NAV_BG_OPACITY_DESC', 'Please set a decimal value between 0 (transparent) to 1');
 define('TF_NAV_MARGIN', 'Set the spacing between the top and bottom of the navigation column');
@@ -161,13 +137,6 @@ define('TF_BORDER_RADIUS_DESC', 'Only works if \"' . TF_DISPLAY_TYPE_NOT_FULL . 
 define('TF_LOGO_FULL', 'Whether the logo will be full automatically');
 define('TF_LOGO_FULL_DESC', 'Set the width of logo to 100% automatically');
 
-define('TF_TOPDIV_CONTENT', 'Customize top content');
-define('TF_TOPDIV_CONTENT_DESC', 'Can add any content (html) at the top');
-define('TF_TOPDIV_STYLE', 'Customize top content style');
-define('TF_TOPDIV_STYLE_DESC', 'Top custom content CSS style setting');
-define('TF_TOPDIV_DISPLAY_TYPE', 'Top custom content display mode');
-define('TF_TOPDIV_DISPLAY_TYPE_DESC', 'The way to present the top custom content');
-
 define('TF_NAV_LINE', 'Option Grid Line');
 define('TF_NAV_LINE_DESC', 'Whether to add grid lines to options');
 
@@ -200,3 +169,20 @@ define('TF_CONTENT_BGCOLOR', 'Content area background color');
 define('TF_CONTENT_BGCOLOR_DESC', 'The center has the base color of the area where the content is placed');
 define('TF_SIDE_BGCOLOR', 'Both sides of the base color');
 define('TF_SIDE_BGCOLOR_DESC', 'Background color of the part without content (both sides)');
+
+define('TF_STYLE', 'Custom Style Setting');
+define('TF_STYLE_DESC', 'You can use CSS syntax to define your own external view of the region');
+
+define('TF_TOPDIV_LEFT', 'Top left side');
+define('TF_TOPDIV_CENTER', 'Top center');
+define('TF_TOPDIV_RIGHT', 'Top right side');
+define('TF_TOPDIV_SELECT_CONTENT', 'Select the content you want to appear');
+define('TF_TOPDIV_CONTENT', 'Custom Content');
+define('TF_TOPDIV_CONTENT_DESC', 'Any content (html) can be added');
+define('TF_NONE', 'None');
+define('TF_SEARCH', 'Search Box');
+define('TF_LOGIN', 'Login Box');
+define('TF_HTML', 'Custom Content (please fill in below)');
+define('TF_GOOGLE_TRANSLATE', 'Google Translation');
+define('TF_TOPDIV_COLS', 'Set the width of the left-center-right presentation bar');
+define('TF_TOPDIV_COLS_DESC', 'Fill in three numbers, separated by -, no blanks, the sum should be 12, for example: 4-4-4 or 3-6-3');
