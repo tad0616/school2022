@@ -4,7 +4,8 @@
 #nav-wrapper,#nav-display,
 #slide-wrapper,#slide-display,
 #base-wrapper,#base-display,
-#footer-wrapper,#footer-display
+#footer-wrapper,#footer-display,
+#bottom-wrapper,#bottom-display
 {
     max-width: 100%;
 }
@@ -168,6 +169,33 @@
 <{/if}>
 
 
+<{* 底部 *}>
+<{assign var="item" value='bottom'}>
+<{assign var="side_bgcolor" value=$bottom_side_bgcolor}>
+<{assign var="content_bgcolor" value=$bottom_content_bgcolor}>
+<{assign var="bg_img" value=$bottom_img}>
+<{assign var="bg_repeat" value=$bottom_img_repeat}>
+<{assign var="bg_position" value=$bottom_img_position}>
+<{assign var="bg_size" value=$bottom_img_size}>
+<{assign var="padding" value=$bottom_padding}>
+<{assign var="mt" value=$bottom_padding_mt}>
+<{assign var="mb" value=$bottom_padding_mb}>
+<{assign var="height" value=$bottom_height}>
+<{assign var="color" value=$bottom_color}>
+<{assign var="style" value=$bottom_style}>
+<{assign var="zindex" value=$bottom_zindex}>
+<{assign var="shadow_arr" value=$bottom_shadow}>
+<{assign var="display_type" value=$bottom_display_type}>
+<{assign var="border_radius" value=$bottom_border_radius}>
+<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
+<{if $bottom_color}>
+    #bottom-display a,
+    #bottom-display a:hover,
+    #bottom-display a:active ,
+    #bottom-display a:visited {
+        color:<{$bottom_color}>;
+    }
+<{/if}>
 
 @media (min-width: 768px) {
     #page-wrapper{

@@ -177,9 +177,12 @@ define('TF_STYLE_DESC', 'You can use CSS syntax to define your own external view
 define('TF_TOP_LEFT', 'Top left side');
 define('TF_TOP_CENTER', 'Top center');
 define('TF_TOP_RIGHT', 'Top right side');
-define('TF_TOP_SELECT_CONTENT', 'Select the content you want to appear');
-define('TF_TOP_CONTENT', 'Custom Content');
-define('TF_TOP_CONTENT_DESC', 'Any content (html) can be added');
+define('TF_BOTTOM_LEFT', 'Bottom center');
+define('TF_BOTTOM_CENTER', 'Bottom right side');
+define('TF_BOTTOM_RIGHT', 'Bottom left side');
+define('TF_SELECT_CONTENT', 'Select the content you want to appear');
+define('TF_CONTENT', 'Custom Content');
+define('TF_CONTENT_DESC', 'Any content (html) can be added');
 define('TF_NONE', 'None');
 define('TF_SEARCH', 'Search Box');
 define('TF_LOGIN', 'Login Box');
@@ -187,8 +190,8 @@ define('TF_NAVBAR', 'Navbar');
 define('TF_MENU', 'Link options (Please fill in the fields below, one line for each option, e.g. "Latest news|/modules/tadnews/|_blank")');
 define('TF_HTML', 'Custom Content (please fill in below)');
 define('TF_GOOGLE_TRANSLATE', 'Google Translation');
-define('TF_TOP_COLS', 'Set the width of the left-center-right presentation bar');
-define('TF_TOP_COLS_DESC', 'Fill in three numbers, separated by -, no blanks, the sum should be 12, for example: 4-4-4 or 3-6-3');
+define('TF_3COLS', 'Set the width of the left-center-right presentation bar');
+define('TF_3COLS_DESC', 'Fill in three numbers, separated by -, no blanks, the sum should be 12, for example: 4-4-4 or 3-6-3');
 
 define('TF_LOGO_RIGHT', 'Logo right side');
 define('TF_LOGO_RIGHT_DESC', 'Only valid for "Place on page", customizable content');

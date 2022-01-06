@@ -1,22 +1,10 @@
-<div id="top-wrapper">
-    <div id="top-display">
-        <div style="<{$top_style}>" class="row">
-            <{assign var="top_col" value='-'|explode:$top_cols}>
-            <div class="col-xl-<{if $top_col.0}><{$top_col.0}><{else}>auto<{/if}> text-start">
-                <{assign var="top_content" value=$top_left}>
-                <{assign var="top_html" value=$top_left_content}>
-                <{includeq file="$xoops_rootpath/themes/school2022/tpl/top_content.tpl"}>
-            </div>
-            <div class="col-xl-<{if $top_col.1}><{$top_col.1}><{else}>auto<{/if}> text-center">
-                <{assign var="top_content" value=$top_center}>
-                <{assign var="top_html" value=$top_center_content}>
-                <{includeq file="$xoops_rootpath/themes/school2022/tpl/top_content.tpl"}>
-            </div>
-            <div class="col-xl-<{if $top_col.2}><{$top_col.2}><{else}>auto<{/if}> text-end">
-                <{assign var="top_content" value=$top_right}>
-                <{assign var="top_html" value=$top_right_content}>
-                <{includeq file="$xoops_rootpath/themes/school2022/tpl/top_content.tpl"}>
-            </div>
-        </div>
-    </div>
-</div>
+<{assign var="item" value='top'}>
+<{assign var="item_style" value=$top_style}>
+<{assign var="item_cols" value=$top_cols}>
+<{assign var="item_left" value=$top_left}>
+<{assign var="item_center" value=$top_center}>
+<{assign var="item_right" value=$top_right}>
+<{assign var="item_left_content" value=$top_left_content}>
+<{assign var="item_center_content" value=$top_center_content}>
+<{assign var="item_right_content" value=$top_right_content}>
+<{includeq file="$xoops_rootpath/themes/school2022/tpl/custom_wrapper.tpl"}>

@@ -41,7 +41,6 @@
 <{if $border_radius}>
     #<{$item}>-wrapper,
     #<{$item}>-display,
-    #<{$item}>-display div,
     #<{$item}>-display img {
         border-radius: <{$border_radius}>;
     }

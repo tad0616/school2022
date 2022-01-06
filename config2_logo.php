@@ -165,7 +165,7 @@ $theme_config[$i]['default'] = "";
 //右側自訂內容
 $i++;
 $theme_config[$i]['name'] = "logo_right_content";
-$theme_config[$i]['text'] = TF_LOGO_RIGHT . TF_TOP_CONTENT;
-$theme_config[$i]['desc'] = TF_LOGO_RIGHT . TF_TOP_CONTENT_DESC;
+$theme_config[$i]['text'] = TF_LOGO_RIGHT . TF_CONTENT;
+$theme_config[$i]['desc'] = TF_LOGO_RIGHT . TF_CONTENT_DESC;
 $theme_config[$i]['type'] = "textarea";
 $theme_config[$i]['default'] = "";
