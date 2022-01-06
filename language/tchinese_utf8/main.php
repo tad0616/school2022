@@ -149,6 +149,7 @@ define('TF_SLIDE_KIND', '滑動圖套件');
 define('TF_SLIDE_KIND_DESC', '可選用不同滑動圖套件');
 define('TF_SLIDE_KIND1', '自適應滑動圖（不限數量、不限高度）');
 define('TF_SLIDE_KIND2', 'CarouSlide滑動圖（限五張圖，需有描述，高度 300）');
+define('TF_SLIDE_KIND3', 'templatemo_slider 滑動圖');
 
 define('TF_LOGO_TEXT', '是否使用文字取代 logo 圖片');
 define('TF_LOGO_TEXT_DESC', '是否使用網站名稱取代 logo 圖');
@@ -189,7 +190,14 @@ define('TF_TOPDIV_CONTENT_DESC', '可以加入任何內容（html）');
 define('TF_NONE', '無');
 define('TF_SEARCH', '搜尋框');
 define('TF_LOGIN', '登入框');
+define('TF_NAVBAR', '導覽列');
+define('TF_MENU', '連結選項（請於下方自行填入，一個選項一行，如：「最新消息|/modules/tadnews/|_blank」');
 define('TF_HTML', '自訂內容（請於下方自行填入）');
 define('TF_GOOGLE_TRANSLATE', 'Google 翻譯');
 define('TF_TOPDIV_COLS', '設定左中右的呈現欄寬');
 define('TF_TOPDIV_COLS_DESC', '填入三個數字，以-隔開，勿有空白，總和需為 12，如：4-4-4 或 3-6-3');
+
+define('TF_LOGO_RIGHT', 'Logo 右側');
+define('TF_LOGO_RIGHT_DESC', '僅「置於頁面上」有效，可自定義內容');
+define('TF_LOGO_COLS', '設定 Logo 左右的呈現欄寬');
+define('TF_LOGO_COLS_DESC', '僅「置於頁面上」有效，填入兩個數字，以-隔開，勿有空白，總和需為 12，如：6-6 或 4-8');

@@ -69,7 +69,7 @@
 
         <!-- 導覽列區域 -->
         <{if $navbar_pos=='sticky-top'}>
-            <{includeq file="$xoops_rootpath/themes/school2022/tpl/nav-container.tpl"}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
         <{/if}>
 
         <!-- 滑動圖區域 -->
@@ -88,7 +88,7 @@
 
         <!-- 導覽列區域 -->
         <{if $navbar_pos=='default'}>
-            <{includeq file="$xoops_rootpath/themes/school2022/tpl/nav-container.tpl"}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
         <{/if}>
 
 

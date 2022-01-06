@@ -144,6 +144,7 @@ define('TF_SLIDE_KIND', 'Slide Kit');
 define('TF_SLIDE_KIND_DESC', 'Optional different slide kits');
 define('TF_SLIDE_KIND1', 'Self-adapting slide map (unlimited number, unlimited height)');
 define('TF_SLIDE_KIND2', 'CarouSlide (limited to five images, description required, height 300)');
+define('TF_SLIDE_KIND3', 'templatemo slider');
 
 define('TF_LOGO_TEXT', 'Whether to use text instead of logo image');
 define('TF_LOGO_TEXT_DESC', 'Whether to use website name instead of logo image');
@@ -182,7 +183,14 @@ define('TF_TOPDIV_CONTENT_DESC', 'Any content (html) can be added');
 define('TF_NONE', 'None');
 define('TF_SEARCH', 'Search Box');
 define('TF_LOGIN', 'Login Box');
+define('TF_NAVBAR', 'Navbar');
+define('TF_MENU', 'Link options (Please fill in the fields below, one line for each option, e.g. "Latest news|/modules/tadnews/|_blank")');
 define('TF_HTML', 'Custom Content (please fill in below)');
 define('TF_GOOGLE_TRANSLATE', 'Google Translation');
 define('TF_TOPDIV_COLS', 'Set the width of the left-center-right presentation bar');
 define('TF_TOPDIV_COLS_DESC', 'Fill in three numbers, separated by -, no blanks, the sum should be 12, for example: 4-4-4 or 3-6-3');
+
+define('TF_LOGO_RIGHT', 'Logo right side');
+define('TF_LOGO_RIGHT_DESC', 'Only valid for "Place on page", customizable content');
+define('TF_LOGO_COLS', 'Set the width of the presentation bar around Logo');
+define('TF_LOGO_COLS_DESC', 'Only valid for "Place on page", fill in two numbers separated by -, no blank, the sum should be 12, e.g. 6-6 or 4-8');

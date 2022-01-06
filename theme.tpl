@@ -19,6 +19,11 @@
         <{elseif $container_width == 8}>
             <{assign var=container_width value=67%}>
         <{/if}>
+        <{if $slide_display_type=='not_full' and $content_display_type=='not_full' and $logo_display_type=='not_full' and $footer_display_type=='not_full' and $nav_display_type=='not_full' and $topdiv_display_type=='not_full'}>
+            <{assign var=use_page value=true}>
+        <{else}>
+            <{assign var=use_page value=false}>
+        <{/if}>
 
         <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/meta.tpl"}>
         <!-- 網站的標題及標語 -->
@@ -85,123 +90,51 @@
     </head>
 
     <body>
-        <{if $slide_display_type=='not_full' and $content_display_type=='not_full' and $logo_display_type=='not_full' and $footer_display_type=='not_full' and $nav_display_type=='not_full' and $topdiv_display_type=='not_full'}>
+
+        <!-- 導覽列區域 -->
+        <{if $navbar_pos=='fixed-top'}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+        <{/if}>
+
+        <{if $use_page}>
         <div id="page-wrapper" style="<{$page_style}>">
         <{/if}>
-            <{* 頂部內容區 *}>
-            <div id="topdiv-wrapper">
-                <div id="topdiv-display">
-                    <div style="<{$topdiv_style}>" class="row">
-                        <{assign var="topdiv_col" value='-'|explode:$topdiv_cols}>
-                        <div class="col-xl-<{if $topdiv_col.0}><{$topdiv_col.0}><{else}>auto<{/if}> text-start">
-                            <{assign var="topdiv_content" value=$topdiv_left}>
-                            <{assign var="topdiv_html" value=$topdiv_left_content}>
-                            <{includeq file="$xoops_rootpath/themes/school2022/tpl/topdiv_content.tpl"}>
-                        </div>
-                        <div class="col-xl-<{if $topdiv_col.1}><{$topdiv_col.1}><{else}>auto<{/if}> text-center">
-                            <{assign var="topdiv_content" value=$topdiv_center}>
-                            <{assign var="topdiv_html" value=$topdiv_center_content}>
-                            <{includeq file="$xoops_rootpath/themes/school2022/tpl/topdiv_content.tpl"}>
-                        </div>
-                        <div class="col-xl-<{if $topdiv_col.2}><{$topdiv_col.2}><{else}>auto<{/if}> text-end">
-                            <{assign var="topdiv_content" value=$topdiv_right}>
-                            <{assign var="topdiv_html" value=$topdiv_right_content}>
-                            <{includeq file="$xoops_rootpath/themes/school2022/tpl/topdiv_content.tpl"}>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- 導覽列區域 -->
-            <{if $navbar_pos=='fixed-top'}>
-                <{includeq file="$xoops_rootpath/themes/school2022/tpl/nav-container.tpl"}>
-            <{/if}>
+        <{* 頂部內容區 *}>
+        <{includeq file="$xoops_rootpath/themes/school2022/tpl/topdiv_wrapper.tpl"}>
 
-            <!-- logo區域 -->
-            <div id="logo-wrapper">
-                <{assign var=mylogofile value=$xoops_rootpath$logo_path`$smarty.get.$logo_var`.$logo_ext}>
-                <div id="logo-display" class="container-fluid <{if $logo_align}>d-flex <{$logo_align}><{/if}>">
-                    <div style="<{$logo_style}>">
-                        <{if $logo_text=='1'}>
-                            <h1 class="mt-4">
-                            <a href="<{$xoops_url}>/index.php?<{$logo_var}>=<{$smarty.get.$logo_var}>"><{$xoops_sitename}></a>
-                            </h1>
-                            <div class="mt-1 opacity-75"><{$xoops_slogan}></div>
-                        <{elseif $logo_img and $logo_position=="page"}>
-                            <{if $logo_auto==1 and $smarty.server.REQUEST_URI|strpos:$smarty.get.$logo_var!==false and $mylogofile|file_exists}>
-                                <a href="<{$xoops_url}>/index.php?<{$logo_var}>=<{$smarty.get.$logo_var}>">
-                                    <img id="website_logo" src="<{$xoops_url}><{$logo_path}><{$smarty.get.$logo_var}>.<{$logo_ext}>" style="<{if $logo_full!='1'}>max-<{/if}>>width: 100%;<{if $logo_position=="slide"}>position: absolute; z-index: 5; <{$logo_place}><{else}>position: relative; z-index:10;<{/if}>" alt="<{$xoops_sitename}>" title="<{$xoops_sitename}>" class="img-fluid">
-                                </a>
-                            <{else}>
-                                <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/logo.tpl"}>
-                            <{/if}>
-                        <{/if}>
-                    </div>
-                </div>
-            </div>
+        <{* logo區域 *}>
+        <{includeq file="$xoops_rootpath/themes/school2022/tpl/logo_wrapper.tpl"}>
+
+        <{* 導覽列區域 *}>
+        <{if $navbar_pos=='sticky-top'}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+        <{/if}>
+
+        <{* 滑動圖區域 *}>
+        <{if $use_slide }>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/slide_wrapper.tpl"}>
+        <{/if}>
+
+        <{* 導覽列區域 *}>
+        <{if $navbar_pos=='default'}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+        <{/if}>
+
+        <{* 主內容區域 *}>
+        <{includeq file="$xoops_rootpath/themes/school2022/tpl/content_wrapper.tpl"}>
+
+        <{* 頁尾區域 *}>
+        <{includeq file="$xoops_rootpath/themes/school2022/tpl/footer_wrapper.tpl"}>
 
 
-            <{if $navbar_pos=='sticky-top'}>
-                <{includeq file="$xoops_rootpath/themes/school2022/tpl/nav-container.tpl"}>
-            <{/if}>
-
-            <!-- 滑動圖區域 -->
-            <{if $use_slide }>
-                <div id="slide-wrapper">
-                    <div id="slide-display">
-                        <div style="<{$slide_style}>">
-                            <{if $slide_kind=='CarouSlide'}>
-                                <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/slider/CarouSlide.tpl"}>
-                            <{else}>
-                                <{includeq file="$xoops_rootpath/themes/school2022/tpl/slideshow_responsive.tpl"}>
-                                <{if $slide_mask}>
-                                    <img src="<{$slide_mask}>" alt="mask" class="img-fluid" style="width:100%; position:absolute; z-index:2; left:0px; top:0px;">
-                                <{elseif $slide_def_mask}>
-                                    <img src="<{$xoops_url}>/uploads/tad_themes/school2022/mask/<{$slide_def_mask}>.svg" alt="mask" class="img-fluid" style="width:100%; position:absolute; z-index:2; left:0px; top:0px;">
-                                <{/if}>
-                            <{/if}>
-                        </div>
-                    </div>
-                </div>
-            <{/if}>
-
-            <!-- 導覽列區域 -->
-            <{if $navbar_pos=='default'}>
-                <{includeq file="$xoops_rootpath/themes/school2022/tpl/nav-container.tpl"}>
-            <{/if}>
-
-
-            <!-- 主內容區域 -->
-            <div id="content-wrapper">
-                <div id="content-display">
-                    <div class="container-fluid" style="<{$content_style}>">
-                        <!-- 載入布局 -->
-                        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/$theme_type.tpl"}>
-
-                        <!-- 顯示參數，開發用，開發完可刪除 -->
-                        <{if $show_var=='1'}>
-                            <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/show_var.tpl"}>
-                        <{/if}>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 頁尾區域 -->
-            <div id="footer-wrapper">
-                <div id="footer-display">
-                    <div style="<{$footer_style}>">
-                        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/footerBlock.tpl"}>
-                        <{if $xoops_isadmin}><a href="<{$xoops_url}>/modules/system/admin.php?fct=preferences&op=show&confcat_id=3" class="block_config"></a><{/if}>
-                        <{$xoops_footer}>
-                    </div>
-                </div>
-            </div>
-        <{if $slide_display_type=='not_full' and $content_display_type=='not_full' and $logo_display_type=='not_full' and $footer_display_type=='not_full' and $nav_display_type=='not_full' and $topdiv_display_type=='not_full'}>
+        <{if $use_page}>
         </div>
         <{/if}>
 
+        <{* 導覽列區域 *}>
         <{if $navbar_pos=='fixed-bottom'}>
-            <{includeq file="$xoops_rootpath/themes/school2022/tpl/nav-container.tpl"}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
         <{/if}>
 
         <!-- 載入自訂js -->

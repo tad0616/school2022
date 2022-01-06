@@ -13,6 +13,22 @@ $theme_config[$i]['options'] = ['not_full' => TF_DISPLAY_TYPE_NOT_FULL, 'bg_full
 $theme_config[$i]['images'] = ['not_full' => XOOPS_URL . '/modules/tad_themes/images/dt_not_full.png', 'bg_full' => XOOPS_URL . '/modules/tad_themes/images/dt_bg_full.png', 'all_full' => XOOPS_URL . '/modules/tad_themes/images/dt_all_full.png'];
 $theme_config[$i]['default'] = "bg_full";
 
+//中間底色
+$i++;
+$theme_config[$i]['name'] = "footer_content_bgcolor";
+$theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
+$theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
+$theme_config[$i]['type'] = "color";
+$theme_config[$i]['default'] = "#ffffff";
+
+//兩側底色
+$i++;
+$theme_config[$i]['name'] = "footer_side_bgcolor";
+$theme_config[$i]['text'] = TF_SIDE_BGCOLOR;
+$theme_config[$i]['desc'] = TF_SIDE_BGCOLOR_DESC;
+$theme_config[$i]['type'] = "color";
+$theme_config[$i]['default'] = "transparent";
+
 //頁尾 是否套用陰影
 $i++;
 $theme_config[$i]['name'] = "footer_shadow";
@@ -40,21 +56,13 @@ $theme_config[$i]['desc'] = TF_ZINDEX_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "0";
 
-//中間底色
+//圓角
 $i++;
-$theme_config[$i]['name'] = "footer_content_bgcolor";
-$theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
-$theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
-$theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#ffffff";
-
-//兩側底色
-$i++;
-$theme_config[$i]['name'] = "footer_side_bgcolor";
-$theme_config[$i]['text'] = TF_SIDE_BGCOLOR;
-$theme_config[$i]['desc'] = TF_SIDE_BGCOLOR_DESC;
-$theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "transparent";
+$theme_config[$i]['name'] = "footer_border_radius";
+$theme_config[$i]['text'] = TF_BORDER_RADIUS;
+$theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "0px";
 
 //頁尾底圖
 $i++;

@@ -40,6 +40,14 @@ $theme_config[$i]['desc'] = TF_ZINDEX_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "0";
 
+//圓角
+$i++;
+$theme_config[$i]['name'] = "topdiv_border_radius";
+$theme_config[$i]['text'] = TF_BORDER_RADIUS;
+$theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "0px";
+
 //中間底色
 $i++;
 $theme_config[$i]['name'] = "topdiv_content_bgcolor";
@@ -106,7 +114,7 @@ $theme_config[$i]['name'] = "topdiv_left";
 $theme_config[$i]['text'] = TF_TOPDIV_LEFT;
 $theme_config[$i]['desc'] = TF_TOPDIV_LEFT . TF_TOPDIV_SELECT_CONTENT;
 $theme_config[$i]['type'] = "select";
-$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'google_translate' => TF_GOOGLE_TRANSLATE, 'html' => TF_HTML];
+$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'menu' => TF_MENU, 'google_translate' => TF_GOOGLE_TRANSLATE, 'html' => TF_HTML];
 $theme_config[$i]['default'] = "";
 
 //左側自訂內容
@@ -123,7 +131,7 @@ $theme_config[$i]['name'] = "topdiv_center";
 $theme_config[$i]['text'] = TF_TOPDIV_CENTER;
 $theme_config[$i]['desc'] = TF_TOPDIV_CENTER . TF_TOPDIV_SELECT_CONTENT;
 $theme_config[$i]['type'] = "select";
-$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'google_translate' => TF_GOOGLE_TRANSLATE, 'html' => TF_HTML];
+$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'menu' => TF_MENU, 'google_translate' => TF_GOOGLE_TRANSLATE, 'html' => TF_HTML];
 $theme_config[$i]['default'] = "";
 
 //中間自訂內容
@@ -140,7 +148,7 @@ $theme_config[$i]['name'] = "topdiv_right";
 $theme_config[$i]['text'] = TF_TOPDIV_RIGHT;
 $theme_config[$i]['desc'] = TF_TOPDIV_RIGHT . TF_TOPDIV_SELECT_CONTENT;
 $theme_config[$i]['type'] = "select";
-$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'google_translate' => TF_GOOGLE_TRANSLATE, 'html' => TF_HTML];
+$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'menu' => TF_MENU, 'google_translate' => TF_GOOGLE_TRANSLATE, 'html' => TF_HTML];
 $theme_config[$i]['default'] = "";
 
 //右側自訂內容

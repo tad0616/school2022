@@ -13,6 +13,22 @@ $theme_config[$i]['options'] = ['not_full' => TF_DISPLAY_TYPE_NOT_FULL, 'bg_full
 $theme_config[$i]['images'] = ['not_full' => XOOPS_URL . '/modules/tad_themes/images/dt_not_full.png', 'bg_full' => XOOPS_URL . '/modules/tad_themes/images/dt_bg_full.png', 'all_full' => XOOPS_URL . '/modules/tad_themes/images/dt_all_full.png'];
 $theme_config[$i]['default'] = "not_full";
 
+//中間底色
+$i++;
+$theme_config[$i]['name'] = "logo_content_bgcolor";
+$theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
+$theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
+$theme_config[$i]['type'] = "color";
+$theme_config[$i]['default'] = "#ffffff";
+
+//兩側底色
+$i++;
+$theme_config[$i]['name'] = "logo_side_bgcolor";
+$theme_config[$i]['text'] = TF_SIDE_BGCOLOR;
+$theme_config[$i]['desc'] = TF_SIDE_BGCOLOR_DESC;
+$theme_config[$i]['type'] = "color";
+$theme_config[$i]['default'] = "transparent";
+
 //logo 陰影方向
 $i++;
 $theme_config[$i]['name'] = "logo_shadow";
@@ -40,21 +56,13 @@ $theme_config[$i]['desc'] = TF_ZINDEX_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "0";
 
-//中間底色
+//圓角
 $i++;
-$theme_config[$i]['name'] = "logo_content_bgcolor";
-$theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
-$theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
-$theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#ffffff";
-
-//兩側底色
-$i++;
-$theme_config[$i]['name'] = "logo_side_bgcolor";
-$theme_config[$i]['text'] = TF_SIDE_BGCOLOR;
-$theme_config[$i]['desc'] = TF_SIDE_BGCOLOR_DESC;
-$theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "transparent";
+$theme_config[$i]['name'] = "logo_border_radius";
+$theme_config[$i]['text'] = TF_BORDER_RADIUS;
+$theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "0px";
 
 //logo 底圖1
 $i++;
@@ -136,3 +144,28 @@ $theme_config[$i]['text'] = TF_LOGO_TEXT;
 $theme_config[$i]['desc'] = TF_LOGO_TEXT_DESC;
 $theme_config[$i]['type'] = "yesno";
 $theme_config[$i]['default'] = "1";
+
+//logo 兩邊寬度
+$i++;
+$theme_config[$i]['name'] = "logo_cols";
+$theme_config[$i]['text'] = TF_LOGO_COLS;
+$theme_config[$i]['desc'] = TF_LOGO_COLS_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "6-6";
+
+//logo 右側內容
+$i++;
+$theme_config[$i]['name'] = "logo_right";
+$theme_config[$i]['text'] = TF_LOGO_RIGHT;
+$theme_config[$i]['desc'] = TF_LOGO_RIGHT_DESC;
+$theme_config[$i]['type'] = "select";
+$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'menu' => TF_MENU, 'navbar' => TF_NAVBAR, 'html' => TF_HTML];
+$theme_config[$i]['default'] = "";
+
+//右側自訂內容
+$i++;
+$theme_config[$i]['name'] = "logo_right_content";
+$theme_config[$i]['text'] = TF_LOGO_RIGHT . TF_TOPDIV_CONTENT;
+$theme_config[$i]['desc'] = TF_LOGO_RIGHT . TF_TOPDIV_CONTENT_DESC;
+$theme_config[$i]['type'] = "textarea";
+$theme_config[$i]['default'] = "";

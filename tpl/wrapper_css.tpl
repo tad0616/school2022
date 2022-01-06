@@ -39,6 +39,7 @@
 <{assign var="zindex" value=$topdiv_zindex}>
 <{assign var="shadow_arr" value=$topdiv_shadow}>
 <{assign var="display_type" value=$topdiv_display_type}>
+<{assign var="border_radius" value=$topdiv_border_radius}>
 <{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
 <{if $topdiv_color}>
     #topdiv-display a,
@@ -66,6 +67,7 @@
 <{assign var="zindex" value=$logo_zindex}>
 <{assign var="shadow_arr" value=$logo_shadow}>
 <{assign var="display_type" value=$logo_display_type}>
+<{assign var="border_radius" value=$logo_border_radius}>
 <{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
 
 #logo-wrapper{
@@ -133,6 +135,7 @@
 <{assign var="zindex" value=$content_zindex}>
 <{assign var="shadow_arr" value=$content_shadow}>
 <{assign var="display_type" value=$content_display_type}>
+<{assign var="border_radius" value=$content_border_radius}>
 <{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
 
 
@@ -153,6 +156,7 @@
 <{assign var="zindex" value=$footer_zindex}>
 <{assign var="shadow_arr" value=$footer_shadow}>
 <{assign var="display_type" value=$footer_display_type}>
+<{assign var="border_radius" value=$footer_border_radius}>
 <{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
 <{if $footer_color}>
     #footer-display a,
@@ -169,44 +173,4 @@
     #page-wrapper{
         max-width: <{$container_width}>;
     }
-<{*
-    <{if $topdiv_display_type=='not_full'}>
-        #topdiv-wrapper{ width: <{$container_width}>; }
-    <{elseif $topdiv_display_type=='bg_full'}>
-        #topdiv-display{ width: <{$container_width}>; }
-    <{/if}>
-
-
-    <{if $logo_display_type=='not_full'}>
-        #logo-wrapper{ width: <{$container_width}>; }
-    <{elseif $logo_display_type=='bg_full'}>
-        #logo-display{ width: <{$container_width}>; }
-    <{/if}>
-
-
-    <{if $nav_display_type=='not_full'}>
-        #nav-wrapper{ width: <{$container_width}>; }
-    <{elseif $nav_display_type=='bg_full'}>
-        #nav-display{ width: <{$container_width}>; }
-    <{/if}>
-
-
-    <{if $slide_display_type=='not_full'}>
-        #slide-wrapper{ width: <{$container_width}>; }
-    <{elseif $slide_display_type=='bg_full'}>
-        #slide-display{ width: <{$container_width}>; }
-    <{/if}>
-
-    <{if $base_display_type=='not_full'}>
-        #base-wrapper{ width: <{$container_width}>; }
-    <{elseif $base_display_type=='bg_full'}>
-        #base-display{ width: <{$container_width}>; }
-    <{/if}>
-
-
-    <{if $footer_display_type=='not_full'}>
-        #footer-wrapper{ width: <{$container_width}>; }
-    <{elseif $footer_display_type=='bg_full'}>
-        #footer-display{ width: <{$container_width}>; }
-    <{/if}> *}>
 }
