@@ -19,7 +19,10 @@
         <{elseif $container_width == 8}>
             <{assign var=container_width value=67%}>
         <{/if}>
-        <{if $slide_display_type=='not_full' and $content_display_type=='not_full' and $logo_display_type=='not_full' and $footer_display_type=='not_full' and $nav_display_type=='not_full' and $topdiv_display_type=='not_full'}>
+
+
+
+        <{if $slide_display_type=='not_full' and $content_display_type=='not_full' and $logo_display_type=='not_full' and $footer_display_type=='not_full' and $nav_display_type=='not_full' and $top_display_type=='not_full'}>
             <{assign var=use_page value=true}>
         <{else}>
             <{assign var=use_page value=false}>
@@ -90,7 +93,6 @@
     </head>
 
     <body>
-
         <!-- 導覽列區域 -->
         <{if $navbar_pos=='fixed-top'}>
             <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
@@ -101,7 +103,7 @@
         <{/if}>
 
         <{* 頂部內容區 *}>
-        <{includeq file="$xoops_rootpath/themes/school2022/tpl/topdiv_wrapper.tpl"}>
+        <{includeq file="$xoops_rootpath/themes/school2022/tpl/top_wrapper.tpl"}>
 
         <{* logo區域 *}>
         <{includeq file="$xoops_rootpath/themes/school2022/tpl/logo_wrapper.tpl"}>

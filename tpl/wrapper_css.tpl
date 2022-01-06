@@ -1,5 +1,5 @@
 #page-wrapper,
-#topdiv-wrapper,#topdiv-display,
+#top-wrapper,#top-display,
 #logo-wrapper,#logo-display,
 #nav-wrapper,#nav-display,
 #slide-wrapper,#slide-display,
@@ -23,30 +23,30 @@
 
 
 <{* 頂部 *}>
-<{assign var="item" value='topdiv'}>
-<{assign var="side_bgcolor" value=$topdiv_side_bgcolor}>
-<{assign var="content_bgcolor" value=$topdiv_content_bgcolor}>
-<{assign var="bg_img" value=$topdiv_img}>
-<{assign var="bg_repeat" value=$topdiv_img_repeat}>
-<{assign var="bg_position" value=$topdiv_img_position}>
-<{assign var="bg_size" value=$topdiv_img_size}>
-<{assign var="padding" value=$topdiv_padding}>
-<{assign var="mt" value=$topdiv_padding_mt}>
-<{assign var="mb" value=$topdiv_padding_mb}>
-<{assign var="height" value=$topdiv_height}>
-<{assign var="color" value=$topdiv_color}>
-<{assign var="style" value=$topdiv_style}>
-<{assign var="zindex" value=$topdiv_zindex}>
-<{assign var="shadow_arr" value=$topdiv_shadow}>
-<{assign var="display_type" value=$topdiv_display_type}>
-<{assign var="border_radius" value=$topdiv_border_radius}>
+<{assign var="item" value='top'}>
+<{assign var="side_bgcolor" value=$top_side_bgcolor}>
+<{assign var="content_bgcolor" value=$top_content_bgcolor}>
+<{assign var="bg_img" value=$top_img}>
+<{assign var="bg_repeat" value=$top_img_repeat}>
+<{assign var="bg_position" value=$top_img_position}>
+<{assign var="bg_size" value=$top_img_size}>
+<{assign var="padding" value=$top_padding}>
+<{assign var="mt" value=$top_padding_mt}>
+<{assign var="mb" value=$top_padding_mb}>
+<{assign var="height" value=$top_height}>
+<{assign var="color" value=$top_color}>
+<{assign var="style" value=$top_style}>
+<{assign var="zindex" value=$top_zindex}>
+<{assign var="shadow_arr" value=$top_shadow}>
+<{assign var="display_type" value=$top_display_type}>
+<{assign var="border_radius" value=$top_border_radius}>
 <{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
-<{if $topdiv_color}>
-    #topdiv-display a,
-    #topdiv-display a:hover,
-    #topdiv-display a:active ,
-    #topdiv-display a:visited {
-        color:<{$topdiv_color}>;
+<{if $top_color}>
+    #top-display a,
+    #top-display a:hover,
+    #top-display a:active ,
+    #top-display a:visited {
+        color:<{$top_color}>;
     }
 <{/if}>
 
