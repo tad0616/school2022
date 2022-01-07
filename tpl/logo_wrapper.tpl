@@ -26,9 +26,9 @@
         </div>
         <{if $logo_col.1}>
             <div class="col-xl-<{if $logo_col.1}><{$logo_col.1}><{else}>auto<{/if}> text-end">
-                <{assign var="logo_content" value=$logo_right}>
-                <{assign var="logo_html" value=$logo_right_content}>
-                <{includeq file="$xoops_rootpath/themes/school2022/tpl/logo_content.tpl"}>
+                <{assign var="item_content" value=$logo_right}>
+                <{assign var="item_html" value=$logo_right_content}>
+                <{includeq file="$xoops_rootpath/themes/school2022/tpl/custom_content.tpl"}>
             </div>
         <{/if}>
 

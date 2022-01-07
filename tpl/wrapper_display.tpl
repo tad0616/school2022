@@ -53,3 +53,10 @@
         <{/if}>
     }
 }
+
+
+@media (max-width: 768px) {
+    #<{$item}>-wrapper{
+        max-width: 100%;
+    }
+}

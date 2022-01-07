@@ -1,7 +1,6 @@
 <?php
-require XOOPS_ROOT_PATH . '/themes/school2022/bg_config.php';
-
 $i = 0;
+
 //背景底圖2
 $i++;
 $theme_config[$i]['name'] = "bg_bg2";
@@ -12,7 +11,7 @@ $theme_config[$i]['default'] = "";
 $theme_config[$i]['options'] = $bg_file;
 $theme_config[$i]['repeat'] = "no-repeat";
 $theme_config[$i]['position'] = "left top";
-$theme_config[$i]['size'] = "auto";
+$theme_config[$i]['size'] = "contain";
 
 //背景底圖3
 $i++;

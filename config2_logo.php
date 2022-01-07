@@ -1,6 +1,4 @@
 <?php
-require XOOPS_ROOT_PATH . '/themes/school2022/bg_config.php';
-
 $i = 0;
 
 //區域顯示模式
@@ -19,7 +17,7 @@ $theme_config[$i]['name'] = "logo_content_bgcolor";
 $theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
 $theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
 $theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#ffffff";
+$theme_config[$i]['default'] = "#ffffff99";
 
 //兩側底色
 $i++;
@@ -44,7 +42,7 @@ $theme_config[$i]['name'] = "logo_padding";
 $theme_config[$i]['text'] = TF_PADDING_MARGIN;
 $theme_config[$i]['desc'] = TF_PADDING_MARGIN_DESC;
 $theme_config[$i]['type'] = "padding_margin";
-$theme_config[$i]['default'] = "0px";
+$theme_config[$i]['default'] = "10px";
 $theme_config[$i]['mt'] = "0px";
 $theme_config[$i]['mb'] = "0px";
 
@@ -62,7 +60,7 @@ $theme_config[$i]['name'] = "logo_border_radius";
 $theme_config[$i]['text'] = TF_BORDER_RADIUS;
 $theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "0px";
+$theme_config[$i]['default'] = "";
 
 //logo 底圖1
 $i++;
@@ -72,8 +70,8 @@ $theme_config[$i]['desc'] = TF_LOGO_BG1_DESC;
 $theme_config[$i]['type'] = "bg_file";
 $theme_config[$i]['default'] = "";
 $theme_config[$i]['options'] = $bg_file;
-$theme_config[$i]['repeat'] = "no-repeat";
-$theme_config[$i]['position'] = "right top";
+$theme_config[$i]['repeat'] = "repeat";
+$theme_config[$i]['position'] = "left top";
 $theme_config[$i]['size'] = "auto";
 
 //logo 底圖重複方式
@@ -84,7 +82,7 @@ $theme_config[$i]['desc'] = TF_LOGO_BG2_DESC;
 $theme_config[$i]['type'] = "bg_file";
 $theme_config[$i]['default'] = "";
 $theme_config[$i]['options'] = $bg_file;
-$theme_config[$i]['repeat'] = "no-repeat";
+$theme_config[$i]['repeat'] = "repeat";
 $theme_config[$i]['position'] = "left top";
 $theme_config[$i]['size'] = "auto";
 
@@ -143,7 +141,7 @@ $theme_config[$i]['name'] = "logo_text";
 $theme_config[$i]['text'] = TF_LOGO_TEXT;
 $theme_config[$i]['desc'] = TF_LOGO_TEXT_DESC;
 $theme_config[$i]['type'] = "yesno";
-$theme_config[$i]['default'] = "1";
+$theme_config[$i]['default'] = "0";
 
 //logo 兩邊寬度
 $i++;
@@ -151,16 +149,16 @@ $theme_config[$i]['name'] = "logo_cols";
 $theme_config[$i]['text'] = TF_LOGO_COLS;
 $theme_config[$i]['desc'] = TF_LOGO_COLS_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "6-6";
+$theme_config[$i]['default'] = "3-9";
 
 //logo 右側內容
 $i++;
 $theme_config[$i]['name'] = "logo_right";
 $theme_config[$i]['text'] = TF_LOGO_RIGHT;
 $theme_config[$i]['desc'] = TF_LOGO_RIGHT_DESC;
-$theme_config[$i]['type'] = "select";
-$theme_config[$i]['options'] = ['' => TF_NONE, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'menu' => TF_MENU, 'navbar' => TF_NAVBAR, 'html' => TF_HTML];
-$theme_config[$i]['default'] = "";
+$theme_config[$i]['type'] = "checkbox";
+$theme_config[$i]['options'] = ['html' => TF_HTML, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
+$theme_config[$i]['default'] = ['html', 'google_translate', 'navbar'];
 
 //右側自訂內容
 $i++;
@@ -168,4 +166,31 @@ $theme_config[$i]['name'] = "logo_right_content";
 $theme_config[$i]['text'] = TF_LOGO_RIGHT . TF_CONTENT;
 $theme_config[$i]['desc'] = TF_LOGO_RIGHT . TF_CONTENT_DESC;
 $theme_config[$i]['type'] = "textarea";
-$theme_config[$i]['default'] = "";
+$theme_config[$i]['default'] = "<span class=\"ci\">
+<i class=\"fa fa-phone\"></i> (06)2130669#33
+</span>
+<span class=\"ci\">
+<i class=\"fa fa-fax\"></i> (06)-2130668
+</span>
+<span class=\"ci\">
+<i class=\"fa fa-envelope\"></i> service@tn.edu.tw
+</span>
+
+<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700\" rel=\"stylesheet\" type=\"text/css\">
+
+<style>
+.ci {
+    font-size: 0.8rem;
+    font-family: \"open sans\", arial, sans-serif;
+    font-weight: 300;
+    margin: 10px 1rem;
+}
+
+.ci .fa {
+    color: #6091ba;
+    margin-right: 8px;
+    font-size: 1.1rem;
+    position: relative;
+    top: 1px;
+}
+</style>";
