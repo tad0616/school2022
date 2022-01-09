@@ -3,7 +3,7 @@ $i = 0;
 
 //頂部自訂內容顯示模式
 $i++;
-$theme_config[$i]['name'] = "top_display_type";
+$theme_config[$i]['name'] = "middle_display_type";
 $theme_config[$i]['text'] = TF_DISPLAY_TYPE;
 $theme_config[$i]['desc'] = TF_DISPLAY_TYPE_DESC;
 $theme_config[$i]['type'] = "selectpicker";
@@ -13,7 +13,7 @@ $theme_config[$i]['default'] = "bg_full";
 
 //頂部自訂內容是否套用陰影
 $i++;
-$theme_config[$i]['name'] = "top_shadow";
+$theme_config[$i]['name'] = "middle_shadow";
 $theme_config[$i]['text'] = TF_SHADOW;
 $theme_config[$i]['desc'] = TF_SHADOW_DESC;
 $theme_config[$i]['type'] = "checkbox";
@@ -22,25 +22,25 @@ $theme_config[$i]['default'] = [];
 
 //內部距離設定
 $i++;
-$theme_config[$i]['name'] = "top_padding";
+$theme_config[$i]['name'] = "middle_padding";
 $theme_config[$i]['text'] = TF_PADDING_MARGIN;
 $theme_config[$i]['desc'] = TF_PADDING_MARGIN_DESC;
 $theme_config[$i]['type'] = "padding_margin";
-$theme_config[$i]['default'] = "6px 0px";
+$theme_config[$i]['default'] = "10px";
 $theme_config[$i]['mt'] = "0px";
 $theme_config[$i]['mb'] = "0px";
 
 //z-index
 $i++;
-$theme_config[$i]['name'] = "top_zindex";
+$theme_config[$i]['name'] = "middle_zindex";
 $theme_config[$i]['text'] = TF_ZINDEX;
 $theme_config[$i]['desc'] = TF_ZINDEX_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "0";
+$theme_config[$i]['default'] = "";
 
 //圓角
 $i++;
-$theme_config[$i]['name'] = "top_border_radius";
+$theme_config[$i]['name'] = "middle_border_radius";
 $theme_config[$i]['text'] = TF_BORDER_RADIUS;
 $theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
 $theme_config[$i]['type'] = "text";
@@ -48,43 +48,43 @@ $theme_config[$i]['default'] = "";
 
 //中間底色
 $i++;
-$theme_config[$i]['name'] = "top_content_bgcolor";
+$theme_config[$i]['name'] = "middle_content_bgcolor";
 $theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
 $theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
 $theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#3fbbc0";
+$theme_config[$i]['default'] = "transparent";
 
 //兩側底色
 $i++;
-$theme_config[$i]['name'] = "top_side_bgcolor";
+$theme_config[$i]['name'] = "middle_side_bgcolor";
 $theme_config[$i]['text'] = TF_SIDE_BGCOLOR;
 $theme_config[$i]['desc'] = TF_SIDE_BGCOLOR_DESC;
 $theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#3fbbc0";
+$theme_config[$i]['default'] = "transparent";
 
-//頁尾底圖
+//中間底圖
 $i++;
-$theme_config[$i]['name'] = "top_img";
+$theme_config[$i]['name'] = "middle_img";
 $theme_config[$i]['text'] = TF_BG_IMG;
 $theme_config[$i]['desc'] = TF_BG_IMG_DESC;
 $theme_config[$i]['type'] = "bg_file";
 $theme_config[$i]['default'] = "";
 $theme_config[$i]['options'] = $bg_file;
-$theme_config[$i]['repeat'] = "no-repeat";
+$theme_config[$i]['repeat'] = "repeat";
 $theme_config[$i]['position'] = "left top";
-$theme_config[$i]['size'] = "contain";
+$theme_config[$i]['size'] = "auto";
 
-//頁尾高度
+//中間高度
 $i++;
-$theme_config[$i]['name'] = "top_height";
+$theme_config[$i]['name'] = "middle_height";
 $theme_config[$i]['text'] = TF_HEIGHT;
 $theme_config[$i]['desc'] = TF_HEIGHT_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "50px";
+$theme_config[$i]['default'] = "";
 
-//頁尾文字顏色
+//中間文字顏色
 $i++;
-$theme_config[$i]['name'] = "top_color";
+$theme_config[$i]['name'] = "middle_color";
 $theme_config[$i]['text'] = TF_COLOR;
 $theme_config[$i]['desc'] = TF_COLOR_DESC;
 $theme_config[$i]['type'] = "color";
@@ -92,15 +92,15 @@ $theme_config[$i]['default'] = "#ffffff";
 
 //頂部自訂內容CSS樣式設定
 $i++;
-$theme_config[$i]['name'] = "top_style";
+$theme_config[$i]['name'] = "middle_style";
 $theme_config[$i]['text'] = TF_STYLE;
 $theme_config[$i]['desc'] = TF_STYLE_DESC;
 $theme_config[$i]['type'] = "textarea";
-$theme_config[$i]['default'] = "font-size: 0.8rem;";
+$theme_config[$i]['default'] = "";
 
 //左中右的寬度
 $i++;
-$theme_config[$i]['name'] = "top_cols";
+$theme_config[$i]['name'] = "middle_cols";
 $theme_config[$i]['text'] = TF_3COLS;
 $theme_config[$i]['desc'] = TF_3COLS_DESC;
 $theme_config[$i]['type'] = "text";
@@ -108,76 +108,51 @@ $theme_config[$i]['default'] = "4-4-4";
 
 // 左側內容
 $i++;
-$theme_config[$i]['name'] = "top_left";
-$theme_config[$i]['text'] = TF_TOP_LEFT;
-$theme_config[$i]['desc'] = TF_TOP_LEFT . TF_SELECT_CONTENT;
+$theme_config[$i]['name'] = "middle_left";
+$theme_config[$i]['text'] = TF_MIDDLE_LEFT;
+$theme_config[$i]['desc'] = TF_MIDDLE_LEFT . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
 $theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
-$theme_config[$i]['default'] = ['html'];
+$theme_config[$i]['default'] = [];
 
 //左側自訂內容
 $i++;
-$theme_config[$i]['name'] = "top_left_content";
-$theme_config[$i]['text'] = TF_TOP_LEFT . TF_CONTENT;
-$theme_config[$i]['desc'] = TF_TOP_LEFT . TF_CONTENT_DESC;
+$theme_config[$i]['name'] = "middle_left_content";
+$theme_config[$i]['text'] = TF_MIDDLE_LEFT . TF_CONTENT;
+$theme_config[$i]['desc'] = TF_MIDDLE_LEFT . TF_CONTENT_DESC;
 $theme_config[$i]['type'] = "textarea";
-$theme_config[$i]['default'] = "<a href=\"https://www.facebook.com/\" target=\"_blank\" class=\"si\"><i class=\"fa fa-facebook\"></i></a>
-<a href=\"https://www.youtube.com/\" target=\"_blank\" class=\"si\"><i class=\"fa fa-youtube\"></i></a>
-<a href=\"/modules/tadnews/rss.php\" target=\"_blank\" class=\"si\"><i class=\"fa fa-rss\"></i></a>
-
-<style>
-    a.si {
-      display: inline-block;
-      background: #2e898c;
-      width: 32px;
-      height: 32px;
-      text-align: center;
-      padding-top: 4px;
-      border-radius: 50%;
-      background-clip: padding-box;
-      font-size: 1.1rem;
-      margin-right: 10px;
-    }
-
-    a.si:hover {
-      background: #4fecf2;
-    }
-
-    a.si .fa {
-      color: #fff;
-    }
-</style>";
+$theme_config[$i]['default'] = "";
 
 // 中間內容
 $i++;
-$theme_config[$i]['name'] = "top_center";
-$theme_config[$i]['text'] = TF_TOP_CENTER;
-$theme_config[$i]['desc'] = TF_TOP_CENTER . TF_SELECT_CONTENT;
+$theme_config[$i]['name'] = "middle_center";
+$theme_config[$i]['text'] = TF_MIDDLE_CENTER;
+$theme_config[$i]['desc'] = TF_MIDDLE_CENTER . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
-$theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
-$theme_config[$i]['default'] = ['login'];
+$theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
+$theme_config[$i]['default'] = [];
 
 //中間自訂內容
 $i++;
-$theme_config[$i]['name'] = "top_center_content";
-$theme_config[$i]['text'] = TF_TOP_CENTER . TF_CONTENT;
-$theme_config[$i]['desc'] = TF_TOP_CENTER . TF_CONTENT_DESC;
+$theme_config[$i]['name'] = "middle_center_content";
+$theme_config[$i]['text'] = TF_MIDDLE_CENTER . TF_CONTENT;
+$theme_config[$i]['desc'] = TF_MIDDLE_CENTER . TF_CONTENT_DESC;
 $theme_config[$i]['type'] = "textarea";
 $theme_config[$i]['default'] = "";
 
 // 右側內容
 $i++;
-$theme_config[$i]['name'] = "top_right";
-$theme_config[$i]['text'] = TF_TOP_RIGHT;
-$theme_config[$i]['desc'] = TF_TOP_RIGHT . TF_SELECT_CONTENT;
+$theme_config[$i]['name'] = "middle_right";
+$theme_config[$i]['text'] = TF_MIDDLE_RIGHT;
+$theme_config[$i]['desc'] = TF_MIDDLE_RIGHT . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
 $theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
-$theme_config[$i]['default'] = ['search'];
+$theme_config[$i]['default'] = [];
 
 //右側自訂內容
 $i++;
-$theme_config[$i]['name'] = "top_right_content";
-$theme_config[$i]['text'] = TF_TOP_RIGHT . TF_CONTENT;
-$theme_config[$i]['desc'] = TF_TOP_RIGHT . TF_CONTENT_DESC;
+$theme_config[$i]['name'] = "middle_right_content";
+$theme_config[$i]['text'] = TF_MIDDLE_RIGHT . TF_CONTENT;
+$theme_config[$i]['desc'] = TF_MIDDLE_RIGHT . TF_CONTENT_DESC;
 $theme_config[$i]['type'] = "textarea";
 $theme_config[$i]['default'] = "";

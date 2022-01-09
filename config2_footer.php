@@ -80,7 +80,7 @@ $theme_config[$i]['name'] = "footer_height";
 $theme_config[$i]['text'] = TF_HEIGHT;
 $theme_config[$i]['desc'] = TF_HEIGHT_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "344px";
+$theme_config[$i]['default'] = "200px";
 
 //頁尾文字顏色
 $i++;

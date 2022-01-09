@@ -1,6 +1,5 @@
 <?php
 include_once XOOPS_ROOT_PATH . '/modules/tadtools/language/' . $GLOBALS['xoopsConfig']['language'] . '/theme_common.php';
-
 /**Custom settings of Languages **/
 define('TF_SHOW_VAR', 'Show set variable information');
 define('TF_SHOW_VAR_DESC', 'When the scene is developed, all the control variables and settings provided by tad_themes will be displayed');
@@ -74,13 +73,15 @@ define('TF_BG_ATTACHMENT', 'background');
 define('TF_BG_ATTACHMENT_SCROLL', 'scroll');
 define('TF_BG_ATTACHMENT_FIXED', 'fixed');
 define('TF_BG_POSITION', 'background-postiton');
-define('TF_BG_POSITION_LT', 'left top');
-define('TF_BG_POSITION_RT', 'right top');
-define('TF_BG_POSITION_LB', 'left bottom');
-define('TF_BG_POSITION_RB', 'right bottom');
-define('TF_BG_POSITION_CC', 'center center');
-define('TF_BG_POSITION_CT', 'center top');
-define('TF_BG_POSITION_CB', 'center bottom');
+define('TF_BG_POSITION_LT', 'Top Left');
+define('TF_BG_POSITION_LC', 'Center Left');
+define('TF_BG_POSITION_LB', 'Lower Left');
+define('TF_BG_POSITION_RT', 'Top Right');
+define('TF_BG_POSITION_RC', 'center-right');
+define('TF_BG_POSITION_RB', 'Right Bottom');
+define('TF_BG_POSITION_CC', 'center');
+define('TF_BG_POSITION_CT', 'top-center');
+define('TF_BG_POSITION_CB', 'lower center');
 define('TF_BG_BG2', 'background-image 2');
 define('TF_BG_BG2_DESC', 'background-image 2');
 define('TF_BG_BG2_REPEAT', 'background-repeart 2');
@@ -112,17 +113,11 @@ define('TF_SLIDE_MT', 'Top distance');
 define('TF_SLIDE_MT_DESC', 'How many pixels (px) above the slide image');
 define('TF_SLIDE_MB', 'Below distance');
 define('TF_SLIDE_MB_DESC', 'How many pixels (px) from below');
-define('TF_SLIDE_MASK', 'Customize the frame of the slider');
-define('TF_SLIDE_MASK_DESC', 'Use mask to add frame for slide image');
-
-define('TF_SLIDE_DEF_MASK', 'Solid color background slider frame');
-define('TF_SLIDE_DEF_MASK_DESC', 'Automatically generate the slider frame according to the background color (custom slider frame should be "None")');
-define('TF_SLIDE_DEF_MASK0', 'None');
-define('TF_SLIDE_DEF_MASK1', 'Outer frame 1');
-define('TF_SLIDE_DEF_MASK2', 'Outer frame 2');
 
 define('TF_NAV_SUB_BG_COLOR', 'navbar submenu background color');
 define('TF_NAV_SUB_BG_COLOR_DESC', 'The background color of the navbar submenu');
+define('TF_NAV_SUB_FONT_COLOR', 'Navigation menu text color');
+define('TF_NAV_SUB_FONT_COLOR_DESC', 'Text color of the navigation menu');
 
 define('TF_SHADOW', 'Shadow direction');
 define('TF_SHADOW_DESC', 'Shading will appear only if the direction is checked');
@@ -151,6 +146,8 @@ define('TF_LOGO_TEXT_DESC', 'Whether to use website name instead of logo image')
 
 define('TF_PADDING_MARGIN', 'Component inside and outside distance setting');
 define('TF_PADDING_MARGIN_DESC', 'Upper and lower is the distance from the upper and lower components (excluding the bg color), while the inner is the distance of the content from the edge of the components (including the bg color)');
+define('TF_PADDING', 'Component inner distance setting');
+define('TF_PADDING_DESC', 'The inner distance is the distance of the content from the edge of the component (including the bottom color)');
 
 define('TF_DISPLAY_TYPE', 'Display mode of this area');
 define('TF_DISPLAY_TYPE_DESC', 'Mode to present this area');
@@ -168,27 +165,32 @@ define('TF_ZINDEX_DESC', 'Set the upper and lower order of this area');
 
 define('TF_CONTENT_BGCOLOR', 'Content area background color');
 define('TF_CONTENT_BGCOLOR_DESC', 'The center has the base color of the area where the content is placed');
+
 define('TF_SIDE_BGCOLOR', 'Both sides of the base color');
 define('TF_SIDE_BGCOLOR_DESC', 'Background color of the part without content (both sides)');
-
 define('TF_STYLE', 'Custom Style Setting');
 define('TF_STYLE_DESC', 'You can use CSS syntax to define your own external view of the region');
 
 define('TF_TOP_LEFT', 'Top left side');
 define('TF_TOP_CENTER', 'Top center');
 define('TF_TOP_RIGHT', 'Top right side');
+define('TF_MIDDLE_LEFT', 'Middle left');
+define('TF_MIDDLE_CENTER', 'Middle Center');
+define('TF_MIDDLE_RIGHT', 'Middle right side');
 define('TF_BOTTOM_LEFT', 'Bottom center');
 define('TF_BOTTOM_CENTER', 'Bottom right side');
 define('TF_BOTTOM_RIGHT', 'Bottom left side');
-define('TF_SELECT_CONTENT', 'Select the content you want to appear');
+
+define('TF_SELECT_CONTENT', 'Select the content you want to appear<ol style="list-style-type: decimal;"><li>You can select more than one option, but "Custom Content" and "Link Options" cannot be selected at the same time.</li><li>Block does not need to be enabled</li><li>Advanced block modules can be used to <a href="<{$xoops_url}>/modules/tad_blocks/index.php?op=block_form">generate custom content</a></li></ol>');
 define('TF_CONTENT', 'Custom Content');
-define('TF_CONTENT_DESC', 'Any content (html) can be added');
+define('TF_CONTENT_DESC', 'Any HTML content can be added<ol style="list-style-type: decimal;"><li>Fill in the contents of "Custom Content" and "Link Options" here</li><li>"Custom Content" supports HTML syntax</li><li>"Link Options" one option line, e.g.<code>News|/modules/tadnews/|_blank</code></li></ol>');
 define('TF_NONE', 'None');
 define('TF_SEARCH', 'Search Box');
 define('TF_LOGIN', 'Login Box');
 define('TF_NAVBAR', 'Navbar');
 define('TF_MENU', 'Link options (Please fill in the fields below, one line for each option, e.g. "Latest news|/modules/tadnews/|_blank")');
 define('TF_HTML', 'Custom Content (please fill in below)');
+define('TF_BLOCK', 'Placement of blocks: ');
 define('TF_GOOGLE_TRANSLATE', 'Google Translation');
 define('TF_3COLS', 'Set the width of the left-center-right presentation bar');
 define('TF_3COLS_DESC', 'Fill in three numbers, separated by -, no blanks, the sum should be 12, for example: 4-4-4 or 3-6-3');

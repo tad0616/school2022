@@ -2,6 +2,16 @@
     <{if $item_html}><div class="d-inline-block"><{$item_html}></div><{/if}>
 <{/if}>
 
+<{if 'block'|in_array:$item_content}>
+    <div class="d-block">
+        <{if $item_bid.options}>
+            <{block id=$item_bid.bid options=$item_bid.options}>
+        <{else}>
+            <{block id=$item_bid.bid}>
+        <{/if}>
+    </div>
+<{/if}>
+
 <{if 'google_translate'|in_array:$item_content}>
     <div class="d-inline-block"> <{includeq file="$xoops_rootpath/themes/school2022/tpl/google_translate.tpl"}></div>
 <{/if}>

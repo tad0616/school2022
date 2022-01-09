@@ -62,6 +62,9 @@
             <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
         <{/if}>
 
+        <{* 中間內容區 *}>
+        <{includeq file="$xoops_rootpath/themes/school2022/tpl/middle_wrapper.tpl"}>
+
         <{* 主內容區域 *}>
         <{includeq file="$xoops_rootpath/themes/school2022/tpl/content_wrapper.tpl"}>
 

@@ -121,6 +121,34 @@
 <{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
 
 
+<{* 中間 *}>
+<{assign var="item" value='middle'}>
+<{assign var="side_bgcolor" value=$middle_side_bgcolor}>
+<{assign var="content_bgcolor" value=$middle_content_bgcolor}>
+<{assign var="bg_img" value=$middle_img}>
+<{assign var="bg_repeat" value=$middle_img_repeat}>
+<{assign var="bg_position" value=$middle_img_position}>
+<{assign var="bg_size" value=$middle_img_size}>
+<{assign var="padding" value=$middle_padding}>
+<{assign var="mt" value=$middle_padding_mt}>
+<{assign var="mb" value=$middle_padding_mb}>
+<{assign var="height" value=$middle_height}>
+<{assign var="color" value=$middle_color}>
+<{assign var="style" value=$middle_style}>
+<{assign var="zindex" value=$middle_zindex}>
+<{assign var="shadow_arr" value=$middle_shadow}>
+<{assign var="display_type" value=$middle_display_type}>
+<{assign var="border_radius" value=$middle_border_radius}>
+<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
+<{if $middle_color}>
+    #middle-display a,
+    #middle-display a:hover,
+    #middle-display a:active ,
+    #middle-display a:visited {
+        color:<{$middle_color}>;
+    }
+<{/if}>
+
 <{* 主內容 *}>
 <{assign var="item" value='content'}>
 <{assign var="side_bgcolor" value=$base_color}>
