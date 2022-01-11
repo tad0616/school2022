@@ -37,8 +37,8 @@ define('TF_LOGO_BG2_SIZE_DESC', 'logo底圖2縮放方式');
 
 define('TF_SLIDE_TIMEOUT', '滑動圖顯示時間');
 define('TF_SLIDE_TIMEOUT_DESC', '單位為毫秒');
-define('TF_SLIDE_NAV', '是否顯示左右箭頭');
-define('TF_SLIDE_NAV_DESC', '若「否」左右滑動的圖示會消失');
+define('TF_SLIDE_NAV', '是否顯示控制項目');
+define('TF_SLIDE_NAV_DESC', '若「否」左右滑動的圖示或控制器會消失');
 
 define('TF_DISPLAY_TYPE_NOT_FULL', '內容底色皆置中');
 define('TF_DISPLAY_TYPE_BG_FULL', '內容置中，底色滿版');
@@ -121,6 +121,7 @@ define('TF_NAV_SUB_FONT_COLOR_DESC', '導覽列子選單的文字顏色');
 
 define('TF_SHADOW', '陰影方向');
 define('TF_SHADOW_DESC', '有勾選的方向才會出現陰影');
+define('TF_PAGE_SHADOW_DESC', '（當所有區域的「顯示模式」值均為「內容底色皆置中」陰影才會生效）');
 define('TF_TOP', '上');
 define('TF_RIGHT', '右');
 define('TF_BOTTOM', '下');
@@ -162,6 +163,8 @@ define('TF_HEIGHT_DESC', '沒內容時可設定最低呈現高度');
 
 define('TF_ZINDEX', '上下層順序');
 define('TF_ZINDEX_DESC', '設定此區域的上下層排序');
+define('TF_PIN', '是否釘選此區域');
+define('TF_PIN_DESC', '選是的話，當該區域到頂端時會固定住（若偏好設定有設定「導覽列的釘住」或導覽列設為「上方鎖定」則會找出導覽列位置優先釘選，並忽略此值）');
 
 define('TF_CONTENT_BGCOLOR', '中間底色');
 define('TF_CONTENT_BGCOLOR_DESC', '中間有放內容的區域之底色');
@@ -183,7 +186,7 @@ define('TF_BOTTOM_RIGHT', '底部右側');
 
 define('TF_SELECT_CONTENT', '選擇欲出現的內容<ol style="list-style-type: decimal;"><li>可多選，但「自訂內容」及「連結選項」不能同時選</li><li>區塊無須啟用</li><li>可用進階區塊模組來<a href="<{$xoops_url}>/modules/tad_blocks/index.php?op=block_form">產生自訂內容</a></li></ol>');
 define('TF_CONTENT', '自訂內容');
-define('TF_CONTENT_DESC', '可以加入任何內容（html）<ol style="list-style-type: decimal;"><li>「自訂內容」及「連結選項」的內容填至此處</li><li>「自訂內容」支援HTML語法</li><li>「連結選項」一個選項一行，如：<code>最新消息|/modules/tadnews/|_blank</code></li></ol>');
+define('TF_CONTENT_DESC', '可以加入任何內容（html）<ol style="list-style-type: decimal;"><li>「自訂內容」及「連結選項」的內容填至此處</li><li>「自訂內容」支援HTML語法</li><li>「連結選項」一個選項一行：「文字|連結|背景色|文字色|新視窗」，如：<code>最新消息|/modules/tadnews/|#f5c9c9|#ffffff|_blank</code></li></ol>');
 define('TF_NONE', '無');
 define('TF_SEARCH', '搜尋框');
 define('TF_LOGIN', '登入框');
@@ -196,6 +199,12 @@ define('TF_3COLS', '設定左中右的呈現欄寬');
 define('TF_3COLS_DESC', '填入三個數字，以-隔開，勿有空白，總和需為 12，如：4-4-4 或 3-6-3');
 
 define('TF_LOGO_RIGHT', 'Logo 右側');
-define('TF_LOGO_RIGHT_DESC', '<ol style="list-style-type: decimal;"><li>僅於「logo圖位置」值為「置於頁面上」時有效，可多選</li><li>連結選項：一個選項一行，如：<code>最新消息|/modules/tadnews/|_blank</code></li></ol>');
+define('TF_LOGO_RIGHT_DESC', '<ol style="list-style-type: decimal;"><li>僅於「logo圖位置」值為「置於頁面上」時有效，可多選</li><li>「自訂內容」及「連結選項」不可同時勾選</li></ol>');
 define('TF_LOGO_COLS', '設定 Logo 左右的呈現欄寬');
 define('TF_LOGO_COLS_DESC', '僅「置於頁面上」有效，填入兩個數字，以-隔開，勿有空白，總和需為 12，如：6-6 或 4-8');
+
+define('TF_TOP_ZONE', '頂部自訂區');
+define('TF_LOGO_ZONE', 'Logo區域');
+define('TF_NAV_ZONE', '導覽列區域');
+define('TF_SLIDE_ZONE', '滑動圖區域');
+define('TF_MIDDEL_ZONE', '中間自訂區');

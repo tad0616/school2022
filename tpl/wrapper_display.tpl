@@ -8,8 +8,6 @@
         <{/if}>
     <{/if}>
 
-
-
     <{if $zindex}>z-index: <{$zindex}>;<{/if}>
     <{if $bg_img || $side_bgcolor}>background: <{$side_bgcolor}> <{if $bg_img and $item!='logo'}>url(<{$bg_img}>) <{$bg_repeat}> <{$bg_position}> <{if $bg_size}>/<{$bg_size}><{/if}><{/if}>;<{/if}>
     <{if $mt}>margin-top: <{$mt}>;<{/if}>
@@ -18,6 +16,7 @@
     <{if $mr}>margin-right: <{$mr}>;<{/if}>
     <{includeq file="$xoops_rootpath/themes/school2022/tpl/shadow.tpl"}>
     <{if $shadow}>box-shadow: <{$shadow|substr:0:-1}>;<{/if}>
+    <{if $style}><{$style}><{/if}>
 }
 
 #<{$item}>-display{
@@ -56,7 +55,12 @@
 
 
 @media (max-width: 768px) {
-    #<{$item}>-wrapper{
+    #<{$item}>-wrapper, #<{$item}>-display{
         max-width: 100%;
+    }
+
+    #page-wrapper{
+        padding: 0px;
+        margin: 0px;
     }
 }

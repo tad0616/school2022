@@ -62,6 +62,14 @@ $theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "10px";
 
+//CSS樣式設定
+$i++;
+$theme_config[$i]['name'] = "slide_style";
+$theme_config[$i]['text'] = TF_STYLE;
+$theme_config[$i]['desc'] = TF_STYLE_DESC;
+$theme_config[$i]['type'] = "textarea";
+$theme_config[$i]['default'] = "";
+
 //slide 速度調整
 $i++;
 $theme_config[$i]['name'] = "slide_timeout";

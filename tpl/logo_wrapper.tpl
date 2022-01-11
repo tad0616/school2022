@@ -4,7 +4,7 @@
     <div id="logo-wrapper">
         <{assign var=mylogofile value=$xoops_rootpath$logo_path`$smarty.get.$logo_var`.$logo_ext}>
         <div id="logo-display" class="container-fluid <{if $logo_align}>d-flex <{$logo_align}><{/if}>">
-            <div style="<{$logo_style}>" class="row">
+            <div class="row">
 
             <{if $logo_cols}>
                 <{assign var="logo_col" value='-'|explode:$logo_cols}>

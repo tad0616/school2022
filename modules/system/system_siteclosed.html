@@ -6,6 +6,7 @@
         <{assign var=theme_name value=$xoTheme->folderName}>
         <!--載入由使用者設定的各項佈景變數-->
         <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/get_var.tpl"}>
+        <!--目前 $smarty.config.bootstrap = <{$smarty.config.bootstrap}> | $bootstrap=<{$bootstrap}> -->
         <!-- theme_id= <{$theme_id}>-->
         <{includeq file="$xoops_rootpath/themes/school2022/tpl/var.tpl"}>
 
@@ -38,7 +39,7 @@
         <{/if}>
 
         <{if $use_page}>
-        <div id="page-wrapper" style="<{$page_style}>">
+        <div id="page-wrapper">
         <{/if}>
 
         <{* 頂部內容區 *}>
@@ -84,7 +85,7 @@
         <{/if}>
 
         <!-- 載入自訂js -->
-        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/my_js.tpl"}>
+        <{includeq file="$xoops_rootpath/themes/school2022/tpl/my_js.tpl"}>
         <{$my_code}>
     </body>
 </html>

@@ -1,6 +1,6 @@
 <div id="content-wrapper">
     <div id="content-display">
-        <div class="container-fluid" style="<{$content_style}>">
+        <div class="container-fluid">
             <!-- 載入布局 -->
             <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/$theme_type.tpl"}>
 

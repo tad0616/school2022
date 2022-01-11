@@ -30,5 +30,7 @@
 <{/if}>
 
 <{if 'navbar'|in_array:$item_content}>
-    <div class="d-inline-block"> <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}></div>
+    <div class="d-xl-inline-block" style="<{$nav_style}>">
+        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/navbar.tpl"}>
+    </div>
 <{/if}>

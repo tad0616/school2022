@@ -17,7 +17,7 @@ $theme_config[$i]['name'] = "logo_content_bgcolor";
 $theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
 $theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
 $theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#ffffff99";
+$theme_config[$i]['default'] = "transparent";
 
 //兩側底色
 $i++;
@@ -60,6 +60,14 @@ $theme_config[$i]['name'] = "logo_border_radius";
 $theme_config[$i]['text'] = TF_BORDER_RADIUS;
 $theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
 $theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "";
+
+//CSS樣式設定
+$i++;
+$theme_config[$i]['name'] = "logo_style";
+$theme_config[$i]['text'] = TF_STYLE;
+$theme_config[$i]['desc'] = TF_STYLE_DESC;
+$theme_config[$i]['type'] = "textarea";
 $theme_config[$i]['default'] = "";
 
 //logo 底圖1
@@ -158,7 +166,7 @@ $theme_config[$i]['text'] = TF_LOGO_RIGHT;
 $theme_config[$i]['desc'] = TF_LOGO_RIGHT_DESC;
 $theme_config[$i]['type'] = "checkbox";
 $theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
-$theme_config[$i]['default'] = ['html', 'google_translate', 'navbar'];
+$theme_config[$i]['default'] = ['html', 'google_translate', 'login'];
 
 //右側自訂內容
 $i++;

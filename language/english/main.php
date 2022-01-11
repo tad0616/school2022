@@ -121,6 +121,7 @@ define('TF_NAV_SUB_FONT_COLOR_DESC', 'Text color of the navigation menu');
 
 define('TF_SHADOW', 'Shadow direction');
 define('TF_SHADOW_DESC', 'Shading will appear only if the direction is checked');
+define('TF_PAGE_SHADOW_DESC', '(Only effective when the Display Mode value of all areas is "Content Base Color is Centered" shaded)');
 define('TF_TOP', 'TOP');
 define('TF_RIGHT', 'RIGHT');
 define('TF_BOTTOM', 'DOWN');
@@ -162,6 +163,8 @@ define('TF_HEIGHT_DESC', 'Minimum render height when no content');
 
 define('TF_ZINDEX', 'Upper and lower layer order');
 define('TF_ZINDEX_DESC', 'Set the upper and lower order of this area');
+define('TF_PIN', 'Whether to pin this area');
+define('TF_PIN_DESC', 'If yes, the area will be pinned when it reaches the top (if the preferences have "Pinning of Navigation Columns" set or if the Navigation Column is set to "Locked from Above", then the Navigation Column position will be prioritized for pinning and this value will be ignored)');
 
 define('TF_CONTENT_BGCOLOR', 'Content area background color');
 define('TF_CONTENT_BGCOLOR_DESC', 'The center has the base color of the area where the content is placed');
@@ -199,3 +202,9 @@ define('TF_LOGO_RIGHT', 'Logo right side');
 define('TF_LOGO_RIGHT_DESC', 'Only valid for "Place on page", customizable content');
 define('TF_LOGO_COLS', 'Set the width of the presentation bar around Logo');
 define('TF_LOGO_COLS_DESC', 'Only valid for "Place on page", fill in two numbers separated by -, no blank, the sum should be 12, e.g. 6-6 or 4-8');
+
+define('TF_TOP_ZONE', 'Top Custom Zone');
+define('TF_LOGO_ZONE', 'Logo Zone');
+define('TF_NAV_ZONE', 'Navigation column zone');
+define('TF_SLIDE_ZONE', 'Slide Zone');
+define('TF_MIDDEL_ZONE', 'Middle Custom Zone');

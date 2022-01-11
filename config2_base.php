@@ -13,10 +13,10 @@ $theme_config[$i]['default'] = "70%";
 $i++;
 $theme_config[$i]['name'] = "page_shadow";
 $theme_config[$i]['text'] = TF_SHADOW;
-$theme_config[$i]['desc'] = TF_SHADOW_DESC;
+$theme_config[$i]['desc'] = TF_SHADOW_DESC . TF_PAGE_SHADOW_DESC;
 $theme_config[$i]['type'] = "checkbox";
 $theme_config[$i]['options'] = ['t' => TF_TOP, 'b' => TF_BOTTOM, 'l' => TF_LEFT, 'r' => TF_RIGHT];
-$theme_config[$i]['default'] = ['t', 'b', 'l', 'r'];
+$theme_config[$i]['default'] = [];
 
 //底圖
 $i++;

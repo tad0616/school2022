@@ -1,7 +1,7 @@
 <?php
 $i = 0;
 
-//頂部自訂內容顯示模式
+//底部自訂內容顯示模式
 $i++;
 $theme_config[$i]['name'] = "bottom_display_type";
 $theme_config[$i]['text'] = TF_DISPLAY_TYPE;
@@ -11,7 +11,7 @@ $theme_config[$i]['options'] = ['not_full' => TF_DISPLAY_TYPE_NOT_FULL, 'bg_full
 $theme_config[$i]['images'] = ['not_full' => XOOPS_URL . '/modules/tad_themes/images/dt_not_full.png', 'bg_full' => XOOPS_URL . '/modules/tad_themes/images/dt_bg_full.png', 'all_full' => XOOPS_URL . '/modules/tad_themes/images/dt_all_full.png'];
 $theme_config[$i]['default'] = "bg_full";
 
-//頂部自訂內容是否套用陰影
+//底部自訂內容是否套用陰影
 $i++;
 $theme_config[$i]['name'] = "bottom_shadow";
 $theme_config[$i]['text'] = TF_SHADOW;
@@ -36,7 +36,7 @@ $theme_config[$i]['name'] = "bottom_zindex";
 $theme_config[$i]['text'] = TF_ZINDEX;
 $theme_config[$i]['desc'] = TF_ZINDEX_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "";
+$theme_config[$i]['default'] = "0";
 
 //圓角
 $i++;
@@ -44,7 +44,7 @@ $theme_config[$i]['name'] = "bottom_border_radius";
 $theme_config[$i]['text'] = TF_BORDER_RADIUS;
 $theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "";
+$theme_config[$i]['default'] = "0px";
 
 //中間底色
 $i++;
@@ -62,7 +62,7 @@ $theme_config[$i]['desc'] = TF_SIDE_BGCOLOR_DESC;
 $theme_config[$i]['type'] = "color";
 $theme_config[$i]['default'] = "#585858";
 
-//頁尾底圖
+//底部底圖
 $i++;
 $theme_config[$i]['name'] = "bottom_img";
 $theme_config[$i]['text'] = TF_BG_IMG;
@@ -74,7 +74,7 @@ $theme_config[$i]['repeat'] = "repeat";
 $theme_config[$i]['position'] = "left top";
 $theme_config[$i]['size'] = "auto";
 
-//頁尾高度
+//底部高度
 $i++;
 $theme_config[$i]['name'] = "bottom_height";
 $theme_config[$i]['text'] = TF_HEIGHT;
@@ -82,7 +82,7 @@ $theme_config[$i]['desc'] = TF_HEIGHT_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "40px";
 
-//頁尾文字顏色
+//底部文字顏色
 $i++;
 $theme_config[$i]['name'] = "bottom_color";
 $theme_config[$i]['text'] = TF_COLOR;
@@ -90,7 +90,7 @@ $theme_config[$i]['desc'] = TF_COLOR_DESC;
 $theme_config[$i]['type'] = "color";
 $theme_config[$i]['default'] = "#ffffff";
 
-//頂部自訂內容CSS樣式設定
+//底部自訂內容CSS樣式設定
 $i++;
 $theme_config[$i]['name'] = "bottom_style";
 $theme_config[$i]['text'] = TF_STYLE;

@@ -1,6 +1,6 @@
 <div id="slide-wrapper">
     <div id="slide-display">
-        <div style="<{$slide_style}>">
+        <div>
             <{if $slide_kind!=''}>
                 <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/slider/`$slide_kind`.tpl"}>
             <{else}>

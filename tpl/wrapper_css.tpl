@@ -19,6 +19,7 @@
 <{assign var="bg_size" value=$page_img_size}>
 <{assign var="mt" value="`$margin_top`px"}>
 <{assign var="mb" value="`$margin_bottom`px"}>
+<{assign var="style" value=$page_style}>
 <{assign var="shadow_arr" value=$page_shadow}>
 <{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
 
@@ -63,8 +64,7 @@
 <{assign var="padding" value=$logo_padding}>
 <{assign var="mt" value=$logo_padding_mt}>
 <{assign var="mb" value=$logo_padding_mb}>
-<{assign var="height" value=$logo_height}>
-<{assign var="color" value=$logo_color}>
+<{assign var="style" value=$logo_style}>
 <{assign var="zindex" value=$logo_zindex}>
 <{assign var="shadow_arr" value=$logo_shadow}>
 <{assign var="display_type" value=$logo_display_type}>
@@ -83,7 +83,6 @@
 <{* 導覽列 *}>
 <{assign var="item" value='nav'}>
 <{assign var="side_bgcolor" value=$nav_side_bgcolor}>
-<{assign var="content_bgcolor" value=$nav_content_bgcolor}>
 <{assign var="bg_img" value=$nav_img}>
 <{assign var="bg_repeat" value=$nav_img_repeat}>
 <{assign var="bg_position" value=$nav_img_position}>
@@ -91,8 +90,7 @@
 <{assign var="padding" value=$nav_padding}>
 <{assign var="mt" value=$nav_padding_mt}>
 <{assign var="mb" value=$nav_padding_mb}>
-<{assign var="height" value=$nav_height}>
-<{assign var="color" value=$nav_color}>
+<{assign var="style" value=$nav_style}>
 <{assign var="zindex" value=$nav_zindex}>
 <{assign var="shadow_arr" value=$nav_shadow}>
 <{assign var="display_type" value=$nav_display_type}>
@@ -105,15 +103,11 @@
 <{assign var="item" value='slide'}>
 <{assign var="side_bgcolor" value=$slide_side_bgcolor}>
 <{assign var="content_bgcolor" value=$slide_content_bgcolor}>
-<{assign var="bg_img" value=$slide_img}>
-<{assign var="bg_repeat" value=$slide_img_repeat}>
-<{assign var="bg_position" value=$slide_img_position}>
-<{assign var="bg_size" value=$slide_img_size}>
 <{assign var="padding" value=$slide_padding}>
 <{assign var="mt" value=$slide_padding_mt}>
 <{assign var="mb" value=$slide_padding_mb}>
 <{assign var="height" value=$slide_height}>
-<{assign var="color" value=$slide_color}>
+<{assign var="style" value=$slide_style}>
 <{assign var="zindex" value=$slide_zindex}>
 <{assign var="shadow_arr" value=$slide_shadow}>
 <{assign var="display_type" value=$slide_display_type}>
@@ -161,6 +155,7 @@
 <{assign var="mt" value=$content_padding_mt}>
 <{assign var="mb" value=$content_padding_mb}>
 <{assign var="color" value=$font_color}>
+<{assign var="style" value=$content_style}>
 <{assign var="zindex" value=$content_zindex}>
 <{assign var="shadow_arr" value=$content_shadow}>
 <{assign var="display_type" value=$content_display_type}>
@@ -182,6 +177,7 @@
 <{assign var="mb" value=$footer_padding_mb}>
 <{assign var="height" value=$footer_height}>
 <{assign var="color" value=$footer_color}>
+<{assign var="style" value=$footer_style}>
 <{assign var="zindex" value=$footer_zindex}>
 <{assign var="shadow_arr" value=$footer_shadow}>
 <{assign var="display_type" value=$footer_display_type}>

@@ -44,6 +44,14 @@ $theme_config[$i]['name'] = "content_border_radius";
 $theme_config[$i]['text'] = TF_BORDER_RADIUS;
 $theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
 $theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "0px";
+
+//CSS樣式設定
+$i++;
+$theme_config[$i]['name'] = "content_style";
+$theme_config[$i]['text'] = TF_STYLE;
+$theme_config[$i]['desc'] = TF_STYLE_DESC;
+$theme_config[$i]['type'] = "textarea";
 $theme_config[$i]['default'] = "";
 
 //左區域和主內容間是否加上分隔線

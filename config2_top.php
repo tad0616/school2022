@@ -36,7 +36,7 @@ $theme_config[$i]['name'] = "top_zindex";
 $theme_config[$i]['text'] = TF_ZINDEX;
 $theme_config[$i]['desc'] = TF_ZINDEX_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "0";
+$theme_config[$i]['default'] = "11";
 
 //圓角
 $i++;
@@ -44,7 +44,7 @@ $theme_config[$i]['name'] = "top_border_radius";
 $theme_config[$i]['text'] = TF_BORDER_RADIUS;
 $theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "";
+$theme_config[$i]['default'] = "0px";
 
 //中間底色
 $i++;
@@ -52,7 +52,7 @@ $theme_config[$i]['name'] = "top_content_bgcolor";
 $theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
 $theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
 $theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#3fbbc0";
+$theme_config[$i]['default'] = "#80d3d6";
 
 //兩側底色
 $i++;
@@ -60,9 +60,9 @@ $theme_config[$i]['name'] = "top_side_bgcolor";
 $theme_config[$i]['text'] = TF_SIDE_BGCOLOR;
 $theme_config[$i]['desc'] = TF_SIDE_BGCOLOR_DESC;
 $theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#3fbbc0";
+$theme_config[$i]['default'] = "#80d3d6";
 
-//頁尾底圖
+//頂部底圖
 $i++;
 $theme_config[$i]['name'] = "top_img";
 $theme_config[$i]['text'] = TF_BG_IMG;
@@ -74,7 +74,7 @@ $theme_config[$i]['repeat'] = "no-repeat";
 $theme_config[$i]['position'] = "left top";
 $theme_config[$i]['size'] = "contain";
 
-//頁尾高度
+//頂部高度
 $i++;
 $theme_config[$i]['name'] = "top_height";
 $theme_config[$i]['text'] = TF_HEIGHT;
@@ -82,13 +82,13 @@ $theme_config[$i]['desc'] = TF_HEIGHT_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "50px";
 
-//頁尾文字顏色
+//頂部文字顏色
 $i++;
 $theme_config[$i]['name'] = "top_color";
 $theme_config[$i]['text'] = TF_COLOR;
 $theme_config[$i]['desc'] = TF_COLOR_DESC;
 $theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#ffffff";
+$theme_config[$i]['default'] = "";
 
 //頂部自訂內容CSS樣式設定
 $i++;
@@ -104,7 +104,7 @@ $theme_config[$i]['name'] = "top_cols";
 $theme_config[$i]['text'] = TF_3COLS;
 $theme_config[$i]['desc'] = TF_3COLS_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "4-4-4";
+$theme_config[$i]['default'] = "4-0-8";
 
 // 左側內容
 $i++;
@@ -113,7 +113,7 @@ $theme_config[$i]['text'] = TF_TOP_LEFT;
 $theme_config[$i]['desc'] = TF_TOP_LEFT . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
 $theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
-$theme_config[$i]['default'] = ['html'];
+$theme_config[$i]['default'] = ['html', 'search'];
 
 //左側自訂內容
 $i++;
@@ -121,32 +121,9 @@ $theme_config[$i]['name'] = "top_left_content";
 $theme_config[$i]['text'] = TF_TOP_LEFT . TF_CONTENT;
 $theme_config[$i]['desc'] = TF_TOP_LEFT . TF_CONTENT_DESC;
 $theme_config[$i]['type'] = "textarea";
-$theme_config[$i]['default'] = "<a href=\"https://www.facebook.com/\" target=\"_blank\" class=\"si\"><i class=\"fa fa-facebook\"></i></a>
-<a href=\"https://www.youtube.com/\" target=\"_blank\" class=\"si\"><i class=\"fa fa-youtube\"></i></a>
-<a href=\"/modules/tadnews/rss.php\" target=\"_blank\" class=\"si\"><i class=\"fa fa-rss\"></i></a>
-
-<style>
-    a.si {
-      display: inline-block;
-      background: #2e898c;
-      width: 32px;
-      height: 32px;
-      text-align: center;
-      padding-top: 4px;
-      border-radius: 50%;
-      background-clip: padding-box;
-      font-size: 1.1rem;
-      margin-right: 10px;
-    }
-
-    a.si:hover {
-      background: #4fecf2;
-    }
-
-    a.si .fa {
-      color: #fff;
-    }
-</style>";
+$theme_config[$i]['default'] = "<a href=\"https://www.facebook.com/\" target=\"_blank\" class=\"si-dark\"><i class=\"fa fa-facebook\"></i></a>
+<a href=\"https://www.youtube.com/\" target=\"_blank\" class=\"si-dark\"><i class=\"fa fa-youtube\"></i></a>
+<a href=\"/modules/tadnews/rss.php\" target=\"_blank\" class=\"si-dark\"><i class=\"fa fa-rss\"></i></a>";
 
 // 中間內容
 $i++;
@@ -155,7 +132,7 @@ $theme_config[$i]['text'] = TF_TOP_CENTER;
 $theme_config[$i]['desc'] = TF_TOP_CENTER . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
 $theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
-$theme_config[$i]['default'] = ['login'];
+$theme_config[$i]['default'] = [];
 
 //中間自訂內容
 $i++;
@@ -172,7 +149,7 @@ $theme_config[$i]['text'] = TF_TOP_RIGHT;
 $theme_config[$i]['desc'] = TF_TOP_RIGHT . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
 $theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
-$theme_config[$i]['default'] = ['search'];
+$theme_config[$i]['default'] = ['navbar'];
 
 //右側自訂內容
 $i++;

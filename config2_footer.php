@@ -60,7 +60,7 @@ $theme_config[$i]['name'] = "footer_border_radius";
 $theme_config[$i]['text'] = TF_BORDER_RADIUS;
 $theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "";
+$theme_config[$i]['default'] = "0px";
 
 //頁尾底圖
 $i++;

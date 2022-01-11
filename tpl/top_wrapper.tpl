@@ -11,4 +11,5 @@
 <{assign var="item_left_bid" value=$bids.top_left}>
 <{assign var="item_center_bid" value=$bids.top_center}>
 <{assign var="item_right_bid" value=$bids.top_right}>
+<{assign var="item_pin" value=$top_pin}>
 <{includeq file="$xoops_rootpath/themes/school2022/tpl/custom_wrapper.tpl"}>

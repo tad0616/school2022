@@ -11,13 +11,13 @@ $theme_config[$i]['options'] = ['not_full' => TF_DISPLAY_TYPE_NOT_FULL, 'bg_full
 $theme_config[$i]['images'] = ['not_full' => XOOPS_URL . '/modules/tad_themes/images/dt_not_full.png', 'bg_full' => XOOPS_URL . '/modules/tad_themes/images/dt_bg_full.png', 'all_full' => XOOPS_URL . '/modules/tad_themes/images/dt_all_full.png'];
 $theme_config[$i]['default'] = "bg_full";
 
-//中間底色
-$i++;
-$theme_config[$i]['name'] = "nav_content_bgcolor";
-$theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
-$theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
-$theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#6091ba";
+// //中間底色
+// $i++;
+// $theme_config[$i]['name'] = "nav_content_bgcolor";
+// $theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
+// $theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
+// $theme_config[$i]['type'] = "color";
+// $theme_config[$i]['default'] = "#ffffff99";
 
 //兩側底色
 $i++;
@@ -25,7 +25,7 @@ $theme_config[$i]['name'] = "nav_side_bgcolor";
 $theme_config[$i]['text'] = TF_SIDE_BGCOLOR;
 $theme_config[$i]['desc'] = TF_SIDE_BGCOLOR_DESC;
 $theme_config[$i]['type'] = "color";
-$theme_config[$i]['default'] = "#6091ba";
+$theme_config[$i]['default'] = "transparent";
 
 //陰影方向
 $i++;
@@ -42,7 +42,7 @@ $theme_config[$i]['name'] = "nav_padding";
 $theme_config[$i]['text'] = TF_PADDING_MARGIN;
 $theme_config[$i]['desc'] = TF_PADDING_MARGIN_DESC;
 $theme_config[$i]['type'] = "padding_margin";
-$theme_config[$i]['default'] = "0px 20px";
+$theme_config[$i]['default'] = "0px";
 $theme_config[$i]['mt'] = "0px";
 $theme_config[$i]['mb'] = "0px";
 
@@ -62,6 +62,14 @@ $theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "0px";
 
+//CSS樣式設定
+$i++;
+$theme_config[$i]['name'] = "nav_style";
+$theme_config[$i]['text'] = TF_STYLE;
+$theme_config[$i]['desc'] = TF_STYLE_DESC;
+$theme_config[$i]['type'] = "textarea";
+$theme_config[$i]['default'] = "";
+
 //導覽列子選單底色
 $i++;
 $theme_config[$i]['name'] = "nav_sub_bg_color";
@@ -77,14 +85,6 @@ $theme_config[$i]['text'] = TF_NAV_SUB_FONT_COLOR;
 $theme_config[$i]['desc'] = TF_NAV_SUB_FONT_COLOR_DESC;
 $theme_config[$i]['type'] = "color";
 $theme_config[$i]['default'] = "#3b3b3b";
-
-//nav 背景透明度
-$i++;
-$theme_config[$i]['name'] = "nav_bg_opacity";
-$theme_config[$i]['text'] = TF_NAV_BG_OPACITY;
-$theme_config[$i]['desc'] = TF_NAV_BG_OPACITY_DESC;
-$theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "1";
 
 //選項分格線
 $i++;
