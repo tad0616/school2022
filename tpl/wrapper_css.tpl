@@ -83,10 +83,7 @@
 <{* 導覽列 *}>
 <{assign var="item" value='nav'}>
 <{assign var="side_bgcolor" value=$nav_side_bgcolor}>
-<{assign var="bg_img" value=$nav_img}>
-<{assign var="bg_repeat" value=$nav_img_repeat}>
-<{assign var="bg_position" value=$nav_img_position}>
-<{assign var="bg_size" value=$nav_img_size}>
+<{assign var="bg_img" value=""}>
 <{assign var="padding" value=$nav_padding}>
 <{assign var="mt" value=$nav_padding_mt}>
 <{assign var="mb" value=$nav_padding_mb}>

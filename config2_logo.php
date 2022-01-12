@@ -165,7 +165,7 @@ $theme_config[$i]['name'] = "logo_right";
 $theme_config[$i]['text'] = TF_LOGO_RIGHT;
 $theme_config[$i]['desc'] = TF_LOGO_RIGHT_DESC;
 $theme_config[$i]['type'] = "checkbox";
-$theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
+$theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
 $theme_config[$i]['default'] = ['html', 'google_translate', 'login'];
 
 //右側自訂內容

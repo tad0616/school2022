@@ -63,6 +63,12 @@
             <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
         <{/if}>
 
+        <{if $errorMsg}>
+            <div class="alert alert-danger">
+                <h1><{$errorMsg}></h1>
+            </div>
+        <{/if}>
+
         <{* 中間內容區 *}>
         <{includeq file="$xoops_rootpath/themes/school2022/tpl/middle_wrapper.tpl"}>
 

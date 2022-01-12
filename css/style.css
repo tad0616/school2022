@@ -126,7 +126,7 @@ blockquote>p>cite {
   font-style: italic;
 }
 
-a.si, a.si-dark {
+a.si, a.sidark {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -139,26 +139,22 @@ a.si, a.si-dark {
   color: #fff;
 }
 
-/* a.si .fa, a.si-dark .fa {
-  color: #fff;
-} */
-
 a.si{
     background: rgba(255, 255, 255, 0.4);
 }
 
 a.si:hover {
   background: rgba(0, 0, 0, 0.4);
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
 }
 
-a.si-dark{
+a.sidark{
     background: rgba(0, 0, 0, 0.4);
 }
 
-a.si-dark:hover {
+a.sidark:hover {
     background: rgba(255, 255, 255, 0.4);
-    color: #fff;
+    color: rgba(0, 0, 0, 0.4);
 }
 
 ul#head_menu {

@@ -2,6 +2,11 @@
     <{if $item_html}><div class="d-inline-block"><{$item_html}></div><{/if}>
 <{/if}>
 
+<{if 'fa-icon'|in_array:$item_content}>
+    <{assign var="icon_arr" value="\n"|explode:$item_html}>
+    <div class="d-inline-block"> <{includeq file="$xoops_rootpath/themes/school2022/tpl/fa_icon.tpl"}></div>
+<{/if}>
+
 <{if 'block'|in_array:$item_content}>
     <div class="d-block">
         <{if $item_bid.options}>

@@ -112,7 +112,7 @@ $theme_config[$i]['name'] = "middle_left";
 $theme_config[$i]['text'] = TF_MIDDLE_LEFT;
 $theme_config[$i]['desc'] = TF_MIDDLE_LEFT . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
-$theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
+$theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
 $theme_config[$i]['default'] = [];
 
 //左側自訂內容
@@ -129,7 +129,7 @@ $theme_config[$i]['name'] = "middle_center";
 $theme_config[$i]['text'] = TF_MIDDLE_CENTER;
 $theme_config[$i]['desc'] = TF_MIDDLE_CENTER . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
-$theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
+$theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
 $theme_config[$i]['default'] = [];
 
 //中間自訂內容
@@ -146,7 +146,7 @@ $theme_config[$i]['name'] = "middle_right";
 $theme_config[$i]['text'] = TF_MIDDLE_RIGHT;
 $theme_config[$i]['desc'] = TF_MIDDLE_RIGHT . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
-$theme_config[$i]['options'] = ['html' => TF_HTML, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
+$theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
 $theme_config[$i]['default'] = [];
 
 //右側自訂內容
