@@ -1,4 +1,5 @@
 <?php
+require XOOPS_ROOT_PATH . '/themes/school2022/bg_config.php';
 $i = 0;
 
 //頂部自訂內容顯示模式
@@ -112,8 +113,9 @@ $theme_config[$i]['name'] = "top_left";
 $theme_config[$i]['text'] = TF_TOP_LEFT;
 $theme_config[$i]['desc'] = TF_TOP_LEFT . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
-$theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
+$theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
 $theme_config[$i]['default'] = ['fa-icon', 'search'];
+$theme_config[$i]['bid_name'] = '';
 
 //左側自訂內容
 $i++;
@@ -133,6 +135,7 @@ $theme_config[$i]['desc'] = TF_TOP_CENTER . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
 $theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
 $theme_config[$i]['default'] = [];
+$theme_config[$i]['bid_name'] = '';
 
 //中間自訂內容
 $i++;
@@ -148,8 +151,9 @@ $theme_config[$i]['name'] = "top_right";
 $theme_config[$i]['text'] = TF_TOP_RIGHT;
 $theme_config[$i]['desc'] = TF_TOP_RIGHT . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "checkbox";
-$theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
+$theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
 $theme_config[$i]['default'] = ['navbar'];
+$theme_config[$i]['bid_name'] = '';
 
 //右側自訂內容
 $i++;

@@ -167,7 +167,7 @@ define('TF_PIN', '是否釘選此區域');
 define('TF_PIN_DESC', '選是的話，當該區域到頂端時會固定住（若偏好設定有設定「導覽列的釘住」或導覽列設為「上方鎖定」則會找出導覽列位置優先釘選，並忽略此值）');
 
 define('TF_CONTENT_BGCOLOR', '中間底色');
-define('TF_CONTENT_BGCOLOR_DESC', '中間有放內容的區域之底色');
+define('TF_CONTENT_BGCOLOR_DESC', '中間有放內容的區域之底色（若有底圖，此處請設成透明）');
 
 define('TF_SIDE_BGCOLOR', '兩側底色');
 define('TF_SIDE_BGCOLOR_DESC', '無內容（兩側）部份的底色');
@@ -209,3 +209,6 @@ define('TF_LOGO_ZONE', 'Logo區域');
 define('TF_NAV_ZONE', '導覽列區域');
 define('TF_SLIDE_ZONE', '滑動圖區域');
 define('TF_MIDDEL_ZONE', '中間自訂區');
+
+define('TF_NAV_NO_MOUSE_OVER', '是否點擊才出現子選單');
+define('TF_NAV_NO_MOUSE_OVER_DESC', '預設為滑鼠停留就出現，選是就必須點擊才會出現');

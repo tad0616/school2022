@@ -11,14 +11,6 @@ $theme_config[$i]['options'] = ['not_full' => TF_DISPLAY_TYPE_NOT_FULL, 'bg_full
 $theme_config[$i]['images'] = ['not_full' => XOOPS_URL . '/modules/tad_themes/images/dt_not_full.png', 'bg_full' => XOOPS_URL . '/modules/tad_themes/images/dt_bg_full.png', 'all_full' => XOOPS_URL . '/modules/tad_themes/images/dt_all_full.png'];
 $theme_config[$i]['default'] = "bg_full";
 
-// //中間底色
-// $i++;
-// $theme_config[$i]['name'] = "nav_content_bgcolor";
-// $theme_config[$i]['text'] = TF_CONTENT_BGCOLOR;
-// $theme_config[$i]['desc'] = TF_CONTENT_BGCOLOR_DESC;
-// $theme_config[$i]['type'] = "color";
-// $theme_config[$i]['default'] = "#ffffff99";
-
 //兩側底色
 $i++;
 $theme_config[$i]['name'] = "nav_side_bgcolor";
@@ -93,3 +85,11 @@ $theme_config[$i]['text'] = TF_NAV_LINE;
 $theme_config[$i]['desc'] = TF_NAV_LINE_DESC;
 $theme_config[$i]['type'] = "yesno";
 $theme_config[$i]['default'] = "1";
+
+//是否點擊才出現子選單
+$i++;
+$theme_config[$i]['name'] = "no_mouse_over";
+$theme_config[$i]['text'] = TF_NAV_NO_MOUSE_OVER;
+$theme_config[$i]['desc'] = TF_NAV_NO_MOUSE_OVER_DESC;
+$theme_config[$i]['type'] = "yesno";
+$theme_config[$i]['default'] = "0";

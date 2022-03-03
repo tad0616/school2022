@@ -209,7 +209,7 @@ tabs-6 導覽選單
 
 $config_tabs[6] = 1;
 
-//導覽選單位置[navbar.tpl]，值： fixed-top （固定上方）, fixed-bottom （固定下方）, sticky-top（滑動圖片上方）, default （滑動圖片下方）, not-use （不使用）
+//導覽選單位置[navbar.tpl]，值： fixed-top （固定上方）, fixed-bottom （固定下方）, sticky-top（滑動圖片上方）, default （滑動圖片下方）, middle-bottom （中間區域下方）, not-use （不使用）
 $config_enable['navbar_pos'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'not-use');
 
 //導覽選單 漸層顏色(top)[theme_css_navbar.tpl]
@@ -237,10 +237,10 @@ $config_enable['navbar_icon'] = array('enable' => '0', 'min' => '', 'max' => '',
 $config_enable['navbar_py'] = array('enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => '15');
 
 //導覽選單 導覽選項左右距離[theme_css_navbar.tpl]
-$config_enable['navbar_px'] = array('enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => '6');
+$config_enable['navbar_px'] = array('enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => '12');
 
 //導覽選單 導覽選項文字大小[theme_css_navbar.tpl]
-$config_enable['navbar_font_size'] = array('enable' => '1', 'min' => '0.6', 'max' => '2', 'require' => '1', 'default' => '0.925');
+$config_enable['navbar_font_size'] = array('enable' => '1', 'min' => '0.6', 'max' => '2', 'require' => '1', 'default' => '1');
 
 // 上傳導覽列logo圖[navbar.tpl]，值：可指定置於「themes/佈景/images/navlogo/」下的某一檔案名稱
 $config_enable['navlogo_img'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');

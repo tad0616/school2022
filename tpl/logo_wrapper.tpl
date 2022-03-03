@@ -13,7 +13,7 @@
             <{/if}>
             <div class="col-xl-<{if $logo_col.0}><{$logo_col.0}><{else}>auto<{/if}> text-start">
                 <{if $logo_text=='1'}>
-                    <h1 class="mt-4">
+                    <h1>
                     <a href="<{$xoops_url}>/index.php?<{$logo_var}>=<{$smarty.get.$logo_var}>"><{$xoops_sitename}></a>
                     </h1>
                     <div class="mt-1 opacity-75"><{$xoops_slogan}></div>

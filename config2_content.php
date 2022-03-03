@@ -1,4 +1,5 @@
 <?php
+require XOOPS_ROOT_PATH . '/themes/school2022/bg_config.php';
 $i = 0;
 
 //內容區域顯示模式
@@ -45,6 +46,18 @@ $theme_config[$i]['text'] = TF_BORDER_RADIUS;
 $theme_config[$i]['desc'] = TF_BORDER_RADIUS_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "0px";
+
+//底圖
+$i++;
+$theme_config[$i]['name'] = "content_img";
+$theme_config[$i]['text'] = TF_BG_IMG;
+$theme_config[$i]['desc'] = TF_BG_IMG_DESC;
+$theme_config[$i]['type'] = "bg_file";
+$theme_config[$i]['default'] = "";
+$theme_config[$i]['options'] = $bg_file;
+$theme_config[$i]['repeat'] = "repeat";
+$theme_config[$i]['position'] = "left top";
+$theme_config[$i]['size'] = "contain";
 
 //CSS樣式設定
 $i++;

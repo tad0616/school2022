@@ -1,4 +1,5 @@
 <?php
+require XOOPS_ROOT_PATH . '/themes/school2022/bg_config.php';
 $i = 0;
 
 //區域顯示模式
@@ -167,6 +168,7 @@ $theme_config[$i]['desc'] = TF_LOGO_RIGHT_DESC;
 $theme_config[$i]['type'] = "checkbox";
 $theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
 $theme_config[$i]['default'] = ['html', 'google_translate', 'login'];
+$theme_config[$i]['bid_name'] = '';
 
 //右側自訂內容
 $i++;

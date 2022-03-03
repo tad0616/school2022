@@ -209,3 +209,5 @@ define('TF_LOGO_ZONE', 'Logo Zone');
 define('TF_NAV_ZONE', 'Navigation column zone');
 define('TF_SLIDE_ZONE', 'Slide Zone');
 define('TF_MIDDEL_ZONE', 'Middle Custom Zone');
+define('TF_NAV_NO_MOUSE_OVER', 'Click to show submenu or not');
+define('TF_NAV_NO_MOUSE_OVER_DESC', 'Default is to appear when mouse hover, if yes, you must click to appear');

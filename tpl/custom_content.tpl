@@ -4,7 +4,7 @@
 
 <{if 'fa-icon'|in_array:$item_content}>
     <{assign var="icon_arr" value="\n"|explode:$item_html}>
-    <div class="d-inline-block"> <{includeq file="$xoops_rootpath/themes/school2022/tpl/fa_icon.tpl"}></div>
+    <div class="<{if "<br>"|in_array:$icon_arr}>d-block<{else}>d-inline-block<{/if}>"> <{includeq file="$xoops_rootpath/themes/school2022/tpl/fa_icon.tpl"}></div>
 <{/if}>
 
 <{if 'block'|in_array:$item_content}>

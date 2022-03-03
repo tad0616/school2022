@@ -13,14 +13,21 @@
 <{* 頁面 *}>
 <{assign var="item" value='page'}>
 <{assign var="side_bgcolor" value=$base_color}>
+<{assign var="content_bgcolor" value=null}>
 <{assign var="bg_img" value=$page_img}>
 <{assign var="bg_repeat" value=$page_img_repeat}>
 <{assign var="bg_position" value=$page_img_position}>
 <{assign var="bg_size" value=$page_img_size}>
+<{assign var="padding" value=null}>
 <{assign var="mt" value="`$margin_top`px"}>
 <{assign var="mb" value="`$margin_bottom`px"}>
+<{assign var="height" value=null}>
+<{assign var="color" value=null}>
 <{assign var="style" value=$page_style}>
+<{assign var="zindex" value=null}>
 <{assign var="shadow_arr" value=$page_shadow}>
+<{assign var="display_type" value=null}>
+<{assign var="border_radius" value=null}>
 <{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
 
 
@@ -64,6 +71,8 @@
 <{assign var="padding" value=$logo_padding}>
 <{assign var="mt" value=$logo_padding_mt}>
 <{assign var="mb" value=$logo_padding_mb}>
+<{assign var="height" value=null}>
+<{assign var="color" value=null}>
 <{assign var="style" value=$logo_style}>
 <{assign var="zindex" value=$logo_zindex}>
 <{assign var="shadow_arr" value=$logo_shadow}>
@@ -83,10 +92,16 @@
 <{* 導覽列 *}>
 <{assign var="item" value='nav'}>
 <{assign var="side_bgcolor" value=$nav_side_bgcolor}>
-<{assign var="bg_img" value=""}>
+<{assign var="content_bgcolor" value=null}>
+<{assign var="bg_img" value=null}>
+<{assign var="bg_repeat" value=null}>
+<{assign var="bg_position" value=null}>
+<{assign var="bg_size" value=null}>
 <{assign var="padding" value=$nav_padding}>
 <{assign var="mt" value=$nav_padding_mt}>
 <{assign var="mb" value=$nav_padding_mb}>
+<{assign var="height" value=null}>
+<{assign var="color" value=null}>
 <{assign var="style" value=$nav_style}>
 <{assign var="zindex" value=$nav_zindex}>
 <{assign var="shadow_arr" value=$nav_shadow}>
@@ -100,10 +115,15 @@
 <{assign var="item" value='slide'}>
 <{assign var="side_bgcolor" value=$slide_side_bgcolor}>
 <{assign var="content_bgcolor" value=$slide_content_bgcolor}>
+<{assign var="bg_img" value=$slide_img}>
+<{assign var="bg_repeat" value=$slide_img_repeat}>
+<{assign var="bg_position" value=$slide_img_position}>
+<{assign var="bg_size" value=$slide_img_size}>
 <{assign var="padding" value=$slide_padding}>
 <{assign var="mt" value=$slide_padding_mt}>
 <{assign var="mb" value=$slide_padding_mb}>
 <{assign var="height" value=$slide_height}>
+<{assign var="color" value=null}>
 <{assign var="style" value=$slide_style}>
 <{assign var="zindex" value=$slide_zindex}>
 <{assign var="shadow_arr" value=$slide_shadow}>
@@ -151,6 +171,7 @@
 <{assign var="padding" value=$content_padding}>
 <{assign var="mt" value=$content_padding_mt}>
 <{assign var="mb" value=$content_padding_mb}>
+<{assign var="height" value=null}>
 <{assign var="color" value=$font_color}>
 <{assign var="style" value=$content_style}>
 <{assign var="zindex" value=$content_zindex}>

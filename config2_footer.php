@@ -1,4 +1,5 @@
 <?php
+require XOOPS_ROOT_PATH . '/themes/school2022/bg_config.php';
 $i = 0;
 
 //頁尾區域顯示模式

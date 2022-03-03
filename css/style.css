@@ -126,7 +126,7 @@ blockquote>p>cite {
   font-style: italic;
 }
 
-a.si, a.sidark {
+a.si, a.sidark, a.silight {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -135,7 +135,7 @@ a.si, a.sidark {
   border-radius: 50%;
   background-clip: padding-box;
   font-size: 1.1rem;
-  margin-right: 10px;
+  margin: 3px 5px 6px;
   color: #fff;
 }
 
@@ -155,6 +155,15 @@ a.sidark{
 a.sidark:hover {
     background: rgba(255, 255, 255, 0.4);
     color: rgba(0, 0, 0, 0.4);
+}
+
+a.silight{
+    background: rgba(255, 255, 255, 0.4);
+}
+
+a.silight:hover {
+  background: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
 
 ul#head_menu {

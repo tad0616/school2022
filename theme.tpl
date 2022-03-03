@@ -72,6 +72,11 @@
         <{* 中間內容區 *}>
         <{includeq file="$xoops_rootpath/themes/school2022/tpl/middle_wrapper.tpl"}>
 
+        <{* 導覽列區域 *}>
+        <{if $navbar_pos=='middle-bottom'}>
+            <{includeq file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+        <{/if}>
+
         <{* 主內容區域 *}>
         <{includeq file="$xoops_rootpath/themes/school2022/tpl/content_wrapper.tpl"}>
 
