@@ -4,7 +4,7 @@ include_once XOOPS_ROOT_PATH . '/modules/tadtools/language/' . $GLOBALS['xoopsCo
 define('TF_SHOW_VAR', '顯示佈景變數資訊');
 define('TF_SHOW_VAR_DESC', '佈景開發時，會顯示所有 tad_themes 提供的控制變數及設定值');
 define('TF_FONT_FAMILY', '主要字型設定');
-define('TF_FONT_FAMILY_DEFAULT', 'jf-openhuninn, Mamelon, mnyylti, HanWangWeBe, HanWangMingBlack, JasonHandwriting1-Regular, JasonHandwriting2-Regular, JasonHandwriting3-Regular');
+define('TF_FONT_FAMILY_DEFAULT', 'Iansui, jf-openhuninn, Mamelon, mnyylti, HanWangWeBe, HanWangMingBlack, JasonHandwriting1-Regular, JasonHandwriting2-Regular, JasonHandwriting3-Regular');
 define('TF_FONT_FAMILY_DESC', '輸入字型名稱，有空白的部份需要用""包起來。如：' . TF_FONT_FAMILY_DEFAULT);
 define('TF_LEFT_SPARATE', '左區域分隔線');
 define('TF_LEFT_SPARATE_DESC', '左區域和主內容間是否加上分隔線');
