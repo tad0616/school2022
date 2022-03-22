@@ -13,8 +13,7 @@ define('TF_RIGHT_SPARATE_DESC', 'Is there a dividing line between the right area
 define('TF_SPARATE_STYLE', 'The style of the left and right area dividers');
 define('TF_SPARATE_STYLE_DESC', 'The style of the left and right area dividers');
 define('TF_MY_CODE', 'CSS or JS syntax to add to the end of the page');
-define('TF_MY_CODE_DESC', 'Can load CSS or JS by yourself, ex: <link href="https://schoolweb.tn.edu.tw/uploads/fonts/woff2.css" rel="stylesheet" media="all">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet" media="all">');
+define('TF_MY_CODE_DESC', 'Can load CSS or JS by yourself, ex: &lt;link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet" media="all"&gt;');
 define('TF_OG_FILE', 'Site Thumbnails');
 define('TF_OG_FILE_DESC', 'Thumbnails displayed when sharing URLs on fb or line(width at least 200px)');
 

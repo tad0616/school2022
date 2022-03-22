@@ -13,8 +13,7 @@ define('TF_RIGHT_SPARATE_DESC', '右區域和主內容間是否加上分隔線')
 define('TF_SPARATE_STYLE', '左右區域分隔線的樣式');
 define('TF_SPARATE_STYLE_DESC', '左右區域分隔線的樣式');
 define('TF_MY_CODE', '欲加入頁尾的CSS或JS語法');
-define('TF_MY_CODE_DESC', '可自行載入CSS或JS，例如：<link href="https://schoolweb.tn.edu.tw/uploads/fonts/woff2.css" rel="stylesheet" media="all">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet" media="all">');
+define('TF_MY_CODE_DESC', '可自行載入CSS或JS，例如：&lt;link href="&lt;link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC&display=swap" rel="stylesheet" media="all"&gt;');
 define('TF_OG_FILE', '網站縮圖');
 define('TF_OG_FILE_DESC', '在fb或line分享網址時，會顯示的縮圖（寬高至少 200px）');
 
