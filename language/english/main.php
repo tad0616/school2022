@@ -5,7 +5,7 @@ define('TF_SHOW_VAR', 'Show set variable information');
 define('TF_SHOW_VAR_DESC', 'When the scene is developed, all the control variables and settings provided by tad_themes will be displayed');
 define('TF_FONT_FAMILY', 'Main font settings');
 define('TF_FONT_FAMILY_DEFAULT', 'jf-openhuninn, Mamelon, mnyylti, HanWangWeBe, HanWangMingBlack, JasonHandwriting1-Regular, JasonHandwriting2-Regular, JasonHandwriting3-Regular');
-define('TF_FONT_FAMILY_DESC', 'Enter the font name, the blank part needs to be wrapped with "". For example: ' . TF_FONT_FAMILY_DEFAULT);
+define('TF_FONT_FAMILY_DESC', 'Enter the font name, and wrap the blank part with "". For a complete list of available fonts, please refer to <a href="' . XOOPS_URL . '/modules/tadtools/fonts.php" target="_blank">' . XOOPS_URL . '/modules/tadtools/fonts.php</a>');
 define('TF_LEFT_SPARATE', 'Left area divider');
 define('TF_LEFT_SPARATE_DESC', 'Do you want to add a separator between the left area and the main content');
 define('TF_RIGHT_SPARATE', 'Right area divider');
