@@ -174,13 +174,13 @@ $config_enable['bt_bg_repeat'] = array('enable' => '1', 'min' => '', 'max' => ''
 $config_enable['block_style'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'position: relative;
 background: #f5f5f5;
 overflow: hidden;
-margin-bottom: 30px;
-border-radius: 4px;', );
+margin: 15px 0px 15px;
+border-radius: 4px;');
 
 //區塊標題區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
 $config_enable['block_title_style'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'border-bottom: 2px solid #7cb6b7;
 padding: 8px 15px;
-text-shadow: 0px 1px #0d4e5c, 1px 0px #0d4e5c, -1px 0px #0d4e5c, 0px -1px #0d4e5c, -1px -1px #0d4e5c, 1px 1px #0d4e5c, 1px -1px #0d4e5c, -1px 1px #0d4e5c;', );
+text-shadow: 0px 1px #0d4e5c, 1px 0px #0d4e5c, -1px 0px #0d4e5c, 0px -1px #0d4e5c, -1px -1px #0d4e5c, 1px 1px #0d4e5c, 1px -1px #0d4e5c, -1px 1px #0d4e5c;');
 
 //區塊內容區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
 $config_enable['block_content_style'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'padding: 15px;');
@@ -202,6 +202,33 @@ $config_enable['bt_xx']['footerRightBlock']：頁尾右區塊設定
 $config_enable['bt_bg_color']['leftBlock'] = array('enable'=>1, 'min' => '', 'max' => '', 'require'=>0 , 'default' => '#7CBBBB');
 $config_enable['bt_bg_color']['rightBlock'] = array('enable'=>1, 'min' => '', 'max' => '', 'require'=>0 , 'default' => '#D2C38E');
  */
+
+//頁尾左區塊整體樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
+$config_enable['block_style']['footerLeftBlock'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+
+//頁尾左區塊標題區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
+$config_enable['block_title_style']['footerLeftBlock'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+
+//頁尾左區塊內容區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
+$config_enable['block_content_style']['footerLeftBlock'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+
+//頁尾中區塊整體樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
+$config_enable['block_style']['footerCenterBlock'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+
+//頁尾中區塊標題區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
+$config_enable['block_title_style']['footerCenterBlock'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+
+//頁尾中區塊內容區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
+$config_enable['block_content_style']['footerCenterBlock'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+
+//頁尾右區塊整體樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
+$config_enable['block_style']['footerRightBlock'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+
+//頁尾右區塊標題區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
+$config_enable['block_title_style']['footerRightBlock'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
+
+//頁尾右區塊內容區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
+$config_enable['block_content_style']['footerRightBlock'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
 
 /*
 tabs-6 導覽選單

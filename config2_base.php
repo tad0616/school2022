@@ -8,7 +8,7 @@ $theme_config[$i]['name'] = "container_width";
 $theme_config[$i]['text'] = TF_USE_CONTAINER_WIDTH;
 $theme_config[$i]['desc'] = TF_USE_CONTAINER_WIDTH_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "70%";
+$theme_config[$i]['default'] = "80%";
 
 //整體頁面是否套用陰影
 $i++;

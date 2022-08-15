@@ -159,7 +159,7 @@ define('TF_BG_IMG_DESC', '背景圖相關設定項目');
 define('TF_COLOR', '文字顏色');
 define('TF_COLOR_DESC', '內容的文字顏色');
 define('TF_HEIGHT', '最低高度');
-define('TF_HEIGHT_DESC', '沒內容時可設定最低呈現高度');
+define('TF_HEIGHT_DESC', '沒內容時可設定最低呈現高度（空值就是不使用本區域）');
 
 define('TF_ZINDEX', '上下層順序');
 define('TF_ZINDEX_DESC', '設定此區域的上下層排序');
@@ -202,7 +202,7 @@ define('TF_3COLS_DESC', '填入三個數字，以-隔開，勿有空白，總和
 define('TF_LOGO_RIGHT', 'Logo 右側');
 define('TF_LOGO_RIGHT_DESC', '<ol style="list-style-type: decimal;"><li>僅於「logo圖位置」值為「置於頁面上」時有效，可多選</li><li>「自訂內容」及「連結選項」不可同時勾選</li></ol>');
 define('TF_LOGO_COLS', '設定 Logo 左右的呈現欄寬');
-define('TF_LOGO_COLS_DESC', '僅「置於頁面上」有效，填入兩個數字，以-隔開，勿有空白，總和需為 12，如：6-6 或 4-8');
+define('TF_LOGO_COLS_DESC', '僅「置於頁面上」有效，填入兩個數字，以-隔開，總和需為 12，如：6-6 或 4-8（空白即關閉整個 logo 區域）');
 
 define('TF_TOP_ZONE', '頂部自訂區');
 define('TF_LOGO_ZONE', 'Logo區域');

@@ -133,7 +133,7 @@ $theme_config[$i]['name'] = "logo_align";
 $theme_config[$i]['text'] = TF_LOGO_ALIGN;
 $theme_config[$i]['desc'] = TF_LOGO_ALIGN_DESC;
 $theme_config[$i]['type'] = "radio";
-$theme_config[$i]['options'] = ['justify-content-start' => TF_LOGO_ALIGN_L, 'justify-content-center' => TF_LOGO_ALIGN_C, 'justify-content-end' => TF_LOGO_ALIGN_R];
+$theme_config[$i]['options'] = ['' => TF_NONE, 'justify-content-start' => TF_LOGO_ALIGN_L, 'justify-content-center' => TF_LOGO_ALIGN_C, 'justify-content-end' => TF_LOGO_ALIGN_R];
 $theme_config[$i]['default'] = "";
 
 //logo 滿版
