@@ -123,9 +123,9 @@ $theme_config[$i]['name'] = "top_left_content";
 $theme_config[$i]['text'] = TF_TOP_LEFT . TF_CONTENT;
 $theme_config[$i]['desc'] = TF_TOP_LEFT . TF_CONTENT_DESC;
 $theme_config[$i]['type'] = "textarea";
-$theme_config[$i]['default'] = "https://www.facebook.com|fa-facebook|dark|_blank
-https://www.youtube.com|fa-youtube|dark|_blank
-/modules/tadnews/rss.php|fa-rss|dark";
+$theme_config[$i]['default'] = "https://www.facebook.com|fa-facebook|dark|_blank|facebook
+https://www.youtube.com|fa-youtube|dark|_blank|youtube
+/modules/tadnews/rss.php|fa-rss|dark|_self|RSS";
 
 // 中間內容
 $i++;
