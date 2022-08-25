@@ -186,7 +186,9 @@ define('TF_BOTTOM_RIGHT', '底部右側');
 
 define('TF_SELECT_CONTENT', '選擇欲出現的內容<ol style="list-style-type: decimal;"><li>可多選，但「自訂內容」、「連結選項」、「Font Awesome 圖示連結」不能同時選</li><li>區塊無須啟用</li><li>可用進階區塊模組來<a href="<{$xoops_url}>/modules/tad_blocks/index.php?op=block_form">產生自訂內容</a></li></ol>');
 define('TF_CONTENT', '自訂內容');
-define('TF_CONTENT_DESC', '可以加入任何內容（html）<ol style="list-style-type: decimal;"><li>「自訂內容」、「連結選項」、「Font Awesome 圖示連結」的內容填至此處</li><li>「自訂內容」支援HTML語法</li><li>「連結選項」一個選項一行：「文字|連結|背景色|文字色|新視窗」，如：<code>最新消息|/modules/tadnews/|#f5c9c9|#ffffff|_blank</code></li><li>「Font Awesome 圖示連結」一個圖示一行：「連結|圖示|深淺|新視窗」，如：<code>https://www.facebook.com|fa-facebook|dark|_blank</code></li></ol>');
+define('TF_HTML_CONTENT_DESC', '可以加入任何內容，包括 HTML、CSS、JavaScript 等');
+define('TF_FA_CONTENT_DESC', '<ol style="list-style-type: decimal;"><li>「Font Awesome 圖示連結」一個圖示一行：「連結|圖示|深淺|新視窗|提示文字」</li><li>如：<code>https://www.facebook.com|fa-facebook|dark|_blank|粉絲專頁</code></li></ol>');
+define('TF_MENU_CONTENT_DESC', '<ol style="list-style-type: decimal;"><li>「連結選項」一個選項一行：「文字|連結|背景色|文字色|新視窗」</li><li>如：<code>最新消息|/modules/tadnews/|#f5c9c9|#ffffff|_blank</code></li></ol>');
 define('TF_NONE', '無');
 define('TF_SEARCH', '搜尋框');
 define('TF_LOGIN', '登入框');

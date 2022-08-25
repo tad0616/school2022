@@ -1,9 +1,9 @@
 <{if 'html'|in_array:$item_content}>
-    <{if $item_html}><div class="d-inline-block"><{$item_html}></div><{/if}>
+    <{if $item_html_contant}><div class="d-inline-block"><{$item_html_contant}></div><{/if}>
 <{/if}>
 
 <{if 'fa-icon'|in_array:$item_content}>
-    <{assign var="icon_arr" value="\n"|explode:$item_html}>
+    <{assign var="icon_arr" value="\n"|explode:$item_fa_contant}>
     <div class="<{if "<br>"|in_array:$icon_arr}>d-block<{else}>d-inline-block<{/if}>"> <{includeq file="$xoops_rootpath/themes/school2022/tpl/fa_icon.tpl"}></div>
 <{/if}>
 
@@ -22,7 +22,7 @@
 <{/if}>
 
 <{if 'menu'|in_array:$item_content}>
-    <{assign var="line_arr" value="\n"|explode:$item_html}>
+    <{assign var="line_arr" value="\n"|explode:$item_menu_contant}>
     <div class="d-inline-block"> <{includeq file="$xoops_rootpath/themes/school2022/tpl/menu.tpl"}></div>
 <{/if}>
 
