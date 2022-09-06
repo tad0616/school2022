@@ -160,23 +160,15 @@ $theme_config[$i]['desc'] = TF_LOGO_COLS_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "3-9";
 
-//logo 右側內容
+//logo 右側自訂內容
 $i++;
 $theme_config[$i]['name'] = "logo_right";
 $theme_config[$i]['text'] = TF_LOGO_RIGHT;
 $theme_config[$i]['desc'] = TF_LOGO_RIGHT_DESC;
-$theme_config[$i]['type'] = "checkbox";
-$theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
+$theme_config[$i]['type'] = "custom_zone";
 $theme_config[$i]['default'] = ['html', 'google_translate', 'login'];
-$theme_config[$i]['bid_name'] = '';
-
-//右側自訂內容
-$i++;
-$theme_config[$i]['name'] = "logo_right_content";
-$theme_config[$i]['text'] = TF_LOGO_RIGHT . TF_CONTENT;
-$theme_config[$i]['desc'] = TF_LOGO_RIGHT . TF_CONTENT_DESC;
-$theme_config[$i]['type'] = "textarea";
-$theme_config[$i]['default'] = "<span class=\"ci\">
+$theme_config[$i]['block'] = "";
+$theme_config[$i]['html_content'] = "<span class=\"ci\">
 <i class=\"fa fa-phone\"></i> (06)2130669#33
 </span>
 <span class=\"ci\">
@@ -204,3 +196,8 @@ $theme_config[$i]['default'] = "<span class=\"ci\">
     top: 1px;
 }
 </style>";
+$theme_config[$i]['html_content_desc'] = TF_HTML_CONTENT_DESC;
+$theme_config[$i]['fa_content'] = "";
+$theme_config[$i]['fa_content_desc'] = TF_FA_CONTENT_DESC;
+$theme_config[$i]['menu_content'] = "";
+$theme_config[$i]['menu_content_desc'] = TF_MENU_CONTENT_DESC;

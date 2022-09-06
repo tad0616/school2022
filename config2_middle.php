@@ -107,24 +107,6 @@ $theme_config[$i]['desc'] = TF_3COLS_DESC;
 $theme_config[$i]['type'] = "text";
 $theme_config[$i]['default'] = "4-4-4";
 
-// // 左側內容
-// $i++;
-// $theme_config[$i]['name'] = "middle_left";
-// $theme_config[$i]['text'] = TF_MIDDLE_LEFT;
-// $theme_config[$i]['desc'] = TF_MIDDLE_LEFT . TF_SELECT_CONTENT;
-// $theme_config[$i]['type'] = "checkbox";
-// $theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
-// $theme_config[$i]['default'] = [];
-// $theme_config[$i]['bid_name'] = '';
-
-// //左側自訂內容
-// $i++;
-// $theme_config[$i]['name'] = "middle_left_content";
-// $theme_config[$i]['text'] = TF_MIDDLE_LEFT . TF_CONTENT;
-// $theme_config[$i]['desc'] = TF_MIDDLE_LEFT . TF_CONTENT_DESC;
-// $theme_config[$i]['type'] = "textarea";
-// $theme_config[$i]['default'] = "";
-
 // 左側內容
 $i++;
 $theme_config[$i]['name'] = "middle_left";
@@ -132,30 +114,13 @@ $theme_config[$i]['text'] = TF_MIDDLE_LEFT;
 $theme_config[$i]['desc'] = TF_MIDDLE_LEFT . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "custom_zone";
 $theme_config[$i]['default'] = [];
-$theme_config[$i]['bid'] = "";
+$theme_config[$i]['block'] = "";
 $theme_config[$i]['html_content'] = "";
 $theme_config[$i]['html_content_desc'] = TF_HTML_CONTENT_DESC;
 $theme_config[$i]['fa_content'] = "";
 $theme_config[$i]['fa_content_desc'] = TF_FA_CONTENT_DESC;
 $theme_config[$i]['menu_content'] = "";
 $theme_config[$i]['menu_content_desc'] = TF_MENU_CONTENT_DESC;
-// // 中間內容
-// $i++;
-// $theme_config[$i]['name'] = "middle_center";
-// $theme_config[$i]['text'] = TF_MIDDLE_CENTER;
-// $theme_config[$i]['desc'] = TF_MIDDLE_CENTER . TF_SELECT_CONTENT;
-// $theme_config[$i]['type'] = "checkbox";
-// $theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
-// $theme_config[$i]['default'] = [];
-// $theme_config[$i]['bid_name'] = '';
-
-// //中間自訂內容
-// $i++;
-// $theme_config[$i]['name'] = "middle_center_content";
-// $theme_config[$i]['text'] = TF_MIDDLE_CENTER . TF_CONTENT;
-// $theme_config[$i]['desc'] = TF_MIDDLE_CENTER . TF_CONTENT_DESC;
-// $theme_config[$i]['type'] = "textarea";
-// $theme_config[$i]['default'] = "";
 
 // 中間內容
 $i++;
@@ -164,30 +129,13 @@ $theme_config[$i]['text'] = TF_MIDDLE_CENTER;
 $theme_config[$i]['desc'] = TF_MIDDLE_CENTER . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "custom_zone";
 $theme_config[$i]['default'] = [];
-$theme_config[$i]['bid'] = "";
+$theme_config[$i]['block'] = "";
 $theme_config[$i]['html_content'] = "";
 $theme_config[$i]['html_content_desc'] = TF_HTML_CONTENT_DESC;
 $theme_config[$i]['fa_content'] = "";
 $theme_config[$i]['fa_content_desc'] = TF_FA_CONTENT_DESC;
 $theme_config[$i]['menu_content'] = "";
 $theme_config[$i]['menu_content_desc'] = TF_MENU_CONTENT_DESC;
-// // 右側內容
-// $i++;
-// $theme_config[$i]['name'] = "middle_right";
-// $theme_config[$i]['text'] = TF_MIDDLE_RIGHT;
-// $theme_config[$i]['desc'] = TF_MIDDLE_RIGHT . TF_SELECT_CONTENT;
-// $theme_config[$i]['type'] = "checkbox";
-// $theme_config[$i]['options'] = ['html' => TF_HTML, 'fa-icon' => TF_FA_ICON, 'block' => TF_BLOCK, 'google_translate' => TF_GOOGLE_TRANSLATE, 'menu' => TF_MENU, 'search' => TF_SEARCH, 'login' => TF_LOGIN, 'navbar' => TF_NAVBAR];
-// $theme_config[$i]['default'] = [];
-// $theme_config[$i]['bid_name'] = '';
-
-// //右側自訂內容
-// $i++;
-// $theme_config[$i]['name'] = "middle_right_content";
-// $theme_config[$i]['text'] = TF_MIDDLE_RIGHT . TF_CONTENT;
-// $theme_config[$i]['desc'] = TF_MIDDLE_RIGHT . TF_CONTENT_DESC;
-// $theme_config[$i]['type'] = "textarea";
-// $theme_config[$i]['default'] = "";
 
 // 右側內容
 $i++;
@@ -196,7 +144,7 @@ $theme_config[$i]['text'] = TF_MIDDLE_RIGHT;
 $theme_config[$i]['desc'] = TF_MIDDLE_RIGHT . TF_SELECT_CONTENT;
 $theme_config[$i]['type'] = "custom_zone";
 $theme_config[$i]['default'] = [];
-$theme_config[$i]['bid'] = "";
+$theme_config[$i]['block'] = "";
 $theme_config[$i]['html_content'] = "";
 $theme_config[$i]['html_content_desc'] = TF_HTML_CONTENT_DESC;
 $theme_config[$i]['fa_content'] = "";
