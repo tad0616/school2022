@@ -30,7 +30,9 @@ p {
 #xoops_theme_center {}
 
 /*主內容區*/
-#xoops_contents {}
+#xoops_contents {
+  padding-top: 1rem;
+}
 
 /* 右區域 */
 #xoops_theme_right_zone {}

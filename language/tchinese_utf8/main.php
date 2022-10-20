@@ -151,7 +151,7 @@ define('TF_PADDING', '元件內距設定');
 define('TF_PADDING_DESC', '內距則是內容離元件邊界的距離（含底色）');
 
 define('TF_DISPLAY_TYPE', '本區域顯示模式');
-define('TF_DISPLAY_TYPE_DESC', '以何種方式來呈現本區域');
+define('TF_DISPLAY_TYPE_DESC', '以何種方式來呈現本區域（若所有區域都選擇「內容底色皆置中」，則會變成頁面模式，即 logo 也會被包含進主內容區）');
 
 define('TF_BG_IMG', '背景圖');
 define('TF_BG_IMG_DESC', '背景圖相關設定項目');
