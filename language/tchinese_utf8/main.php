@@ -214,3 +214,12 @@ define('TF_MIDDEL_ZONE', '中間自訂區');
 
 define('TF_NAV_NO_MOUSE_OVER', '是否點擊才出現子選單');
 define('TF_NAV_NO_MOUSE_OVER_DESC', '預設為滑鼠停留就出現，選是就必須點擊才會出現');
+
+define('TF_SLIDE_AUTO', '是否使用自動配對');
+define('TF_SLIDE_AUTO_DESC', '讓系統自動偵測網址某變數來自動切換 slide');
+define('TF_SLIDE_PATH', '圖示放置路徑');
+define('TF_SLIDE_PATH_DESC', '前後都要有 /，如：/uploads/slide/');
+define('TF_SLIDE_VAR', '自動配對變數名稱');
+define('TF_SLIDE_VAR_DESC', '欲偵測的網址變數名稱，如：nsn');
+define('TF_SLIDE_EXT', 'slide圖的副檔名');
+define('TF_SLIDE_EXT_DESC', '例如 jpg 或 png');

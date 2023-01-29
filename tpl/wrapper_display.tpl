@@ -40,7 +40,7 @@
 <{if $border_radius}>
     #<{$item}>-wrapper,
     #<{$item}>-display,
-    #<{$item}>-display img {
+    #<{$item}>-display>img {
         border-radius: <{$border_radius}>;
     }
 <{/if}>

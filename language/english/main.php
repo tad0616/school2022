@@ -211,3 +211,12 @@ define('TF_SLIDE_ZONE', 'Slide Zone');
 define('TF_MIDDEL_ZONE', 'Middle Custom Zone');
 define('TF_NAV_NO_MOUSE_OVER', 'Click to show submenu or not');
 define('TF_NAV_NO_MOUSE_OVER_DESC', 'Default is to appear when mouse hover, if yes, you must click to appear');
+
+define('TF_SLIDE_AUTO', 'Whether to use auto-match');
+define('TF_SLIDE_AUTO_DESC', 'Let the system automatically detect a variable in the URL to switch the slide automatically');
+define('TF_SLIDE_PATH', 'Icon placement path');
+define('TF_SLIDE_PATH_DESC', 'both before and after /, such as: /uploads/slide/');
+define('TF_SLIDE_VAR', 'Auto-match variable name');
+define('TF_SLIDE_VAR_DESC', 'Name of the URL variable to be detected, e.g.: nsn');
+define('TF_SLIDE_EXT', 'the subfile name of the slide map');
+define('TF_SLIDE_EXT_DESC', 'e.g. jpg or png');

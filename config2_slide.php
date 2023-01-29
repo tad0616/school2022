@@ -107,3 +107,35 @@ $theme_config[$i]['text'] = TF_SLIDE_NAV;
 $theme_config[$i]['desc'] = TF_SLIDE_NAV_DESC;
 $theme_config[$i]['type'] = "yesno";
 $theme_config[$i]['default'] = "1";
+
+//slide 是否使用自動配對
+$i++;
+$theme_config[$i]['name'] = "slide_auto";
+$theme_config[$i]['text'] = TF_SLIDE_AUTO;
+$theme_config[$i]['desc'] = TF_SLIDE_AUTO_DESC;
+$theme_config[$i]['type'] = "yesno";
+$theme_config[$i]['default'] = "0";
+
+//slide 圖示放置路徑
+$i++;
+$theme_config[$i]['name'] = "slide_path";
+$theme_config[$i]['text'] = TF_SLIDE_PATH;
+$theme_config[$i]['desc'] = TF_SLIDE_PATH_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "/uploads/slides/";
+
+//slide 自動配對變數名稱
+$i++;
+$theme_config[$i]['name'] = "slide_var";
+$theme_config[$i]['text'] = TF_SLIDE_VAR;
+$theme_config[$i]['desc'] = TF_SLIDE_VAR_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "";
+
+//slide 圖副檔名
+$i++;
+$theme_config[$i]['name'] = "slide_ext";
+$theme_config[$i]['text'] = TF_SLIDE_EXT;
+$theme_config[$i]['desc'] = TF_SLIDE_EXT_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "png";
