@@ -37,7 +37,7 @@ $theme_config[$i]['name'] = "top_zindex";
 $theme_config[$i]['text'] = TF_ZINDEX;
 $theme_config[$i]['desc'] = TF_ZINDEX_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "11";
+$theme_config[$i]['default'] = "8";
 
 //圓角
 $i++;
@@ -97,7 +97,7 @@ $theme_config[$i]['name'] = "top_style";
 $theme_config[$i]['text'] = TF_STYLE;
 $theme_config[$i]['desc'] = TF_STYLE_DESC;
 $theme_config[$i]['type'] = "textarea";
-$theme_config[$i]['default'] = "font-size: 0.8rem;";
+$theme_config[$i]['default'] = "font-size: 0.95rem;";
 
 //左中右的寬度
 $i++;

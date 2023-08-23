@@ -44,7 +44,7 @@ $theme_config[$i]['name'] = "nav_zindex";
 $theme_config[$i]['text'] = TF_ZINDEX;
 $theme_config[$i]['desc'] = TF_ZINDEX_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "0";
+$theme_config[$i]['default'] = "8";
 
 //nav 圓角
 $i++;

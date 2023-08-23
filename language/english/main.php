@@ -186,7 +186,9 @@ define('TF_BOTTOM_RIGHT', 'Bottom left side');
 
 define('TF_SELECT_CONTENT', 'Select the content you want to appear<ol style="list-style-type: decimal;"><li>You can select more than one option, but "Custom Content" and "Link Options" cannot be selected at the same time.</li><li>Block does not need to be enabled</li><li>Advanced block modules can be used to <a href="<{$xoops_url}>/modules/tad_blocks/index.php?op=block_form">generate custom content</a></li></ol>');
 define('TF_CONTENT', 'Custom Content');
-define('TF_CONTENT_DESC', 'Any HTML content can be added<ol style="list-style-type: decimal;"><li>Fill in the contents of "Custom Content" and "Link Options" here</li><li>"Custom Content" supports HTML syntax</li><li>"Link Options" one option line, e.g.<code>News|/modules/tadnews/|_blank</code></li></ol>');
+define('TF_HTML_CONTENT_DESC', '<ol style="list-style-type: decimal;"><li>Any content can be added, including HTML, CSS, JavaScript, etc.</li><li><a href="https://campus-xoops.tn.edu.tw/modules/tad_book3/page.php?tbsn=18&tbdsn=1979" target="_blank">Click here to get the pre-set content and see the full description.</a></li></ol>');
+define('TF_FA_CONTENT_DESC', '<ol style="list-style-type: decimal;"><li>"Font Awesome icon links" one icon line: "Link|Icons|Shade|New Window|Tips"</li><li><a href="https://campus-xoops.tn.edu.tw/modules/tad_book3/page.php?tbsn=18&tbdsn=1980" target="_blank">Click here to get the pre-set content and see the full description.</a></li></ol>');
+define('TF_MENU_CONTENT_DESC', '<ol style="list-style-type: decimal;"><li>"Link Options" one option line: "Text|Links|Background Color|Text Color|New Window".</li><li><a href="https://campus-xoops.tn.edu.tw/modules/tad_book3/page.php?tbsn=18&tbdsn=1981" target="_blank">Click here to get the pre-set content and see the full description.</a></li></ol>');
 define('TF_NONE', 'None');
 define('TF_SEARCH', 'Search Box');
 define('TF_LOGIN', 'Login Box');

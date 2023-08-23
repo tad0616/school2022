@@ -30,7 +30,6 @@
 
         <!-- 載入bootstrap -->
         <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/bootstrap_js.tpl"}>
-
     </head>
 
     <body>

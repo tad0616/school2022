@@ -53,7 +53,7 @@ $theme_config[$i]['name'] = "logo_zindex";
 $theme_config[$i]['text'] = TF_ZINDEX;
 $theme_config[$i]['desc'] = TF_ZINDEX_DESC;
 $theme_config[$i]['type'] = "text";
-$theme_config[$i]['default'] = "0";
+$theme_config[$i]['default'] = "7";
 
 //圓角
 $i++;
@@ -162,14 +162,14 @@ $theme_config[$i]['default'] = "3-9";
 
 //logo 右側自訂內容
 $i++;
-$theme_config[$i]['name'] = "logo_right";
+$theme_config[$i]['name'] = "logo_right_zone";
 $theme_config[$i]['text'] = TF_LOGO_RIGHT;
 $theme_config[$i]['desc'] = TF_LOGO_RIGHT_DESC;
 $theme_config[$i]['type'] = "custom_zone";
 $theme_config[$i]['default'] = ['html', 'google_translate', 'login'];
 $theme_config[$i]['block'] = "";
 $theme_config[$i]['html_content'] = "<span class=\"ci\">
-<i class=\"fa fa-phone\"></i> (06)2130669#33
+<i class=\"fa fa-phone\"></i> (06)2130669#233
 </span>
 <span class=\"ci\">
 <i class=\"fa fa-fax\"></i> (06)-2130668

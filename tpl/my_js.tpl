@@ -10,7 +10,7 @@
         <{if $use_pin=="1" or $navbar_pos=='fixed-top'}>
             <{if $top_height!="" && ("navbar"|in_array:$top_left || "navbar"|in_array:$top_center || "navbar"|in_array:$top_right)}>
                 <{assign var=pin_zone value="top"}>
-            <{elseif "navbar"|in_array:$logo_right}>
+            <{elseif "navbar"|in_array:$logo_right_zone}>
                 <{assign var=pin_zone value="logo"}>
             <{elseif $middle_height!="" && ("navbar"|in_array:$middle_left || "navbar"|in_array:$middle_center || "navbar"|in_array:$middle_right)}>
                 <{assign var=pin_zone value="middle"}>
@@ -20,8 +20,18 @@
         <{/if}>
 
         <{if $pin_zone}>
+            <{if $pin_zone=="top"}>
+                <{assign var=zIndex value=$top_zindex}>
+            <{elseif $pin_zone=="logo"}>
+                <{assign var=zIndex value=$logo_zindex}>
+            <{elseif $pin_zone=="nav"}>
+                <{assign var=zIndex value=$nav_zindex}>
+            <{else}>
+                <{assign var=zIndex value=5001}>
+            <{/if}>
+
             if($( window ).width() > 768){
-                $("#<{$pin_zone}>-wrapper").sticky({topSpacing:0 , zIndex: 500, getWidthFrom:'#<{$pin_zone}>-wrapper'});
+                $("#<{$pin_zone}>-wrapper").sticky({topSpacing:0 , zIndex: <{$zIndex}>, getWidthFrom:'#<{$pin_zone}>-wrapper'});
             }else{
                 $("#<{$pin_zone}>-wrapper").unstick();
             }
@@ -32,7 +42,7 @@
         $(window).resize(function() {
             if($(window).width() > 768){
                 // 避免在手機狀態下無法上下選擇選項
-                $("#<{$pin_zone}>-wrapper").sticky({topSpacing:0 , zIndex: 500, getWidthFrom:'#<{$pin_zone}>-wrapper'});
+                $("#<{$pin_zone}>-wrapper").sticky({topSpacing:0 , zIndex: <{$zIndex}>, getWidthFrom:'#<{$pin_zone}>-wrapper'});
             }else{
                 $("#<{$pin_zone}>-wrapper").unstick();
             }

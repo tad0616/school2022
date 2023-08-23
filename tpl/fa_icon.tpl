@@ -5,7 +5,6 @@
     <{/if}>
 <{/foreach}>
 
-
 <script language="JavaScript" type="text/javascript">
     $(document).ready(function(){
         <{if $bootstrap=='5'}>
