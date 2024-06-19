@@ -27,7 +27,7 @@
             <{elseif $pin_zone=="nav"}>
                 <{assign var=zIndex value=$nav_zindex}>
             <{else}>
-                <{assign var=zIndex value=5001}>
+                <{assign var=zIndex value="5001"}>
             <{/if}>
 
             if($( window ).width() > 768){

@@ -1,13 +1,13 @@
 <{if $container_width == 12}>
-    <{assign var=container_width value=100%}>
+    <{assign var=container_width value="100%"}>
 <{elseif $container_width == 11}>
-    <{assign var=container_width value=92%}>
+    <{assign var=container_width value="92%"}>
 <{elseif $container_width == 10}>
-    <{assign var=container_width value=83%}>
+    <{assign var=container_width value="83%"}>
 <{elseif $container_width == 9}>
-    <{assign var=container_width value=75%}>
+    <{assign var=container_width value="75%"}>
 <{elseif $container_width == 8}>
-    <{assign var=container_width value=67%}>
+    <{assign var=container_width value="67%"}>
 <{/if}>
 
 

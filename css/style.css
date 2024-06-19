@@ -2,6 +2,7 @@
 
 body {
   padding-top: 0px;
+  margin-bottom: 0; /* 防止底部出現雙重邊距 */
 }
 
 p {

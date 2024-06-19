@@ -78,6 +78,14 @@ $theme_config[$i]['desc'] = TF_NAV_SUB_FONT_COLOR_DESC;
 $theme_config[$i]['type'] = "color";
 $theme_config[$i]['default'] = "#3b3b3b";
 
+//導覽列子選單上下間距間距
+$i++;
+$theme_config[$i]['name'] = "nav_sub_y_padding";
+$theme_config[$i]['text'] = TF_NAV_SUB_Y_PADDING;
+$theme_config[$i]['desc'] = TF_NAV_SUB_Y_PADDING_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "12";
+
 //選項分格線
 $i++;
 $theme_config[$i]['name'] = "nav_line";

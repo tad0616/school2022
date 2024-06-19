@@ -23,7 +23,7 @@
                             <img id="website_logo" src="<{$xoops_url}><{$logo_path}><{$smarty.get.$logo_var}>.<{$logo_ext}>" style="<{if $logo_full!='1'}>max-<{/if}>>width: 100%;position: relative; z-index:10;" alt="<{$xoops_sitename}>" title="<{$xoops_sitename}>" class="img-fluid">
                         </a>
                     <{else}>
-                        <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/logo.tpl"}>
+                        <{include file="$xoops_rootpath/modules/tadtools/themes5_tpl/logo.tpl"}>
                     <{/if}>
                 <{/if}>
             </div>
@@ -36,7 +36,7 @@
                     <{assign var="item_menu_content" value=$logo_right_zone_menu_content}>
                     <{assign var="item_block" value=$logo_right_zone_block}>
 
-                    <{includeq file="$xoops_rootpath/themes/school2022/tpl/custom_content.tpl"}>
+                    <{include file="$xoops_rootpath/themes/school2022/tpl/custom_content.tpl"}>
                 </div>
             <{/if}>
 

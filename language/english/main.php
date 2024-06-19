@@ -118,6 +118,8 @@ define('TF_NAV_SUB_BG_COLOR', 'navbar submenu background color');
 define('TF_NAV_SUB_BG_COLOR_DESC', 'The background color of the navbar submenu');
 define('TF_NAV_SUB_FONT_COLOR', 'Navigation menu text color');
 define('TF_NAV_SUB_FONT_COLOR_DESC', 'Text color of the navigation menu');
+define('TF_NAV_SUB_Y_PADDING', 'Spacing on the submenu options');
+define('TF_NAV_SUB_Y_PADDING_DESC', 'Distance in pixels (px) between submenu options, recommended value is 12.');
 
 define('TF_SHADOW', 'Shadow direction');
 define('TF_SHADOW_DESC', 'Shading will appear only if the direction is checked');

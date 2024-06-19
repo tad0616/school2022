@@ -2,7 +2,7 @@
     <div id="nav-wrapper">
         <div id="nav-display">
             <div>
-                <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/navbar.tpl"}>
+                <{include file="$xoops_rootpath/modules/tadtools/themes5_tpl/navbar.tpl"}>
             </div>
         </div>
     </div>

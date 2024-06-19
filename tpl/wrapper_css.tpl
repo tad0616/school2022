@@ -11,7 +11,6 @@
 }
 
 <{* 頁面 *}>
-<{assign var="item" value='page'}>
 <{assign var="side_bgcolor" value=$base_color}>
 <{assign var="content_bgcolor" value=null}>
 <{assign var="bg_img" value=$page_img}>
@@ -28,11 +27,10 @@
 <{assign var="shadow_arr" value=$page_shadow}>
 <{assign var="display_type" value=null}>
 <{assign var="border_radius" value=null}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl" item='page'}>
 
 
 <{* 頂部 *}>
-<{assign var="item" value='top'}>
 <{assign var="side_bgcolor" value=$top_side_bgcolor}>
 <{assign var="content_bgcolor" value=$top_content_bgcolor}>
 <{assign var="bg_img" value=$top_img}>
@@ -49,7 +47,7 @@
 <{assign var="shadow_arr" value=$top_shadow}>
 <{assign var="display_type" value=$top_display_type}>
 <{assign var="border_radius" value=$top_border_radius}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl" item='top'}>
 <{if $top_color}>
     #top-display a,
     #top-display a:hover,
@@ -78,7 +76,7 @@
 <{assign var="shadow_arr" value=$logo_shadow}>
 <{assign var="display_type" value=$logo_display_type}>
 <{assign var="border_radius" value=$logo_border_radius}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl" item='logo'}>
 
 #logo-wrapper{
     <{if $logo_bg}>
@@ -90,7 +88,6 @@
 }
 
 <{* 導覽列 *}>
-<{assign var="item" value='nav'}>
 <{assign var="side_bgcolor" value=$nav_side_bgcolor}>
 <{assign var="content_bgcolor" value=null}>
 <{assign var="bg_img" value=null}>
@@ -107,12 +104,11 @@
 <{assign var="shadow_arr" value=$nav_shadow}>
 <{assign var="display_type" value=$nav_display_type}>
 <{assign var="border_radius" value=$nav_border_radius}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/nav_color.tpl"}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl" item='nav'}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/nav_color.tpl"}>
 
 
 <{* 滑動圖 *}>
-<{assign var="item" value='slide'}>
 <{assign var="side_bgcolor" value=$slide_side_bgcolor}>
 <{assign var="content_bgcolor" value=$slide_content_bgcolor}>
 <{assign var="bg_img" value=$slide_img}>
@@ -129,11 +125,10 @@
 <{assign var="shadow_arr" value=$slide_shadow}>
 <{assign var="display_type" value=$slide_display_type}>
 <{assign var="border_radius" value=$slide_border_radius}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl" item='slide'}>
 
 
 <{* 中間 *}>
-<{assign var="item" value='middle'}>
 <{assign var="side_bgcolor" value=$middle_side_bgcolor}>
 <{assign var="content_bgcolor" value=$middle_content_bgcolor}>
 <{assign var="bg_img" value=$middle_img}>
@@ -150,7 +145,7 @@
 <{assign var="shadow_arr" value=$middle_shadow}>
 <{assign var="display_type" value=$middle_display_type}>
 <{assign var="border_radius" value=$middle_border_radius}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl" item='middle'}>
 <{if $middle_color}>
     #middle-display a,
     #middle-display a:hover,
@@ -161,7 +156,6 @@
 <{/if}>
 
 <{* 主內容 *}>
-<{assign var="item" value='content'}>
 <{assign var="side_bgcolor" value=$base_color}>
 <{assign var="content_bgcolor" value=$content_content_bgcolor}>
 <{assign var="bg_img" value=$content_img}>
@@ -178,12 +172,11 @@
 <{assign var="shadow_arr" value=$content_shadow}>
 <{assign var="display_type" value=$content_display_type}>
 <{assign var="border_radius" value=$content_border_radius}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl" item='content'}>
 
 
 
 <{* 頁尾 *}>
-<{assign var="item" value='footer'}>
 <{assign var="side_bgcolor" value=$footer_side_bgcolor}>
 <{assign var="content_bgcolor" value=$footer_content_bgcolor}>
 <{assign var="bg_img" value=$footer_img}>
@@ -200,7 +193,7 @@
 <{assign var="shadow_arr" value=$footer_shadow}>
 <{assign var="display_type" value=$footer_display_type}>
 <{assign var="border_radius" value=$footer_border_radius}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl" item='footer'}>
 <{if $footer_color}>
     #footer-display a,
     #footer-display a:hover,
@@ -212,7 +205,6 @@
 
 
 <{* 底部 *}>
-<{assign var="item" value='bottom'}>
 <{assign var="side_bgcolor" value=$bottom_side_bgcolor}>
 <{assign var="content_bgcolor" value=$bottom_content_bgcolor}>
 <{assign var="bg_img" value=$bottom_img}>
@@ -229,7 +221,7 @@
 <{assign var="shadow_arr" value=$bottom_shadow}>
 <{assign var="display_type" value=$bottom_display_type}>
 <{assign var="border_radius" value=$bottom_border_radius}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl"}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/wrapper_display.tpl" item='bottom'}>
 <{if $bottom_color}>
     #bottom-display a,
     #bottom-display a:hover,

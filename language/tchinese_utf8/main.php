@@ -118,6 +118,8 @@ define('TF_NAV_SUB_BG_COLOR', '導覽列子選單底色');
 define('TF_NAV_SUB_BG_COLOR_DESC', '導覽列子選單的背景色');
 define('TF_NAV_SUB_FONT_COLOR', '導覽列子選單文字顏色');
 define('TF_NAV_SUB_FONT_COLOR_DESC', '導覽列子選單的文字顏色');
+define('TF_NAV_SUB_Y_PADDING', '導覽列子選單上下間距');
+define('TF_NAV_SUB_Y_PADDING_DESC', '子選單選項之間的距離像素（px），建議值為 12');
 
 define('TF_SHADOW', '陰影方向');
 define('TF_SHADOW_DESC', '有勾選的方向才會出現陰影');

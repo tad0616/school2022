@@ -24,4 +24,4 @@
 <{assign var="item_left_menu_content" value=$top_left_menu_content}>
 <{assign var="item_center_menu_content" value=$top_center_menu_content}>
 <{assign var="item_right_menu_content" value=$top_right_menu_content}>
-<{includeq file="$xoops_rootpath/themes/school2022/tpl/custom_wrapper.tpl"}>
+<{include file="$xoops_rootpath/themes/school2022/tpl/custom_wrapper.tpl"}>
