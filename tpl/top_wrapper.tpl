@@ -1,4 +1,3 @@
-<{assign var="item" value='top'}>
 <{assign var="item_style" value=$top_style}>
 <{assign var="item_height" value=$top_height}>
 <{assign var="item_cols" value=$top_cols}>
@@ -24,4 +23,5 @@
 <{assign var="item_left_menu_content" value=$top_left_menu_content}>
 <{assign var="item_center_menu_content" value=$top_center_menu_content}>
 <{assign var="item_right_menu_content" value=$top_right_menu_content}>
-<{include file="$xoops_rootpath/themes/school2022/tpl/custom_wrapper.tpl"}>
+
+<{include file="$xoops_rootpath/themes/school2022/tpl/custom_wrapper.tpl" item="top"}>

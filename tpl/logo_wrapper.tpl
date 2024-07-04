@@ -1,6 +1,7 @@
 <{if $logo_position!="slide" && $logo_cols!=''}>
     <div id="logo-wrapper">
-        <{assign var=mylogofile value=$xoops_rootpath$logo_path`$smarty.get.$logo_var`.$logo_ext}>
+        <{assign var="logo_var" value=$smarty.get.$logo_var}>
+        <{assign var="mylogofile" value="{$xoops_rootpath}{$logo_path}{$logo_var}.$logo_ext"}>
         <div id="logo-display" class="container-fluid <{if $logo_align}>d-flex <{$logo_align}><{/if}>">
             <div class="row">
 

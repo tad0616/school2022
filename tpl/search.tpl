@@ -1,4 +1,4 @@
-<form role="search" action="<{xoAppUrl search.php}>" method="get">
+<form role="search" action="<{$xoops_url}>/search.php" method="get">
     <div class="input-group input-group-sm">
         <input class="form-control" type="text" name="query" title="search" placeholder="<{$smarty.const.THEME_SEARCH_TEXT}>">
         <input type="hidden" name="action" value="results">

@@ -1,5 +1,5 @@
 <{if !$xoops_isuser}>
-    <form action="<{xoAppUrl user.php}>" method="post" role="form">
+    <form action="<{$xoops_url}>/user.php" method="post" role="form">
         <div class="input-group input-group-sm">
             <span class="input-group-text"><{$smarty.const.TF_USER_S_ID}></span>
             <input type="text" name="uname"  id="uname" placeholder="<{$smarty.const.TF_USER_ID}>"  class="form-control">

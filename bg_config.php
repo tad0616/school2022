@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . "/language/{$xoopsConfig['language']}/main.php";
 $bg_file['repeat'] = [
     'repeat' => TF_BG_REPEAT_NORMAL,
     'repeat-x' => TF_BG_REPEAT_X, 'repeat-y' => TF_BG_REPEAT_Y,

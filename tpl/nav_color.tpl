@@ -39,3 +39,7 @@
 
     <{/if}>
 <{/if}>
+
+#main-menu li {
+    color:<{$nav_sub_font_color}>;
+}

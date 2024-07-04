@@ -3,9 +3,9 @@
     <head>
         <!--目前$_SESSION['bootstrap']="<{$smarty.session.bootstrap}>"; -->
         <!--將目前的資料夾名稱，設定為樣板標籤變數 theme_name-->
-        <{assign var=theme_name value=$xoTheme->folderName}>
+        <{assign var="theme_name" value=$xoTheme->folderName}>
         <!--載入由使用者設定的各項佈景變數-->
-        <{include file="$xoops_rootpath/modules/tadtools/themes_common/get_var.tpl"}>
+        <{* <{include file="$xoops_rootpath/modules/tadtools/themes_common/get_var.tpl"}> *}>
 
         <!-- theme_id= <{$theme_id}>-->
         <{include file="$xoops_rootpath/themes/school2022/tpl/var.tpl"}>

@@ -188,11 +188,11 @@ define('TF_BOTTOM_RIGHT', '底部右側');
 
 define('TF_SELECT_CONTENT', '選擇欲出現的內容<ol style="list-style-type: decimal;"><li>可多選，但「自訂內容」、「連結選項」、「Font Awesome 圖示連結」不能同時選</li><li>區塊無須啟用</li><li>可用進階區塊模組來<a href="<{$xoops_url}>/modules/tad_blocks/index.php?op=block_form">產生自訂內容</a></li></ol>');
 define('TF_CONTENT', '自訂內容');
+define('TF_CONTENT_DESC', '依據選擇的種類設定自訂內容');
 define('TF_HTML_CONTENT_DESC', '<ol style="list-style-type: decimal;"><li>可以加入任何內容，包括 HTML、CSS、JavaScript 等</li><li><a href="https://campus-xoops.tn.edu.tw/modules/tad_book3/page.php?tbsn=18&tbdsn=1979" target="_blank">點此取得預設內容並觀看完整說明</a></li></ol>');
 define('TF_FA_CONTENT_DESC', '<ol style="list-style-type: decimal;"><li>「Font Awesome 圖示連結」一個圖示一行：「連結|圖示|深淺|新視窗|提示文字」</li><li><a href="https://campus-xoops.tn.edu.tw/modules/tad_book3/page.php?tbsn=18&tbdsn=1980" target="_blank">點此取得預設內容並觀看完整說明</a></li></ol>');
 define('TF_MENU_CONTENT_DESC', '<ol style="list-style-type: decimal;"><li>「連結選項」一個選項一行：「文字|連結|背景色|文字色|新視窗」</li><li><a href="https://campus-xoops.tn.edu.tw/modules/tad_book3/page.php?tbsn=18&tbdsn=1981" target="_blank">點此取得預設內容並觀看完整說明</a></li></ol>');
 define('TF_NONE', '無');
-define('TF_SEARCH', '搜尋框');
 define('TF_LOGIN', '登入框');
 define('TF_NAVBAR', '導覽列');
 define('TF_MENU', '連結選項');

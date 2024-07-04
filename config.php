@@ -175,12 +175,12 @@ $config_enable['block_style'] = array('enable' => '1', 'min' => '', 'max' => '',
 background: #f5f5f5;
 overflow: hidden;
 margin: 15px 0px 15px;
-border-radius: 4px;');
+border-radius: 4px;', );
 
 //區塊標題區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
 $config_enable['block_title_style'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'border-bottom: 2px solid #7cb6b7;
 padding: 8px 15px;
-text-shadow: 0px 1px #0d4e5c, 1px 0px #0d4e5c, -1px 0px #0d4e5c, 0px -1px #0d4e5c, -1px -1px #0d4e5c, 1px 1px #0d4e5c, 1px -1px #0d4e5c, -1px 1px #0d4e5c;');
+text-shadow: 0px 1px #0d4e5c, 1px 0px #0d4e5c, -1px 0px #0d4e5c, 0px -1px #0d4e5c, -1px -1px #0d4e5c, 1px 1px #0d4e5c, 1px -1px #0d4e5c, -1px 1px #0d4e5c;', );
 
 //區塊內容區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
 $config_enable['block_content_style'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'padding: 15px;');

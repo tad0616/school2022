@@ -1,4 +1,4 @@
-<script type="text/javascript" src="<{xoAppUrl modules/tadtools/jquery.sticky/jquery.sticky.js}>"></script>
+<script type="text/javascript" src="<{$xoops_url}>/modules/tadtools/jquery.sticky/jquery.sticky.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $("select[name='xoops_theme_select']").addClass("form-control");
@@ -8,26 +8,26 @@
         $('iframe:not([title])').attr('title','iframe content');
 
         <{if $use_pin=="1" or $navbar_pos=='fixed-top'}>
-            <{if $top_height!="" && ("navbar"|in_array:$top_left || "navbar"|in_array:$top_center || "navbar"|in_array:$top_right)}>
-                <{assign var=pin_zone value="top"}>
-            <{elseif "navbar"|in_array:$logo_right_zone}>
-                <{assign var=pin_zone value="logo"}>
-            <{elseif $middle_height!="" && ("navbar"|in_array:$middle_left || "navbar"|in_array:$middle_center || "navbar"|in_array:$middle_right)}>
-                <{assign var=pin_zone value="middle"}>
+            <{if $top_height!="" && (($top_left|is_array && "navbar"|in_array:$top_left) || ($top_center|is_array && "navbar"|in_array:$top_center) || ($top_right|is_array && "navbar"|in_array:$top_right))}>
+                <{assign var="pin_zone" value="top"}>
+            <{elseif $logo_right_zone|is_array && "navbar"|in_array:$logo_right_zone}>
+                <{assign var="pin_zone" value="logo"}>
+            <{elseif $middle_height!="" && ( ($middle_left|is_array && "navbar"|in_array:$middle_left) || ($middle_center|is_array && "navbar"|in_array:$middle_center) || ($middle_right|is_array && "navbar"|in_array:$middle_right))}>
+                <{assign var="pin_zone" value="middle"}>
             <{else}>
-                <{assign var=pin_zone value="nav"}>
+                <{assign var="pin_zone" value="nav"}>
             <{/if}>
         <{/if}>
 
         <{if $pin_zone}>
             <{if $pin_zone=="top"}>
-                <{assign var=zIndex value=$top_zindex}>
+                <{assign var="zIndex" value=$top_zindex}>
             <{elseif $pin_zone=="logo"}>
-                <{assign var=zIndex value=$logo_zindex}>
+                <{assign var="zIndex" value=$logo_zindex}>
             <{elseif $pin_zone=="nav"}>
-                <{assign var=zIndex value=$nav_zindex}>
+                <{assign var="zIndex" value=$nav_zindex}>
             <{else}>
-                <{assign var=zIndex value="5001"}>
+                <{assign var="zIndex" value="5001"}>
             <{/if}>
 
             if($( window ).width() > 768){
