@@ -15,7 +15,7 @@
             background: <{$navbar_bg_top}> <{if $navbar_img}>url(<{$navbar_img}>)<{/if}>;
         }
         #nav-wrapper{
-            background: <{$navbar_bg_top}> <{if $navbar_img}>url(<{$navbar_img}>)<{/if}>;
+            background: <{$nav_side_bgcolor}> <{if $navbar_img}>url(<{$navbar_img}>)<{/if}>;
         }
     <{/if}>
 <{else}>

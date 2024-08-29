@@ -3,6 +3,12 @@ use XoopsModules\Tadtools\Utility;
 
 global $xoopsTpl;
 
+if ($_SESSION['xoops_version'] < 20511) {
+    $xoopsTpl->register_function('xoBlock', 'xoBlock');
+    function xoBlock()
+    {return;}
+}
+
 if (!class_exists('XoopsModules\Tadtools\Utility')) {
     require XOOPS_ROOT_PATH . '/modules/tadtools/preloads/autoloader.php';
 }

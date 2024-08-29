@@ -7,9 +7,9 @@
 <{assign var="item_right" value=$top_right}>
 
 
-<{assign var="item_left_block" value=$top_left_block}>
-<{assign var="item_center_block" value=$top_center_block}>
-<{assign var="item_right_block" value=$top_right_block}>
+<{assign var="item_left_block" value=$top_left_block_arr}>
+<{assign var="item_center_block" value=$top_center_block_arr}>
+<{assign var="item_right_block" value=$top_right_block_arr}>
 
 <{assign var="item_left_html_content" value=$top_left_html_content}>
 <{assign var="item_center_html_content" value=$top_center_html_content}>

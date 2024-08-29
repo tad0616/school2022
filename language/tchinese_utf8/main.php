@@ -216,6 +216,8 @@ define('TF_MIDDEL_ZONE', '中間自訂區');
 
 define('TF_NAV_NO_MOUSE_OVER', '是否點擊才出現子選單');
 define('TF_NAV_NO_MOUSE_OVER_DESC', '預設為滑鼠停留就出現，選是就必須點擊才會出現');
+define('TF_NAV_MENU_ICON', '主選單的圖示');
+define('TF_NAV_MENU_ICON_DESC', '<a href="https://fontawesome.com/v4/icons/" target="_blank">圖示可參考這裡</a>，如：fa-bars，空白表示不需要');
 
 define('TF_SLIDE_AUTO', '是否使用自動配對');
 define('TF_SLIDE_AUTO_DESC', '讓系統自動偵測網址某變數來自動切換 slide');

@@ -6,9 +6,9 @@
 <{assign var="item_center" value=$middle_center}>
 <{assign var="item_right" value=$middle_right}>
 
-<{assign var="item_left_block" value=$middle_left_block}>
-<{assign var="item_center_block" value=$middle_center_block}>
-<{assign var="item_right_block" value=$middle_right_block}>
+<{assign var="item_left_block" value=$middle_left_block_arr}>
+<{assign var="item_center_block" value=$middle_center_block_arr}>
+<{assign var="item_right_block" value=$middle_right_block_arr}>
 
 <{assign var="item_left_html_content" value=$middle_left_html_content}>
 <{assign var="item_center_html_content" value=$middle_center_html_content}>

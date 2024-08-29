@@ -101,3 +101,11 @@ $theme_config[$i]['text'] = TF_NAV_NO_MOUSE_OVER;
 $theme_config[$i]['desc'] = TF_NAV_NO_MOUSE_OVER_DESC;
 $theme_config[$i]['type'] = "yesno";
 $theme_config[$i]['default'] = "0";
+
+//主選單的圖示
+$i++;
+$theme_config[$i]['name'] = "menu_icon";
+$theme_config[$i]['text'] = TF_NAV_MENU_ICON;
+$theme_config[$i]['desc'] = TF_NAV_MENU_ICON_DESC;
+$theme_config[$i]['type'] = "text";
+$theme_config[$i]['default'] = "fa-bars";

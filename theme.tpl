@@ -4,11 +4,27 @@
         <!--目前$_SESSION['bootstrap']="<{$smarty.session.bootstrap}>"; -->
         <!--將目前的資料夾名稱，設定為樣板標籤變數 theme_name-->
         <{assign var="theme_name" value=$xoTheme->folderName}>
-        <!--載入由使用者設定的各項佈景變數-->
-        <{* <{include file="$xoops_rootpath/modules/tadtools/themes_common/get_var.tpl"}> *}>
 
         <!-- theme_id= <{$theme_id}>-->
-        <{include file="$xoops_rootpath/themes/school2022/tpl/var.tpl"}>
+        <{if $container_width == 12}>
+            <{assign var="container_width" value="100%"}>
+        <{elseif $container_width == 11}>
+            <{assign var="container_width" value="92%"}>
+        <{elseif $container_width == 10}>
+            <{assign var="container_width" value="83%"}>
+        <{elseif $container_width == 9}>
+            <{assign var="container_width" value="75%"}>
+        <{elseif $container_width == 8}>
+            <{assign var="container_width" value="67%"}>
+        <{/if}>
+
+
+        <{if $slide_display_type=='not_full' && $content_display_type=='not_full' && $logo_display_type=='not_full' && $footer_display_type=='not_full' &&  $top_display_type=='not_full' && $bottom_display_type=='not_full'}>
+            <{assign var="use_page" value="1"}>
+        <{else}>
+            <{assign var="use_page" value="0"}>
+        <{/if}>
+
 
         <{include file="$xoops_rootpath/modules/tadtools/themes_common/meta.tpl"}>
         <!-- 網站的標題及標語 -->
@@ -33,6 +49,7 @@
     </head>
 
     <body>
+
         <!-- 導覽列區域 -->
         <{if $navbar_pos=='fixed-top'}>
             <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
