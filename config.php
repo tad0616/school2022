@@ -175,12 +175,12 @@ $config_enable['block_style'] = array('enable' => '1', 'min' => '', 'max' => '',
 background: #f5f5f5;
 overflow: hidden;
 margin: 15px 0px 15px;
-border-radius: 4px;', );
+border-radius: 4px;');
 
 //區塊標題區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
 $config_enable['block_title_style'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'border-bottom: 2px solid #7cb6b7;
 padding: 8px 15px;
-text-shadow: 0px 1px #0d4e5c, 1px 0px #0d4e5c, -1px 0px #0d4e5c, 0px -1px #0d4e5c, -1px -1px #0d4e5c, 1px 1px #0d4e5c, 1px -1px #0d4e5c, -1px 1px #0d4e5c;', );
+text-shadow: 0px 1px #0d4e5c, 1px 0px #0d4e5c, -1px 0px #0d4e5c, 0px -1px #0d4e5c, -1px -1px #0d4e5c, 1px 1px #0d4e5c, 1px -1px #0d4e5c, -1px 1px #0d4e5c;');
 
 //區塊內容區樣式手動設定[theme_css_blocks.tpl]，值： 1 （重複）, 0 （不重複）
 $config_enable['block_content_style'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'padding: 15px;');
@@ -258,7 +258,7 @@ $config_enable['navbar_color'] = array('enable' => '1', 'min' => '', 'max' => ''
 $config_enable['navbar_color_hover'] = array('enable' => '1', 'min' => '', 'max' => '', 'require' => '0', 'default' => '#3b3b3b');
 
 //導覽選單 圖示顏色[navbar.tpl]，值： icon-white （白色圖案）, '' （黑色圖案）
-$config_enable['navbar_icon'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => 'style=');
+$config_enable['navbar_icon'] = array('enable' => '0', 'min' => '', 'max' => '', 'require' => '0', 'default' => '');
 
 //導覽選單 導覽選項上下距離[theme_css_navbar.tpl]
 $config_enable['navbar_py'] = array('enable' => '1', 'min' => '2', 'max' => '30', 'require' => '1', 'default' => '15');
