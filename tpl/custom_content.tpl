@@ -1,6 +1,6 @@
 <{if $item_content|is_array}>
     <{if 'html'|in_array:$item_content}>
-        <{if $item_html_content}><div class="d-inline-block"><{$item_html_content}></div><{/if}>
+        <{if $item_html_content|default:false}><div class="d-inline-block"><{$item_html_content|default:''}></div><{/if}>
     <{/if}>
 
     <{if 'fa-icon'|in_array:$item_content}>
@@ -40,7 +40,7 @@
     <{/if}>
 
     <{if 'navbar'|in_array:$item_content}>
-        <div class="d-xl-inline-block" style="<{$nav_style}>">
+        <div class="d-xl-inline-block" style="<{$nav_style|default:''}>">
             <{include file="$xoops_rootpath/modules/tadtools/themes5_tpl/navbar.tpl"}>
         </div>
     <{/if}>

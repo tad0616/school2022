@@ -19,32 +19,32 @@
             <{/if}>
         <{/if}>
 
-        <{if $pin_zone}>
+        <{if $pin_zone|default:false}>
             <{if $pin_zone=="top"}>
-                <{assign var="zIndex" value=$top_zindex}>
+                <{assign var="zIndex" value=$top_zindex|default:''}>
             <{elseif $pin_zone=="logo"}>
-                <{assign var="zIndex" value=$logo_zindex}>
+                <{assign var="zIndex" value=$logo_zindex|default:''}>
             <{elseif $pin_zone=="nav"}>
-                <{assign var="zIndex" value=$nav_zindex}>
+                <{assign var="zIndex" value=$nav_zindex|default:''}>
             <{else}>
                 <{assign var="zIndex" value="5001"}>
             <{/if}>
 
             if($( window ).width() > 768){
-                $("#<{$pin_zone}>-wrapper").sticky({topSpacing:0 , zIndex: <{$zIndex}>, getWidthFrom:'#<{$pin_zone}>-wrapper'});
+                $("#<{$pin_zone|default:''}>-wrapper").sticky({topSpacing:0 , zIndex: <{$zIndex|default:''}>, getWidthFrom:'#<{$pin_zone|default:''}>-wrapper'});
             }else{
-                $("#<{$pin_zone}>-wrapper").unstick();
+                $("#<{$pin_zone|default:''}>-wrapper").unstick();
             }
         <{/if}>
     });
 
-    <{if $pin_zone}>
+    <{if $pin_zone|default:false}>
         $(window).resize(function() {
             if($(window).width() > 768){
                 // 避免在手機狀態下無法上下選擇選項
-                $("#<{$pin_zone}>-wrapper").sticky({topSpacing:0 , zIndex: <{$zIndex}>, getWidthFrom:'#<{$pin_zone}>-wrapper'});
+                $("#<{$pin_zone|default:''}>-wrapper").sticky({topSpacing:0 , zIndex: <{$zIndex|default:''}>, getWidthFrom:'#<{$pin_zone|default:''}>-wrapper'});
             }else{
-                $("#<{$pin_zone}>-wrapper").unstick();
+                $("#<{$pin_zone|default:''}>-wrapper").unstick();
             }
         });
     <{/if}>

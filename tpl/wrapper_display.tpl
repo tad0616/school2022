@@ -1,19 +1,19 @@
-#<{$item}>-wrapper{
+#<{$item|default:''}>-wrapper{
     position: relative;
     padding: 0px;
     margin: auto;
     <{if !$use_page}>
         <{if $display_type=='not_full'}>
-            max-width:<{$container_width}>;
+            max-width:<{$container_width|default:''}>;
         <{/if}>
     <{/if}>
 
-    <{if $zindex}>z-index: <{$zindex}>;<{/if}>
-    <{if $bg_img || $side_bgcolor}>background: <{$side_bgcolor}> <{if $bg_img and $item!='logo'}>url(<{$bg_img}>) <{$bg_repeat}> <{$bg_position}> <{if $bg_size}>/<{$bg_size}><{/if}><{/if}>;<{/if}>
-    <{if $mt}>margin-top: <{$mt}>;<{/if}>
-    <{if $mb}>margin-bottom: <{$mb}>;<{/if}>
-    <{if $ml}>margin-left: <{$ml}>;<{/if}>
-    <{if $mr}>margin-right: <{$mr}>;<{/if}>
+    <{if $zindex|default:false}>z-index: <{$zindex|default:''}>;<{/if}>
+    <{if $bg_img || $side_bgcolor}>background: <{$side_bgcolor|default:''}> <{if $bg_img and $item!='logo'}>url(<{$bg_img|default:''}>) <{$bg_repeat|default:''}> <{$bg_position|default:''}> <{if $bg_size|default:false}>/<{$bg_size|default:''}><{/if}><{/if}>;<{/if}>
+    <{if $mt|default:false}>margin-top: <{$mt|default:''}>;<{/if}>
+    <{if $mb|default:false}>margin-bottom: <{$mb|default:''}>;<{/if}>
+    <{if $ml|default:false}>margin-left: <{$ml|default:''}>;<{/if}>
+    <{if $mr|default:false}>margin-right: <{$mr|default:''}>;<{/if}>
 
     <{* 陰影設定 *}>
     <{assign var="shadow" value=""}>
@@ -56,47 +56,47 @@
     <{/if}>
 
 
-    <{if $shadow}>box-shadow: <{$shadow|substr:0:-1}>;<{/if}>
-    <{if $style}><{$style}><{/if}>
+    <{if $shadow|default:false}>box-shadow: <{$shadow|substr:0:-1}>;<{/if}>
+    <{if $style|default:false}><{$style|default:''}><{/if}>
 }
 
-#<{$item}>-display{
+#<{$item|default:''}>-display{
     <{if $display_type=='bg_full'}>
-        max-width:<{$container_width}>;
+        max-width:<{$container_width|default:''}>;
     <{/if}>
     <{* box-sizing: border-box; *}>
     margin: 0px auto;
-    <{if $padding}>padding: <{$padding}>;<{/if}>
+    <{if $padding|default:false}>padding: <{$padding|default:''}>;<{/if}>
     <{* padding 放在這裡 display 才能和 wrapper 緊密合在一起 *}>
-    <{if $content_bgcolor}>background-color: <{$content_bgcolor}>;<{/if}>
-    <{if $height}>min-height: <{$height}>;<{/if}>
-    <{if $color}>color: <{$color}>;<{/if}>
+    <{if $content_bgcolor|default:false}>background-color: <{$content_bgcolor|default:''}>;<{/if}>
+    <{if $height|default:false}>min-height: <{$height|default:''}>;<{/if}>
+    <{if $color|default:false}>color: <{$color|default:''}>;<{/if}>
 }
 
-#<{$item}>-display>div{
+#<{$item|default:''}>-display>div{
     padding: 0px;
     margin: 0px;
 }
 
-<{if $border_radius}>
-    #<{$item}>-wrapper,
-    #<{$item}>-display,
-    #<{$item}>-display img {
-        border-radius: <{$border_radius}>;
+<{if $border_radius|default:false}>
+    #<{$item|default:''}>-wrapper,
+    #<{$item|default:''}>-display,
+    #<{$item|default:''}>-display img {
+        border-radius: <{$border_radius|default:''}>;
     }
 <{/if}>
 
 @media (min-width: 768px) {
-    #<{$item}>-wrapper{
+    #<{$item|default:''}>-wrapper{
         <{if $item=='nav' and $display_type=='not_full' and ($navbar_pos=='fixed-top' or $navbar_pos=='fixed-bottom')}>
-            max-width:<{$container_width}>;
+            max-width:<{$container_width|default:''}>;
         <{/if}>
     }
 }
 
 
 @media (max-width: 768px) {
-    #<{$item}>-wrapper, #<{$item}>-display{
+    #<{$item|default:''}>-wrapper, #<{$item|default:''}>-display{
         max-width: 100%;
     }
 

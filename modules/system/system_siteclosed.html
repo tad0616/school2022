@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="<{$xoops_langcode}>">
+<html lang="<{$xoops_langcode|default:''}>">
     <head>
         <!--目前$_SESSION['bootstrap']="<{$smarty.session.bootstrap}>"; -->
         <!--將目前的資料夾名稱，設定為樣板標籤變數 theme_name-->
         <{assign var="theme_name" value=$xoTheme->folderName}>
 
-        <!-- theme_id= <{$theme_id}>-->
+        <!-- theme_id= <{$theme_id|default:''}>-->
         <{if $container_width == 12}>
             <{assign var="container_width" value="100%"}>
         <{elseif $container_width == 11}>
@@ -27,12 +27,12 @@
 
         <{include file="$xoops_rootpath/modules/tadtools/themes_common/meta.tpl"}>
         <!-- 網站的標題及標語 -->
-        <title><{$xoops_sitename}><{if $xoops_pagetitle}> - <{$xoops_pagetitle}><{/if}></title>
+        <title><{$xoops_sitename|default:''}><{if $xoops_pagetitle|default:false}> - <{$xoops_pagetitle|default:''}><{/if}></title>
 
         <{include file="$xoops_rootpath/modules/tadtools/themes5_tpl/link_css.tpl"}>
 
         <!-- 給模組套用的樣板標籤開始 -->
-        <{$xoops_module_header}>
+        <{$xoops_module_header|default:''}>
         <!-- 給模組套用的樣板標籤結束 -->
 
         <!-- 局部套用的樣式，如果有載入完整樣式 theme_css.tpl 那就不需要這一部份 -->
@@ -53,7 +53,7 @@
             <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
         <{/if}>
 
-        <{if $use_page}>
+        <{if $use_page|default:false}>
         <div id="page-wrapper">
         <{/if}>
 
@@ -95,7 +95,7 @@
         <{* 底部內容區 *}>
         <{include file="$xoops_rootpath/themes/school2022/tpl/bottom_wrapper.tpl"}>
 
-        <{if $use_page}>
+        <{if $use_page|default:false}>
         </div>
         <{/if}>
 
@@ -106,6 +106,6 @@
 
         <!-- 載入自訂js -->
         <{include file="$xoops_rootpath/themes/school2022/tpl/my_js.tpl"}>
-        <{$my_code}>
+        <{$my_code|default:''}>
     </body>
 </html>

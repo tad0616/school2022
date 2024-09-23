@@ -186,7 +186,7 @@ define('TF_BOTTOM_LEFT', '底部左側');
 define('TF_BOTTOM_CENTER', '底部中間');
 define('TF_BOTTOM_RIGHT', '底部右側');
 
-define('TF_SELECT_CONTENT', '選擇欲出現的內容<ol style="list-style-type: decimal;"><li>可多選，但「自訂內容」、「連結選項」、「Font Awesome 圖示連結」不能同時選</li><li>區塊無須啟用</li><li>可用進階區塊模組來<a href="<{$xoops_url}>/modules/tad_blocks/index.php?op=block_form">產生自訂內容</a></li></ol>');
+define('TF_SELECT_CONTENT', '選擇欲出現的內容<ol style="list-style-type: decimal;"><li>可多選，但「自訂內容」、「連結選項」、「Font Awesome 圖示連結」不能同時選</li><li>區塊無須啟用</li><li>可用進階區塊模組來<a href="' . XOOPS_URL . '/modules/tad_blocks/index.php?op=block_form">產生自訂內容</a></li></ol>');
 define('TF_CONTENT', '自訂內容');
 define('TF_CONTENT_DESC', '依據選擇的種類設定自訂內容');
 define('TF_HTML_CONTENT_DESC', '<ol style="list-style-type: decimal;"><li>可以加入任何內容，包括 HTML、CSS、JavaScript 等</li><li><a href="https://campus-xoops.tn.edu.tw/modules/tad_book3/page.php?tbsn=18&tbdsn=1979" target="_blank">點此取得預設內容並觀看完整說明</a></li></ol>');
