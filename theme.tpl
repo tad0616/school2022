@@ -48,7 +48,7 @@
         <{include file="$xoops_rootpath/modules/tadtools/themes5_tpl/bootstrap_js.tpl"}>
     </head>
 
-    <body>
+    <body <{$prism_setup}>>
 
         <!-- 導覽列區域 -->
         <{if $navbar_pos=='fixed-top'}>

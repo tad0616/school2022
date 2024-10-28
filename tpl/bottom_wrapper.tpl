@@ -23,4 +23,5 @@
 <{assign var="item_center_menu_content" value=$bottom_center_menu_content|default:''}>
 <{assign var="item_right_menu_content" value=$bottom_right_menu_content|default:''}>
 
+<{assign var="item_enable" value=$bottom_enable|default:'1'}>
 <{include file="$xoops_rootpath/themes/school2022/tpl/custom_wrapper.tpl" item="bottom"}>

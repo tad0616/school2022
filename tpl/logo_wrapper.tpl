@@ -1,4 +1,4 @@
-<{if $logo_position!="slide" && $logo_cols!=''}>
+<{if $logo_position!="slide" && $logo_cols!='' && $logo_enable|default:'1'=='1'}>
     <div id="logo-wrapper">
         <{assign var="logo_var" value=$smarty.get.$logo_var}>
         <{assign var="mylogofile" value="{$xoops_rootpath}{$logo_path}{$logo_var}.$logo_ext"}>

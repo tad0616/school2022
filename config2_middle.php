@@ -2,6 +2,14 @@
 require XOOPS_ROOT_PATH . '/themes/school2022/bg_config.php';
 $i = 0;
 
+//是否使用此區域
+$i++;
+$theme_config[$i]['name'] = "middle_enable";
+$theme_config[$i]['text'] = TF_ENABLE;
+$theme_config[$i]['desc'] = TF_ENABLE_DESC;
+$theme_config[$i]['type'] = "yesno";
+$theme_config[$i]['default'] = "0";
+
 //中間自訂內容顯示模式
 $i++;
 $theme_config[$i]['name'] = "middle_display_type";

@@ -2,6 +2,14 @@
 require XOOPS_ROOT_PATH . '/themes/school2022/bg_config.php';
 $i = 0;
 
+//是否使用此區域
+$i++;
+$theme_config[$i]['name'] = "top_enable";
+$theme_config[$i]['text'] = TF_ENABLE;
+$theme_config[$i]['desc'] = TF_ENABLE_DESC;
+$theme_config[$i]['type'] = "yesno";
+$theme_config[$i]['default'] = "1";
+
 //頂部自訂內容顯示模式
 $i++;
 $theme_config[$i]['name'] = "top_display_type";

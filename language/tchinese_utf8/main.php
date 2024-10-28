@@ -227,3 +227,6 @@ define('TF_SLIDE_VAR', '自動配對變數名稱');
 define('TF_SLIDE_VAR_DESC', '欲偵測的網址變數名稱，如：nsn');
 define('TF_SLIDE_EXT', 'slide圖的副檔名');
 define('TF_SLIDE_EXT_DESC', '例如 jpg 或 png');
+
+define('TF_ENABLE', '是否使用此區域');
+define('TF_ENABLE_DESC', '選否將隱藏此區域');

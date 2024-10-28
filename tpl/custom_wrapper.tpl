@@ -1,4 +1,4 @@
-<{if $item_height!=""}>
+<{if $item_height!="" && $item_enable=='1'}>
     <div id="<{$item|default:''}>-wrapper">
         <div id="<{$item|default:''}>-display">
             <div style="<{$item_style|default:''}>" class="row">

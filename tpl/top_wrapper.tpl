@@ -24,4 +24,5 @@
 <{assign var="item_center_menu_content" value=$top_center_menu_content|default:''}>
 <{assign var="item_right_menu_content" value=$top_right_menu_content|default:''}>
 
+<{assign var="item_enable" value=$top_enable|default:'1'}>
 <{include file="$xoops_rootpath/themes/school2022/tpl/custom_wrapper.tpl" item="top"}>

@@ -226,3 +226,6 @@ define('TF_SLIDE_VAR', 'Auto-match variable name');
 define('TF_SLIDE_VAR_DESC', 'Name of the URL variable to be detected, e.g.: nsn');
 define('TF_SLIDE_EXT', 'the subfile name of the slide map');
 define('TF_SLIDE_EXT_DESC', 'e.g. jpg or png');
+
+define('TF_ENABLE', 'Whether to use this area');
+define('TF_ENABLE_DESC', 'Select to hide this area');

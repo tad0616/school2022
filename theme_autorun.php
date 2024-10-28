@@ -3,7 +3,7 @@ use XoopsModules\Tadtools\Utility;
 
 global $xoopsTpl;
 
-if ($_SESSION['xoops_version'] < 20511) {
+if (isset($_SESSION['xoops_version']) && $_SESSION['xoops_version'] < 20511) {
     $xoopsTpl->register_function('xoBlock', 'xoBlock');
     function xoBlock()
     {return;}
