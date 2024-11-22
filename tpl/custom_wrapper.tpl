@@ -10,7 +10,7 @@
                         <{assign var="item_html_content" value=$item_left_html_content|default:''}>
                         <{assign var="item_fa_content" value=$item_left_fa_content|default:''}>
                         <{assign var="item_menu_content" value=$item_left_menu_content|default:''}>
-                        <{assign var="item_block" value=$item_left_block|default:''}>
+                        <{assign var="item_block" value=$item_left_block}>
                         <{include file="$xoops_rootpath/themes/school2022/tpl/custom_content.tpl"}>
                     </div>
                 <{/if}>
@@ -21,7 +21,7 @@
                         <{assign var="item_html_content" value=$item_center_html_content|default:''}>
                         <{assign var="item_fa_content" value=$item_center_fa_content|default:''}>
                         <{assign var="item_menu_content" value=$item_center_menu_content|default:''}>
-                        <{assign var="item_block" value=$item_center_block|default:''}>
+                        <{assign var="item_block" value=$item_center_block}>
                         <{include file="$xoops_rootpath/themes/school2022/tpl/custom_content.tpl"}>
                     </div>
                 <{/if}>
@@ -32,7 +32,7 @@
                         <{assign var="item_html_content" value=$item_right_html_content|default:''}>
                         <{assign var="item_fa_content" value=$item_right_fa_content|default:''}>
                         <{assign var="item_menu_content" value=$item_right_menu_content|default:''}>
-                        <{assign var="item_block" value=$item_right_block|default:''}>
+                        <{assign var="item_block" value=$item_right_block}>
                         <{include file="$xoops_rootpath/themes/school2022/tpl/custom_content.tpl"}>
                     </div>
                 <{/if}>

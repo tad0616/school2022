@@ -10,14 +10,11 @@
 
     <{if 'block'|in_array:$item_content}>
         <div class="d-block">
-            <{if $xoops_version < 20511}>
-                <{include file="$xoops_rootpath/themes/school2022/tpl/block.tpl"}>
+            <!-- bid= <{$item_block.bid}> (<{$item_block.title}>) -->
+            <{if $xoops_version >= 20511}>
+                <{include file="$xoops_rootpath/themes/school2022/tpl/xoblock.tpl"}>
             <{else}>
-                <{if isset($item_block.options)}>
-                    <{xoBlock id=$item_block.bid options=$item_block.options}>
-                <{else}>
-                    <{xoBlock id=$item_block.bid}>
-                <{/if}>
+                <{include file="$xoops_rootpath/themes/school2022/tpl/block.tpl"}>
             <{/if}>
         </div>
     <{/if}>

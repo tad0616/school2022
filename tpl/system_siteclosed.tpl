@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="<{$xoops_langcode|default:''}>">
     <head>
-        <!--目前$_SESSION['bootstrap']="<{$smarty.session.bootstrap}>"; -->
+        <{assign var="bootstrap" value=$smarty.session.bootstrap|default:$session.bootstrap}>
+        <!--目前$_SESSION['bootstrap']="<{$bootstrap|default:''}>"; -->
         <!--將目前的資料夾名稱，設定為樣板標籤變數 theme_name-->
         <{assign var="theme_name" value=$xoTheme->folderName}>
 
@@ -47,7 +48,7 @@
         <{include file="$xoops_rootpath/modules/tadtools/themes5_tpl/bootstrap_js.tpl"}>
     </head>
 
-    <body  <{$prism_setup}>>
+    <body <{$prism_setup|default:''}>>
         <!-- 導覽列區域 -->
         <{if $navbar_pos=='fixed-top'}>
             <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
