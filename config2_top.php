@@ -125,9 +125,9 @@ $theme_config[$i]['default'] = ['fa-icon', 'search'];
 $theme_config[$i]['block'] = "";
 $theme_config[$i]['html_content'] = "";
 $theme_config[$i]['html_content_desc'] = TF_HTML_CONTENT_DESC;
-$theme_config[$i]['fa_content'] = "https://www.facebook.com|fa-facebook|dark|_blank|學校粉專
-https://www.youtube.com|fa-youtube|dark|_blank|學校頻道
-/modules/tadnews/rss.php|fa-rss|dark|_self|RSS文摘";
+$theme_config[$i]['fa_content'] = "https://www.facebook.com|fab fa-facebook|dark|_blank|學校粉專
+https://www.youtube.com|fab fa-youtube|dark|_blank|學校頻道
+/modules/tadnews/rss.php|fa-square-rss|dark|_self|RSS文摘";
 $theme_config[$i]['fa_content_desc'] = TF_FA_CONTENT_DESC;
 $theme_config[$i]['menu_content'] = "";
 $theme_config[$i]['menu_content_desc'] = TF_MENU_CONTENT_DESC;

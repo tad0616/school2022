@@ -5,7 +5,7 @@
 <{if $use_slide and $slider_var }>
     <{if $logo_position=="slide" &&  $logo_img}>
         <{if $logo_zindex <= $slide_zindex}>
-            <{assign var="logo_zindex" value=$slide_zindex+1}>
+            <{assign var="logo_zindex" value=$slide_zindex|intval+1}>
         <{/if}>
         <{if $logo_var|default:''}>
             <{assign var="logo_var" value=$smarty.get.$logo_var|default:''}>

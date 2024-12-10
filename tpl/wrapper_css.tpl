@@ -121,7 +121,7 @@
 <{assign var="height" value=$slide_height|default:''}>
 <{assign var="color" value=null}>
 <{assign var="style" value=$slide_style|default:''}>
-<{assign var="zindex" value=$slide_zindex|default:''}>
+<{assign var="zindex" value=$slide_zindex|default:0}>
 <{assign var="shadow_arr" value=$slide_shadow|default:''}>
 <{assign var="display_type" value=$slide_display_type|default:''}>
 <{assign var="border_radius" value=$slide_border_radius|default:''}>
