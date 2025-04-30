@@ -36,7 +36,7 @@
                     <{assign var="item_html_content" value=$logo_right_zone_html_content|default:''}>
                     <{assign var="item_fa_content" value=$logo_right_zone_fa_content|default:''}>
                     <{assign var="item_menu_content" value=$logo_right_zone_menu_content|default:''}>
-                    <{assign var="item_block" value=$logo_right_zone_block|default:[]}>
+                    <{assign var="item_block" value=$logo_right_zone_block_arr|default:[]}>
 
                     <{include file="$xoops_rootpath/themes/school2022/tpl/custom_content.tpl"}>
                 </div>

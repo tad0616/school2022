@@ -10,7 +10,7 @@
 
     <{if 'block'|in_array:$item_content}>
         <div class="d-block">
-            <!-- bid= <{$item_block.bid}> (<{$item_block.title}>) -->
+            <!-- bid= <{if isset($item_block) && $item_block|is_array}> <{$item_block.bid|default:0}> (<{$item_block.title|default:''}>) <{else}> 無 <{/if}>-->
             <{if $xoops_version >= 20511}>
                 <{include file="$xoops_rootpath/themes/school2022/tpl/xoblock.tpl"}>
             <{else}>
