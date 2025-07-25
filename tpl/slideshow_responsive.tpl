@@ -7,13 +7,13 @@
         <{if $logo_zindex <= $slide_zindex}>
             <{assign var="logo_zindex" value=$slide_zindex|intval+1}>
         <{/if}>
-        <{if $logo_var|default:''}>
-            <{assign var="logo_var" value=$smarty.get.$logo_var|default:''}>
-            <{assign var="mylogofile" value="{$xoops_rootpath}{$logo_path}{$logo_var}.$logo_ext"}>
-            <{assign var="mytarget" value="`$logo_var`=`$smarty.get.$logo_var`"}>
+        <{if $logo_var|default:false}>
+            <{assign var="logo_var_val" value=$smarty.get.$logo_var|default:''}>
+            <{assign var="mylogofile" value="$xoops_rootpath$logo_path$logo_var_val.$logo_ext"}>
+            <{assign var="mytarget" value="$logo_var=$logo_var_val"}>
         <{/if}>
         <div style="position:relative; width:100%;">
-            <{if $logo_auto==1 and strpos($smarty.server.QUERY_STRING, $mytarget)!==false and $mylogofile|file_exists}>
+            <{if $logo_auto==1 and $smarty.server.REQUEST_URI|strpos:$mytarget!==false and $mylogofile|file_exists}>
                 <a href="<{$xoops_url}>/index.php?<{$logo_var|default:''}>=<{$smarty.get.$logo_var}>"><img id="website_logo" src="<{$xoops_url}><{$logo_path|default:''}><{$smarty.get.$logo_var}>.<{$logo_ext|default:''}>" style="max-width: 100%;<{if $logo_position=="slide"}>position: absolute; z-index: <{$logo_zindex|default:''}>; <{$logo_place|default:''}><{else}>position: relative; z-index:<{$logo_zindex|default:''}>;<{/if}>" alt="<{$xoops_sitename|default:''}>" title="<{$xoops_sitename|default:''}>" class="img-fluid"></a>
             <{else}>
                 <{include file="$xoops_rootpath/modules/tadtools/themes5_tpl/logo.tpl"}>

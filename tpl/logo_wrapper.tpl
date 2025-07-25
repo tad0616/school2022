@@ -1,10 +1,12 @@
 <{if $logo_position!="slide" && $logo_cols!='' && $logo_enable|default:'1'=='1'}>
     <div id="logo-wrapper">
-        <{if $logo_auto|default:false && $logo_var|default:''}>
-            <{assign var="mylogofile" value="{$xoops_rootpath}{$logo_path}{$logo_var}.$logo_ext"}>
+        <{if $logo_auto|default:false && $logo_var|default:false}>
+            <{assign var="logo_var_val" value=$smarty.get.$logo_var|default:''}>
+            <{assign var="mylogofile" value="$xoops_rootpath$logo_path$logo_var_val.$logo_ext"}>
+            <{assign var="mytarget" value="$logo_var=$logo_var_val"}>
         <{/if}>
         <div id="logo-display" class="container-fluid <{if $logo_align|default:false}>d-flex <{$logo_align|default:''}><{/if}>">
-            <div class="row">
+            <div class="row g-0">
 
             <{if $logo_cols|strpos:":"}>
                 <{assign var="logo_col" value=':'|explode:$logo_cols}>
@@ -20,7 +22,7 @@
                     </h1>
                     <div class="mt-1 opacity-75"><{$xoops_slogan|default:''}></div>
                 <{elseif $logo_position=="page"}>
-                    <{if $logo_auto|default:false and $smarty.server.REQUEST_URI|strpos:$smarty.get.$logo_var!==false and $mylogofile|file_exists}>
+                    <{if $logo_auto==1 and $smarty.server.REQUEST_URI|strpos:$mytarget!==false and $mylogofile|file_exists}>
                         <a href="<{$xoops_url}><{$smarty.server.DOCUMENT_URI}>?<{$logo_var|default:''}>=<{$smarty.get.$logo_var}>">
                             <img id="website_logo" src="<{$xoops_url}><{$logo_path|default:''}><{$smarty.get.$logo_var}>.<{$logo_ext|default:''}>" style="<{if $logo_full!='1'}>max-<{/if}>>width: 100%;position: relative; z-index:10;" alt="<{$xoops_sitename|default:''}>" title="<{$xoops_sitename|default:''}>" class="img-fluid">
                         </a>

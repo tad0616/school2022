@@ -1,7 +1,8 @@
 <?php
+use XoopsModules\Tadtools\Tools;
 use XoopsModules\Tadtools\Utility;
 
-global $xoopsTpl;
+global $xoopsTpl, $xoopsConfig;
 
 if (isset($_SESSION['xoops_version']) && $_SESSION['xoops_version'] < 20511) {
     $xoopsTpl->register_function('xoBlock', 'xoBlock');
@@ -12,6 +13,21 @@ if (isset($_SESSION['xoops_version']) && $_SESSION['xoops_version'] < 20511) {
 if (!class_exists('XoopsModules\Tadtools\Utility')) {
     require XOOPS_ROOT_PATH . '/modules/tadtools/preloads/autoloader.php';
 }
+
+if ($xoopsConfig['closesite'] == 1) {
+    $theme_name      = isset($_SESSION['xoopsUserTheme']) ? $_SESSION['xoopsUserTheme'] : $xoopsConfig['theme_set'];
+    $theme_json_file = XOOPS_VAR_PATH . "/data/{$theme_name}_setup.json";
+
+    if (file_exists($theme_json_file)) {
+        $theme_config = json_decode(file_get_contents($theme_json_file), true);
+    } else {
+        $theme_config = Tools::import_theme_json($theme_name);
+    }
+    foreach ($theme_config as $key => $value) {
+        $xoopsTpl->assign($key, $value);
+    }
+}
+
 Utility::get_jquery(true);
 if (file_exists(XOOPS_ROOT_PATH . "/class/xoopsform/renderer/XoopsFormRendererBootstrap5.php")) {
     xoops_load('XoopsFormRendererBootstrap5');
