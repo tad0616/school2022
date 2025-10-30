@@ -7,7 +7,7 @@
         $("input[name='pass']").addClass("form-control");
         $('iframe:not([title])').attr('title','iframe content');
 
-        <{if $use_pin=="1" or $navbar_pos=='fixed-top'}>
+        <{if $navbar_pos=='fixed-top'}>
             <{if $top_height!="" && (($top_left|is_array && "navbar"|in_array:$top_left) || ($top_center|is_array && "navbar"|in_array:$top_center) || ($top_right|is_array && "navbar"|in_array:$top_right))}>
                 <{assign var="pin_zone" value="top"}>
             <{elseif $logo_right_zone|is_array && "navbar"|in_array:$logo_right_zone}>

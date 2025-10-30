@@ -95,7 +95,10 @@
         <{if $navbar_pos=='middle-bottom'}>
             <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
         <{/if}>
-        <div class="d-flex flex-column min-vh-100">
+
+
+        <{* <div class="d-flex flex-column min-vh-100">*}>
+        <div class="d-flex flex-column">
             <div class="flex-grow-1">
                 <{* 主內容區域 *}>
                 <{include file="$xoops_rootpath/themes/school2022/tpl/content_wrapper.tpl"}>
