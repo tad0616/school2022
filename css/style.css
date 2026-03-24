@@ -1,7 +1,7 @@
 @import url("block.css");
 
 body {
-  padding-top: 0px;
+  padding-top: 0;
   margin-bottom: 0; /* 防止底部出現雙重邊距 */
 }
 
@@ -10,7 +10,7 @@ p {
 }
 
 .navbar {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 /* 用來製作網頁背景效果，僅html模式有效果 */
@@ -18,25 +18,10 @@ p {
   margin: 0 auto;
 }
 
-/* 頁首 */
-#xoops_theme_header {}
-
-/* 內容區（包含各區域） */
-#xoops_theme_content_zone {}
-
-/* 左區域 */
-#xoops_theme_left_zone {}
-
-/* 主頁面區 */
-#xoops_theme_center {}
-
 /*主內容區*/
 #xoops_contents {
   padding-top: 1rem;
 }
-
-/* 右區域 */
-#xoops_theme_right_zone {}
 
 /* 頁尾 */
 #xoops_theme_footer {
@@ -54,12 +39,12 @@ a:hover {
 a.block_config {
   position: absolute;
   z-index: 1;
-  top: 6px;
-  right: 10px;
+  top: 0.375rem;
+  right: 0.625rem;
   display: block;
   float: right;
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   background-image: url(../img/block_config.png);
 }
 
@@ -68,16 +53,16 @@ a.block_config:hover {
 }
 
 .xoops_content_shadow {
-  box-shadow: 6px 0px 5px -2px rgba(0, 0, 0, 0.4),
-    -6px 0px 5px -2px rgba(0, 0, 0, 0.4),
-    0px -6px 5px -2px rgba(0, 0, 0, 0.4),
-    0px 6px 5px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0.375rem 0 0.3125rem -0.125rem rgba(0, 0, 0, 0.4),
+    -0.375rem 0 0.3125rem -0.125rem rgba(0, 0, 0, 0.4),
+    0 -0.375rem 0.3125rem -0.125rem rgba(0, 0, 0, 0.4),
+    0 0.375rem 0.3125rem -0.125rem rgba(0, 0, 0, 0.4);
 }
 
 .form-control-static {
-  min-height: 34px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  min-height: 2.125rem;
+  padding-top: 0.4375rem;
+  padding-bottom: 0.4375rem;
   margin-bottom: 0;
 }
 
@@ -94,7 +79,7 @@ blockquote {
   text-align: left;
   padding: 1.2em 0 2em 1.2em;
   border: none;
-  margin: 20px auto 20px;
+  margin: 1.25rem auto 1.25rem;
   width: 100%;
   display: block;
   font-size: 1.5rem;
@@ -104,7 +89,7 @@ blockquote {
 blockquote:after {
   content: "";
   display: block;
-  width: 10px;
+  width: 0.625rem;
   height: 100%;
   position: absolute;
   left: 0;
@@ -129,14 +114,14 @@ blockquote>p>cite {
 
 a.si, a.sidark, a.silight {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   text-align: center;
-  padding-top: 4px;
+  padding-top: 0.25rem;
   border-radius: 50%;
   background-clip: padding-box;
   font-size: 1.1rem;
-  margin: 3px 5px 6px;
+  margin: 0.1875rem 0.3125rem 0.375rem;
   color: #fff;
 }
 
@@ -168,7 +153,7 @@ a.silight:hover {
 }
 
 ul#head_menu {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 ul#head_menu li {
@@ -179,11 +164,15 @@ ul#head_menu li {
 
 ul#head_menu li a {
   color: #000000;
-  padding: 6px 20px;
+  padding: 0.375rem 0.75rem;
 }
 
 ul#head_menu li a:hover,
 .active {
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
+}
+
+code{
+  color:rgb(163, 35, 12);
 }

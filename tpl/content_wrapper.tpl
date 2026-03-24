@@ -1,4 +1,4 @@
-<div id="content-wrapper">
+<div id="content-wrapper" tabindex="-1" style="outline: none;">
     <div id="content-display">
         <div class="container-fluid">
             <!-- 載入布局 -->

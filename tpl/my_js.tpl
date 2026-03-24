@@ -7,6 +7,12 @@
         $("input[name='pass']").addClass("form-control");
         $('iframe:not([title])').attr('title','iframe content');
 
+        <{if $bootstrap=='5'}>
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        <{else}>
+            $('[data-toggle="tooltip"]').tooltip();
+        <{/if}>
+
         <{if $navbar_pos=='fixed-top'}>
             <{if $top_height!="" && (($top_left|is_array && "navbar"|in_array:$top_left) || ($top_center|is_array && "navbar"|in_array:$top_center) || ($top_right|is_array && "navbar"|in_array:$top_right))}>
                 <{assign var="pin_zone" value="top"}>
@@ -15,7 +21,7 @@
             <{elseif $middle_height!="" && ( ($middle_left|is_array && "navbar"|in_array:$middle_left) || ($middle_center|is_array && "navbar"|in_array:$middle_center) || ($middle_right|is_array && "navbar"|in_array:$middle_right))}>
                 <{assign var="pin_zone" value="middle"}>
             <{else}>
-                <{assign var="pin_zone" value="nav"}>
+                <{* <{assign var="pin_zone" value="nav"}> *}>
             <{/if}>
         <{/if}>
 
@@ -39,6 +45,7 @@
     });
 
     <{if $pin_zone|default:false}>
+    // pin_zone=<{$pin_zone}>
         $(window).resize(function() {
             if($(window).width() > 768){
                 // 避免在手機狀態下無法上下選擇選項

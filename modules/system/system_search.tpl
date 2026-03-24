@@ -11,7 +11,7 @@
     }
 </style>
 <{if isset($results)}>
-    <h3 class="text-center"><{$smarty.const._SR_SEARCHRESULTS}></h3>
+    <p class="text-center h3" ><{$smarty.const._SR_SEARCHRESULTS}></p>
     <div class="text-center">
         <{$smarty.const._SR_KEYWORDS}>: <strong><{$keywords|default:''}></strong>
     </div>
@@ -57,7 +57,7 @@
 <{/if}>
 
 <{if !empty($showallbyuser)}>
-    <h3 class="text-center"><{$smarty.const._SR_SEARCHRESULTS}></h3>
+    <p class="text-center h3"><{$smarty.const._SR_SEARCHRESULTS}></p>
     <{if isset($nomatch) && $nomatch != true}>
         <{if isset($showall)}>
             <div class="text-center">

@@ -4,19 +4,19 @@
 }
 
 .blockContent {
-  margin: 0px;
+  margin: 0;
 }
 
 /* 左區塊 */
 .leftBlock {
   position: relative;
-  margin: 5px auto;
+  margin: 0.3125rem auto;
 }
 
 /* 右區塊 */
 .rightBlock {
   position: relative;
-  margin: 5px auto;
+  margin: 0.3125rem auto;
 }
 
 /* 上中區塊 */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<{$xoops_langcode|default:''}>">
+<html lang="zh-Hant-TW">
     <head>
         <{assign var="bootstrap" value=$smarty.session.bootstrap|default:$session.bootstrap}>
         <!--目前$_SESSION['bootstrap']="<{$bootstrap|default:''}>"; -->
@@ -51,10 +51,14 @@
     </head>
 
     <body <{$prism_setup|default:''}>>
-
+        <!-- 增加跳至主要內容連結 (WCAG 2.4.1) -->
+        <a class="visually-hidden-focusable" href="#xoops_contents">跳至主要內容</a>
+        <h1 class="sr-only visually-hidden"><{$xoops_sitename|default:'學校網站'}></h1>
         <!-- 導覽列區域 -->
         <{if $navbar_pos=='fixed-top'}>
-            <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+            <nav>
+                <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+            </nav>
         <{/if}>
 
         <{if $use_page|default:false}>
@@ -65,11 +69,15 @@
         <{include file="$xoops_rootpath/themes/school2022/tpl/top_wrapper.tpl"}>
 
         <{* logo區域 *}>
-        <{include file="$xoops_rootpath/themes/school2022/tpl/logo_wrapper.tpl"}>
+        <header>
+            <{include file="$xoops_rootpath/themes/school2022/tpl/logo_wrapper.tpl"}>
+        </header>
 
         <{* 導覽列區域 *}>
         <{if $navbar_pos=='sticky-top'}>
-            <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+            <nav>
+                <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+            </nav>
         <{/if}>
 
         <{* 滑動圖區域 *}>
@@ -79,7 +87,9 @@
 
         <{* 導覽列區域 *}>
         <{if $navbar_pos=='default'}>
-            <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+            <nav>
+                <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+            </nav>
         <{/if}>
 
         <{if $errorMsg|default:false}>
@@ -93,16 +103,19 @@
 
         <{* 導覽列區域 *}>
         <{if $navbar_pos=='middle-bottom'}>
-            <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+            <nav>
+                <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+            </nav>
         <{/if}>
 
-
-        <{* <div class="d-flex flex-column min-vh-100">*}>
         <div class="d-flex flex-column">
             <div class="flex-grow-1">
                 <{* 主內容區域 *}>
-                <{include file="$xoops_rootpath/themes/school2022/tpl/content_wrapper.tpl"}>
+                <main>
+                    <{include file="$xoops_rootpath/themes/school2022/tpl/content_wrapper.tpl"}>
+                </main>
             </div>
+            <h2 class="sr-only visually-hidden">頁尾區域</h2>
             <footer>
                 <{* 頁尾區域 *}>
                 <{include file="$xoops_rootpath/themes/school2022/tpl/footer_wrapper.tpl"}>
@@ -117,7 +130,14 @@
 
         <{* 導覽列區域 *}>
         <{if $navbar_pos=='fixed-bottom'}>
-            <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+            <nav>
+                <{include file="$xoops_rootpath/themes/school2022/tpl/navbar.tpl"}>
+            </nav>
+        <{/if}>
+
+        <{* 底部內容區 *}>
+        <{if $back_to_top|default:false}>
+            <{include file="$xoops_rootpath/themes/school2022/tpl/back_to_top.tpl"}>
         <{/if}>
 
         <!-- 載入自訂js -->

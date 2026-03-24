@@ -38,7 +38,7 @@
 
     <{if 'navbar'|in_array:$item_content}>
         <div class="d-xl-inline-block" style="<{$nav_style|default:''}>">
-            <{include file="$xoops_rootpath/modules/tadtools/themes5_tpl/navbar.tpl"}>
+            <{include file="$xoops_rootpath/modules/tadtools/themes5_tpl/tad_navbar.tpl"}>
         </div>
     <{/if}>
 <{/if}>

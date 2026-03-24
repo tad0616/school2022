@@ -168,6 +168,11 @@ define('TF_ZINDEX_DESC', '設定此區域的上下層排序');
 define('TF_PIN', '是否釘選此區域');
 define('TF_PIN_DESC', '選是的話，當該區域到頂端時會固定住（若偏好設定有設定「導覽列的釘住」或導覽列設為「上方鎖定」則會找出導覽列位置優先釘選，並忽略此值）');
 
+define('TF_BACK_TO_TOP', '「回頂端」工具底色');
+define('TF_BACK_TO_TOP_DESC', '空值表示不使用，有設顏色的話，右下角會出現「回頂端」按鈕）');
+define('TF_BACK_TO_TOP_TXT', '「回頂端」符號顏色');
+define('TF_BACK_TO_TOP_TXT_DESC', '空值表示不使用，有設顏色的話，右下角會出現「回頂端」按鈕）');
+
 define('TF_CONTENT_BGCOLOR', '中間底色');
 define('TF_CONTENT_BGCOLOR_DESC', '中間有放內容的區域之底色（若有底圖，此處請設成透明）');
 

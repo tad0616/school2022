@@ -168,6 +168,11 @@ define('TF_ZINDEX_DESC', 'Set the upper and lower order of this area');
 define('TF_PIN', 'Whether to pin this area');
 define('TF_PIN_DESC', 'If yes, the area will be pinned when it reaches the top (if the preferences have "Pinning of Navigation Columns" set or if the Navigation Column is set to "Locked from Above", then the Navigation Column position will be prioritized for pinning and this value will be ignored)');
 
+define('TF_BACK_TO_TOP', '"Back to Top" Tool Background Color');
+define('TF_BACK_TO_TOP_DESC', 'An empty value indicates it is not used. If a color is set, a "Back to Top" button will appear in the bottom-right corner.');
+define('TF_BACK_TO_TOP_TXT', '"Back to Top" icon color');
+define('TF_BACK_TO_TOP_TXT_DESC', 'An empty value indicates it is not used. If a color is set, a "Back to Top" button will appear in the bottom-right corner.');
+
 define('TF_CONTENT_BGCOLOR', 'Content area background color');
 define('TF_CONTENT_BGCOLOR_DESC', 'The center has the base color of the area where the content is placed');
 
