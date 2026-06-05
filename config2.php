@@ -1,4 +1,8 @@
 <?php
+if (!defined('TF_SHOW_VAR')) {
+    exit;
+}
+
 $i                           = 0;
 $theme_config[$i]['name']    = "show_var";
 $theme_config[$i]['text']    = TF_SHOW_VAR;

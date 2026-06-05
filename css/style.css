@@ -176,3 +176,19 @@ ul#head_menu li a:hover,
 code{
   color:rgb(163, 35, 12);
 }
+
+:root {
+    /* 覆蓋 Bootstrap 的變數 */
+    --bs-breadcrumb-item-active-color: #000000 !important; /* 黑色，與白色背景對比度約為 21:1 */
+}
+
+/* 或直接覆蓋樣式 */
+.breadcrumb-item.active {
+    color: #000000 !important; /* 黑色 */
+    font-weight: 500; /* 稍微加粗以增強可讀性 */
+}
+
+/* 如果您的面包屑導航在深色背景上 */
+.bg-dark .breadcrumb-item.active {
+    color: #ffffff !important; /* 白色，與深色背景對比度高 */
+}

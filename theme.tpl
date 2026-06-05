@@ -52,7 +52,9 @@
 
     <body <{$prism_setup|default:''}>>
         <!-- 增加跳至主要內容連結 (WCAG 2.4.1) -->
-        <a class="visually-hidden-focusable" href="#xoops_contents">跳至主要內容</a>
+        <{* <a class="visually-hidden-focusable" href="#xoops_contents">跳至主內容區</a> *}>
+        <a class="visually-hidden-focusable" href="#xoops_theme_center">跳至主內容區</a>
+
         <h1 class="sr-only visually-hidden"><{$xoops_sitename|default:'學校網站'}></h1>
         <!-- 導覽列區域 -->
         <{if $navbar_pos=='fixed-top'}>

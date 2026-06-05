@@ -105,10 +105,19 @@ $theme_config[$i]['desc']    = TF_NAV_NO_MOUSE_OVER_DESC;
 $theme_config[$i]['type']    = "yesno";
 $theme_config[$i]['default'] = "0";
 
-//主選單的圖示
+//導覽列的圖示
 $i++;
 $theme_config[$i]['name']    = "menu_icon";
 $theme_config[$i]['text']    = TF_NAV_MENU_ICON;
 $theme_config[$i]['desc']    = TF_NAV_MENU_ICON_DESC;
 $theme_config[$i]['type']    = "text";
 $theme_config[$i]['default'] = "fa-bars";
+
+//導覽列使用色系
+$i++;
+$theme_config[$i]['name']    = "mobile_theme";
+$theme_config[$i]['text']    = TF_NAV_MENU_MOBILE_THEME;
+$theme_config[$i]['desc']    = TF_NAV_MENU_MOBILE_THEME_DESC;
+$theme_config[$i]['type']    = "radio";
+$theme_config[$i]['options'] = ['dark' => TF_NAV_MENU_MOBILE_THEME_DARK, 'light' => TF_NAV_MENU_MOBILE_THEME_LIGHT];
+$theme_config[$i]['default'] = ['dark'];

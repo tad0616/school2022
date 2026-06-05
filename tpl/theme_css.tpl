@@ -39,22 +39,3 @@
     background-color:<{$rb_color|default:''}>;
     padding: 0px 14px;
 }
-
-/* 增加焦點可視性 (WCAG 2.4.7) */
-:focus-visible {
-    outline: 3px solid #0056b3 !important;
-    outline-offset: 2px !important;
-    box-shadow: 0 0 0 5px rgba(0, 86, 179, 0.3) !important;
-}
-
-.visually-hidden-focusable:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    margin: 5px;
-    background-color: #fff;
-    color: #000;
-    z-index: 1000;
-    border: 2px solid #0056b3;
-}

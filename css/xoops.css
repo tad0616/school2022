@@ -66,7 +66,7 @@ ol {
 
 li {
   margin-left: 0.125rem;
-  color: #233D5E;
+  color: #29323f;
 }
 
 /* ===== 標題預設大小 ===== */
@@ -206,4 +206,74 @@ div.jGrowl div.jGrowl-closer {
   font-size: 0.925rem;
   font-weight: bold;
   text-align: center;
+}
+
+/* 增加焦點可視性 (WCAG 2.4.7) */
+:focus-visible {
+  /* 內層白色 3px + 外層藍色 3px，總共 6px 的雙色外框 */
+  outline: 3px solid #005fcc !important;
+  box-shadow: 0 0 0 3px #ffffff inset !important;
+  /* 調整 offset 確保藍色外框貼齊元素邊緣，而白色往內縮 */
+  outline-offset: 0px !important;
+}
+
+.visually-hidden-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 10px 12px;
+  margin: 5px;
+
+  background-color: #fff;
+  color: #000;
+
+  z-index: 10;
+
+  /* 與上方 :focus-visible 一致的藍白雙色 focus ring */
+  outline: 3px solid #005fcc;
+  box-shadow: 0 0 0 3px #ffffff inset;
+  outline-offset: 0px;
+
+  /* 補強可讀性與可點擊性 */
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* 無障礙跳轉區塊聚焦提示樣式（由 JS 動態加掛 .skip-target-active class） */
+/* 改以 JS class 取代 CSS :target，可精確控制樣式的新增與移除時機 */
+.skip-target-active {
+  position: relative;
+
+  /* 主框（藍色） */
+  outline: 4px solid #005fcc;
+  outline-offset: 6px;
+
+  /* 白色對比層 + 藍色擴散 */
+  box-shadow:
+    0 0 0 3px #ffffff,
+    0 0 0 8px rgba(37, 99, 235, 0.45),
+    0 0 16px 6px rgba(37, 99, 235, 0.35);
+
+  /* 淡提示背景（不干擾閱讀） */
+  background-color: #eff6ff;
+
+  z-index: 10;
+
+  /* forwards 確保動畫結束後保持最終狀態，不回跳 */
+  animation: skipTargetHighlightBlueDark 1.8s ease-out forwards;
+}
+
+@keyframes skipTargetHighlightBlueDark {
+  0% {
+    background-color: rgba(37, 99, 235, 0.15);
+
+    box-shadow:
+      0 0 0 2px rgba(255, 255, 255, 0.85),
+      0 0 0 8px rgba(37, 99, 235, 0.55),
+      0 0 14px 6px rgba(37, 99, 235, 0.35);
+  }
+
+  100% {
+    background-color: rgba(37, 99, 235, 0.08);
+  }
 }
