@@ -218,10 +218,15 @@ define('TF_LOGO_ZONE', 'Logo Zone');
 define('TF_NAV_ZONE', 'Navigation column zone');
 define('TF_SLIDE_ZONE', 'Slide Zone');
 define('TF_MIDDEL_ZONE', 'Middle Custom Zone');
+
 define('TF_NAV_NO_MOUSE_OVER', 'Click to show submenu or not');
 define('TF_NAV_NO_MOUSE_OVER_DESC', 'Default is to appear when mouse hover, if yes, you must click to appear');
 define('TF_NAV_MENU_ICON', 'Main Menu Icons');
 define('TF_NAV_MENU_ICON_DESC', '<a href="https://fontawesome.com/v4/icons/" target="_blank">Icons can be found here</a>, e.g., fa-bars, blank means no');
+define('TF_NAV_MENU_MOBILE_THEME', 'Color Scheme for the Navigation Bar');
+define('TF_NAV_MENU_MOBILE_THEME_DESC', 'If the background color is dark, we recommend selecting "Dark"; otherwise, select "Light." This will affect the color of the navigation bar on the mobile version, but will not affect the desktop version.');
+define('TF_NAV_MENU_MOBILE_THEME_DARK', 'Dark');
+define('TF_NAV_MENU_MOBILE_THEME_LIGHT', 'Light');
 
 define('TF_SLIDE_AUTO', 'Whether to use auto-match');
 define('TF_SLIDE_AUTO_DESC', 'Let the system automatically detect a variable in the URL to switch the slide automatically');

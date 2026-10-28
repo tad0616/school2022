@@ -12,7 +12,7 @@
 </style>
 <{if isset($results)}>
     <p class="text-center h3" ><{$smarty.const._SR_SEARCHRESULTS}></p>
-    <div class="text-center">
+    <div class="text-center" id="keywords" tabindex="-1">
         <{$smarty.const._SR_KEYWORDS}>: <strong><{$keywords|default:''}></strong>
     </div>
 
@@ -38,9 +38,10 @@
                         <th data-field="date" data-class="w16 text-center">發布日期</th>
                     </tr>
                 </thead>
-                <{foreach item=data from=$searchitem.module_data|default:null}>
+                <{foreach item=data from=$searchitem.module_data|default:null name=dataloop}>
                     <tr>
-                        <td><img src="<{$data.image_link}>" title="<{$data.image_title}>" alt="<{$data.image_title}>"/> <a href="<{$data.link}>"><{$data.link_title|default:'無標題'}></a></td>
+                        <td><img src="<{$data.image_link}>" title="<{$data.image_title}>" alt="<{$data.image_title}>"/>
+                            <a href="<{$data.link}>" <{if $smarty.foreach.dataloop.first}>id="first_result"<{/if}>><{$data.link_title|default:'無標題'}></a></td>
                         <td class="text-md-center"><{if $data.uname|default:false}><a href="<{$data.uname_link}>"><{$data.uname}></a><{/if}></td>
                         <td class="text-md-center"><{if $data.time|default:false}><{$data.time}><{/if}></td>
                     </tr>
@@ -60,7 +61,7 @@
     <p class="text-center h3"><{$smarty.const._SR_SEARCHRESULTS}></p>
     <{if isset($nomatch) && $nomatch != true}>
         <{if isset($showall)}>
-            <div class="text-center">
+            <div class="text-center" id="keywords">
                 <{$smarty.const._SR_KEYWORDS}>: <strong><{$keywords|default:''}></strong>
             </div>
         <{/if}>
@@ -101,5 +102,21 @@
 <{if isset($form)}>
     <div class="alert alert-light">
         <{$form|default:''}>
+        <div><span class="xo-caption-required" aria-hidden="true">*</span> 「搜尋範圍」若未勾選，等同搜尋所有可搜尋模組之內容，送出後將自動全部勾選。</div>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        <{if isset($results)}>
+            const first_result = document.getElementById('first_result');
+            if (first_result) {
+                first_result.focus();
+            }
+        <{else}>
+            const queryInput = document.getElementById('query');
+            if (queryInput) {
+                queryInput.focus();
+            }
+        <{/if}>
+    });
+    </script>
 <{/if}>

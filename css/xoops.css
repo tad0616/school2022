@@ -213,8 +213,28 @@ div.jGrowl div.jGrowl-closer {
   /* 內層白色 3px + 外層藍色 3px，總共 6px 的雙色外框 */
   outline: 3px solid #005fcc !important;
   box-shadow: 0 0 0 3px #ffffff inset !important;
-  /* 調整 offset 確保藍色外框貼齊元素邊緣，而白色往內縮 */
   outline-offset: 0px !important;
+}
+
+/* 圖片卡片的連結包含多個行盒，改為區塊後焦點外框只會顯示一個 */
+.polaroid>a {
+  display: block;
+}
+
+.table tbody tr:focus-visible td,
+.table tbody tr:focus-within td {
+  border-top: 3px solid #005fcc !important;
+  border-bottom: 3px solid #005fcc !important;
+}
+
+.table tbody tr:focus-visible td:first-child,
+.table tbody tr:focus-within td:first-child {
+  border-left: 4px solid #005fcc !important;
+}
+
+.table tbody tr:focus-visible td:last-child,
+.table tbody tr:focus-within td:last-child {
+  border-right: 4px solid #005fcc !important;
 }
 
 .visually-hidden-focusable:focus {
@@ -239,9 +259,15 @@ div.jGrowl div.jGrowl-closer {
   text-decoration: none;
 }
 
-/* 無障礙跳轉區塊聚焦提示樣式（由 JS 動態加掛 .skip-target-active class） */
-/* 改以 JS class 取代 CSS :target，可精確控制樣式的新增與移除時機 */
-.skip-target-active {
+/* 無障礙跳轉區塊聚焦提示樣式
+   - .skip-target-active：由 JS 動態加掛
+   - :target：直接輸入網址錨點時觸發
+*/
+.skip-target-active,
+#xoops_theme_center_zone:target,
+#xoops_theme_left_zone:target,
+#xoops_theme_right_zone:target,
+#main-nav-skip:target {
   position: relative;
 
   /* 主框（藍色） */

@@ -99,7 +99,7 @@ $theme_config[$i]['name']    = "slide_kind";
 $theme_config[$i]['text']    = TF_SLIDE_KIND;
 $theme_config[$i]['desc']    = TF_SLIDE_KIND_DESC;
 $theme_config[$i]['type']    = "select";
-$theme_config[$i]['options'] = ['' => TF_SLIDE_KIND1, 'CarouSlide' => TF_SLIDE_KIND2, 'templatemo' => TF_SLIDE_KIND3];
+$theme_config[$i]['options'] = ['responsive_slide' => TF_SLIDE_KIND1, 'CarouSlide' => TF_SLIDE_KIND2, 'templatemo' => TF_SLIDE_KIND3];
 $theme_config[$i]['default'] = "templatemo";
 
 //slide 顯示左右箭頭
